@@ -4,7 +4,7 @@ import org.ejml.simple.SimpleMatrix;
 import com.horse.mpclib.lib.geometry.Pose2d;
 import com.horse.mpclib.lib.geometry.Rotation2d;
 import com.horse.mpclib.lib.physics.MecanumDriveModel;
-import com.horse.mpclib.main.Robot;
+import com.horse.mpclib.examples.Robot;
 
 public class OldMecanumDriveMPC {
     public static final int HORIZON_STEP = 1000;

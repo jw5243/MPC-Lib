@@ -3,7 +3,7 @@ package com.horse.mpclib.lib.physics;
 import org.ejml.data.SingularMatrixException;
 import org.ejml.simple.SimpleMatrix;
 
-public class MecanumDriveModel {
+public class MecanumDriveModel implements NonlinearDynamicModel {
     private final double dt;
 
     //Roller angles 2 and 3 are -45 degrees
@@ -403,6 +403,11 @@ public class MecanumDriveModel {
         return state.plus(k1.plus(k2.scale(2).plus(k3.scale(2).plus(k4))).scale(dt / 6));
     }
 
+    @Override
+    public SimpleMatrix stateTransitionMatrix(SimpleMatrix state, double dt) {
+        return stateTransitionMatrix(state, dt, true);
+    }
+
     public SimpleMatrix stateTransitionMatrix(SimpleMatrix state, double dt, boolean updateCoefficients) {
         double xDot = state.get(1);
         double yDot = state.get(3);
@@ -494,6 +499,11 @@ public class MecanumDriveModel {
 
     public SimpleMatrix stateTransitionMatrix(SimpleMatrix state, boolean updateCoefficients) {
         return stateTransitionMatrix(state, dt, updateCoefficients);
+    }
+
+    @Override
+    public SimpleMatrix inputTransitionMatrix(SimpleMatrix state, double dt) {
+        return inputTransitionMatrix(state, dt, false);
     }
 
     public SimpleMatrix inputTransitionMatrix(SimpleMatrix state, double dt, boolean updateCoefficients) {

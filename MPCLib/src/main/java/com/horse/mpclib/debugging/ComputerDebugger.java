@@ -4,8 +4,8 @@ import com.horse.mpclib.lib.geometry.Line2d;
 import com.horse.mpclib.lib.geometry.Translation2d;
 import com.horse.mpclib.lib.util.TimeUnits;
 import com.horse.mpclib.lib.util.TimeUtil;
-import com.horse.mpclib.main.Robot;
-import com.horse.mpclib.main.RobotMPC;
+import com.horse.mpclib.examples.Robot;
+import com.horse.mpclib.examples.RobotMPC;
 
 import java.text.DecimalFormat;
 

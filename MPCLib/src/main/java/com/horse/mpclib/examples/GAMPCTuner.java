@@ -1,16 +1,13 @@
-package com.horse.mpclib.main;
+package com.horse.mpclib.examples;
 
+import org.ejml.simple.SimpleMatrix;
 import com.horse.mpclib.debugging.ComputerDebugger;
 import com.horse.mpclib.debugging.IllegalMessageTypeException;
 import com.horse.mpclib.debugging.MessageOption;
-import com.horse.mpclib.lib.control.Obstacle;
-import com.horse.mpclib.lib.geometry.Circle2d;
-import com.horse.mpclib.lib.geometry.Line2d;
-import com.horse.mpclib.lib.geometry.Pose2d;
-import com.horse.mpclib.lib.geometry.Rotation2d;
-import com.horse.mpclib.lib.geometry.Translation2d;
-import com.horse.mpclib.lib.motion.Spline;
-import com.horse.mpclib.lib.motion.SplineGenerator;
+import com.horse.mpclib.lib.control.MecanumRunnableMPC;
+import com.horse.mpclib.lib.util.Time;
+import com.horse.mpclib.lib.util.TimeUnits;
+import com.horse.mpclib.lib.util.TimeUtil;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -20,15 +17,16 @@ import java.io.IOException;
 import java.util.Arrays;
 import java.util.concurrent.atomic.AtomicInteger;
 
-public class GASplineTuner {
-    private static final boolean PRINT_SPLINE = false;
+public class GAMPCTuner {
+    private static final Time timeout = new Time(60d, TimeUnits.SECONDS);
+
     private static final int MAX_GENERATIONS = 10;
-    private static final int POPULATION_SIZE = 300;
+    private static final int POPULATION_SIZE = 30;
 
-    private static final double MIN_TUNE_VALUE = -25d;
-    private static final double MAX_TUNE_VALUE = 25d;
+    private static final double MIN_TUNE_VALUE = 0d;
+    private static final double MAX_TUNE_VALUE = 200d;
 
-    private static final int TERMS_TO_TUNE = 4 * 7 + 2; //Must be some multiple of 4
+    private static final int TERMS_TO_TUNE = 10; //6 for state cost + 1 for iteration count + /*1 for timestep count*/ + 3 obstacles //4 for input cost
 
     private static final int elitismCount = 2;
     private static final double crossoverProbability = 0.9d;
@@ -41,18 +39,10 @@ public class GASplineTuner {
     private boolean importedData;
 
     public static void main(String... args) {
-        System.out.println("Running spline smoothing algorithm with degree " + (2 + getTermsToTune() / 4));
-        try {
-            Thread.sleep(500);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
+        GAMPCTuner tuner = new GAMPCTuner();
         ComputerDebugger.init(new RobotGAMPC());
-        ComputerDebugger.getRobot().init_debug();
-        GASplineTuner tuner = new GASplineTuner();
-        tuner.init(false);
-        tuner.simulateGenerations(100);
+        tuner.init(true);
+        tuner.simulateGenerations(2);
     }
 
     public static void saveData() {
@@ -61,7 +51,7 @@ public class GASplineTuner {
         }
 
         try {
-            BufferedWriter out = new BufferedWriter(new FileWriter("SplineTuningData.dat"));
+            BufferedWriter out = new BufferedWriter(new FileWriter("TuningData.dat"));
             StringBuilder stringBuilder = new StringBuilder();
             for(int i = 0; i < getPopulationValues().length; i++) {
                 for(int j = 0; j < getPopulationValues()[i].length; j++) {
@@ -81,7 +71,7 @@ public class GASplineTuner {
 
     public static void importData() {
         try {
-            BufferedReader in = new BufferedReader(new FileReader("SplineTuningData.dat"));
+            BufferedReader in = new BufferedReader(new FileReader("TuningData.dat"));
             AtomicInteger runningIndex = new AtomicInteger(0);
             in.lines().forEach((line) -> {
                 String[] chromosomeRawData = line.split(",");
@@ -115,61 +105,95 @@ public class GASplineTuner {
     }
 
     public void runIteration(int index) {
-        Spline initialSpline = SplineGenerator.getInitialSpline(2 + getTermsToTune() / 4, new Pose2d(9, 9, new Rotation2d(0d, false)),
-                new Translation2d(2d * getPopulationValues()[index][getPopulationValues()[index].length - 1 - 2] + 50d, 2d * getPopulationValues()[index][getPopulationValues()[index].length - 1 - 1] + 50d), Arrays.copyOfRange(getPopulationValues()[index], 0, getPopulationValues()[index].length - 1 - 3 - (getTermsToTune() - 8 - 2) / 2 - 2));
-        Spline finalSpline = SplineGenerator.getTerminatingSpline(2 + getTermsToTune() / 4, initialSpline, new Rotation2d(0d, false),
-                new Translation2d(2d * getPopulationValues()[index][getPopulationValues()[index].length - 1 - 2] + 50d, 2d * getPopulationValues()[index][getPopulationValues()[index].length - 1 - 1] + 50d),
-                new Pose2d(144d - 9d, 144d - 9d, new Rotation2d(0d, false)),
-                Arrays.copyOfRange(getPopulationValues()[index], 4 + 1 + (getTermsToTune() - 8 - 2) / 2, getPopulationValues()[index].length - 1 - 2));
+        MecanumRunnableMPC.setStateCost(SimpleMatrix.diag(Arrays.copyOfRange(getPopulationValues()[index], 0, getPopulationValues()[index].length - 1 - 4 /*- 4*/)));
+        MecanumRunnableMPC.setMaxIterations((int)((20d / getMaxTuneValue()) * getPopulationValues()[index][6]) + 1);
+        //MecanumRunnableMPC.setInputCost(SimpleMatrix.diag(Arrays.copyOfRange(getPopulationValues()[index], 6, getPopulationValues()[index].length - 1)).scale(1d / getMaxTuneValue()));
 
-        if(isPrintSpline()) {
-            System.out.println(initialSpline);
-            System.out.println(finalSpline);
+        RobotGAMPC robot = new RobotGAMPC();
+        ComputerDebugger.setRobot(robot);
+        robot.init_debug();
+        for(int i = 0; i < Robot.getObstacles().size(); i++) {
+            Robot.getObstacles().get(i).setCostFactor((300d / 200d) * getPopulationValues()[index][7 + i]);
         }
 
-        int steps = 500;
-        Translation2d[] values = new Translation2d[2 * steps];
-        for(int i = 0; i < steps; i++) {
-            values[i] = initialSpline.evaluate((double)(i) / steps);
-            values[i + steps] = finalSpline.evaluate((double)(i) / steps);
+        ComputerDebugger.send(MessageOption.CLEAR_LOG_POINTS);
+        ComputerDebugger.send(MessageOption.CLEAR_MOTION_PROFILE);
+        ComputerDebugger.sendMessage();
+
+        try {
+            Thread.sleep(100);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
         }
 
-        for(int i = 0; i < values.length - 1; i++) {
+        robot.start_debug();
+        boolean failed = false;
+        boolean failedLess = false;
+        while(!robot.isDone() && TimeUtil.getCurrentRuntime().compareTo(getTimeout()) < 0) {
             try {
-                ComputerDebugger.send(MessageOption.LINE.setSendValue(new Line2d(values[i], values[i + 1])));
-            } catch (IllegalMessageTypeException e) {
+                if(robot.getFieldPosition().getTranslation().distance(Robot.getInitialPose().getTranslation()) <  1E-6 &&
+                        TimeUtil.getCurrentRuntime(TimeUnits.SECONDS) > 2d) {
+                    failed = true;
+                    break;
+                }
+
+                if(robot.getFieldPosition().getTranslation().distance(robot.getPoseCheck().getTranslation()) < 1E-1 &&
+                        (TimeUtil.getCurrentRuntime(TimeUnits.SECONDS) - robot.getPoseCheckTime().getTimeValue(TimeUnits.SECONDS) > 4d)) {
+                    failedLess = true;
+                    break;
+                }
+
+                robot.loop_debug();
+
+                ComputerDebugger.send(MessageOption.ROBOT_LOCATION);
+                ComputerDebugger.send(MessageOption.LOG_POINT.setSendValue(robot.getFieldPosition().getTranslation()));
+                ComputerDebugger.sendMessage();
+                Thread.sleep(10);
+            } catch (InterruptedException | IllegalMessageTypeException e) {
                 e.printStackTrace();
             }
         }
 
-        Translation2d obstacle = new Translation2d(144d / 2d, 144d / 2d);
-        Obstacle obstacleObject = new Obstacle(obstacle, 9d, 1d);
-        double minDistanceToObstacle = Math.min(initialSpline.getMinDistanceFromPoint(obstacle), finalSpline.getMinDistanceFromPoint(obstacle));
+        double distanceAwayFromGoal = robot.getFieldPosition().getTranslation().distance(robot.getPositions().get(0).getTranslation());
+        double elapsedTime = (robot.getRuntime() == 0d || failed || failedLess) ? getTimeout().getTimeValue(TimeUnits.SECONDS) : robot.getRuntime();
+        int remainingSetpoints = robot.getPositions().size() - 1;
+        int timesHittingObstacles = robot.getTimesHittingObstacle();
+        double closestDistanceToObstacle = robot.getClosestDistanceToObstacle();
+        double angularOffset = Math.abs(robot.getFieldPosition().getRotation().rotateBy(robot.getPositions().get(0).getRotation().inverse()).getDegrees());
+        timesHittingObstacles = Math.min(13 * 3, timesHittingObstacles);
 
-        double obstacleCost = 0d;
-        if(minDistanceToObstacle < 18d) {
-            obstacleCost = 1E9d;
+        if(failed || (failedLess && robot.getSetpointCount() - 1 <= remainingSetpoints)) {
+            timesHittingObstacles = 13 * 3 + 1;
             for(int i = 0; i < getPopulationValues()[index].length - 1; i++) {
                 getPopulationValues()[index][i] = getRandomTuneValue();
             }
+        } else if(elapsedTime != getTimeout().getTimeValue(TimeUnits.SECONDS)) {
+            distanceAwayFromGoal = 0d; //The robot has reached the final position
+        } else {
+            timesHittingObstacles = 13 * 3;
         }
 
-        try {
-            ComputerDebugger.send(MessageOption.KEY_POINT.setSendValue(new Circle2d(
-                    obstacleObject.getLocation(), obstacleObject.getObstacleRadius() / 0.0254d
-            )));
-        } catch (IllegalMessageTypeException e) {
-            e.printStackTrace();
+        double normalizedDistanceCost = 0.01d;
+        double normalizedTimeCost = 50d;
+        double normalizedRemainingSetpointsCost = 50d;
+        double normalizedHittingObstacleCost = 50;
+        double normalizedClosestDistanceToObstacleCost = 200d;
+        double normalizedAngularOffsetCost = 100d;
+
+        if(Double.isNaN(distanceAwayFromGoal)) {
+            distanceAwayFromGoal = normalizedDistanceCost * 144d;
         }
 
-        ComputerDebugger.sendMessage();
-
-        //Update cost value which is set equal to the mean curvature
-        getPopulationValues()[index][getPopulationValues()[index].length - 1] = 10d * (Math.pow(initialSpline.getMeanCurvature() + finalSpline.getMeanCurvature(), 2d) +
-                Math.pow(initialSpline.getMeanDCurvature() + finalSpline.getMeanDCurvature(), 2d)) + (initialSpline.getArcLength() + finalSpline.getArcLength()) + obstacleCost;
+        //Update cost value which is set equal to the time elapsed for the iteration
+        getPopulationValues()[index][getPopulationValues()[index].length - 1] =
+                normalizedDistanceCost * ((double)(remainingSetpoints) / robot.getSetpointCount()) * (distanceAwayFromGoal / 144d) +
+                        normalizedTimeCost * Math.pow(elapsedTime / getTimeout().getTimeValue(TimeUnits.SECONDS), 1d) +
+                        normalizedRemainingSetpointsCost * Math.pow((double)(remainingSetpoints) / robot.getSetpointCount(), 2d) +
+                        normalizedHittingObstacleCost * (144d / (closestDistanceToObstacle + (144d / 4d))) * Math.pow(timesHittingObstacles / (13 * 3d), 1d) +
+                        normalizedAngularOffsetCost * (angularOffset / 5d);
         System.out.print("Iteration: " + index + "\t");
         System.out.print(Arrays.toString(getPopulationValues()[index]));
-        System.out.println("\t" + getPopulationValues()[index][getPopulationValues()[index].length - 1]);
+        System.out.println("\t Took " + elapsedTime + " seconds to finish and hit obstacles " + timesHittingObstacles + " times");
     }
 
     public void simulateGeneration() {
@@ -183,10 +207,7 @@ public class GASplineTuner {
             }
         } else {
             int k = getElitismCount();
-            Arrays.sort(getPopulationValues(), (o1, o2) -> {
-                double comparison = o1[getTermsToTune()] - o2[getTermsToTune()];
-                return Double.compare(comparison, 0d);
-            });
+            Arrays.sort(getPopulationValues(), (o1, o2) -> (int)(o1[getTermsToTune()] - o2[getTermsToTune()]));
 
             double[][] nextPopulationValues = new double[getPopulationSize()][getTermsToTune() + 1];
             for(int i = 0; i < getElitismCount(); i++) {
@@ -231,34 +252,6 @@ public class GASplineTuner {
         for(int i = 0; i < generations; i++) {
             simulateGeneration();
         }
-
-        int index = 0;
-        Spline initialSpline = SplineGenerator.getInitialSpline(2 + getTermsToTune() / 4, new Pose2d(9, 9, new Rotation2d(0d, false)),
-                new Translation2d(2d * getPopulationValues()[index][getPopulationValues()[index].length - 1 - 2] + 50d, 2d * getPopulationValues()[index][getPopulationValues()[index].length - 1 - 1] + 50d), Arrays.copyOfRange(getPopulationValues()[index], 0, getPopulationValues()[index].length - 1 - 3 - (getTermsToTune() - 8 - 2) / 2 - 2));
-        Spline finalSpline = SplineGenerator.getTerminatingSpline(2 + getTermsToTune() / 4, initialSpline, new Rotation2d(0d, false),
-                new Translation2d(2d * getPopulationValues()[index][getPopulationValues()[index].length - 1 - 2] + 50d, 2d * getPopulationValues()[index][getPopulationValues()[index].length - 1 - 1] + 50d),
-                new Pose2d(144d - 9d, 144d - 9d, new Rotation2d(0d, false)),
-                Arrays.copyOfRange(getPopulationValues()[index], 4 + 1 + (getTermsToTune() - 8 - 2) / 2, getPopulationValues()[index].length - 1 - 2));
-
-        int steps = 500;
-        Translation2d[] values = new Translation2d[2 * steps];
-        for(int i = 0; i < steps; i++) {
-            values[i] = initialSpline.evaluate((double)(i) / steps);
-            values[i + steps] = finalSpline.evaluate((double)(i) / steps);
-        }
-
-        for(int i = 0; i < values.length - 1; i++) {
-            try {
-                ComputerDebugger.send(MessageOption.LINE.setSendValue(new Line2d(values[i], values[i + 1])));
-            } catch (IllegalMessageTypeException e) {
-                e.printStackTrace();
-            }
-        }
-
-        ComputerDebugger.sendMessage();
-
-        System.out.println(initialSpline);
-        System.out.println(finalSpline);
     }
 
     public void crossover(double[][] nextPopulationValues, int nextPopulationIndex, int index1, int index2) {
@@ -287,8 +280,8 @@ public class GASplineTuner {
         }
 
         double totalCost = Arrays.stream(getPopulationValues()).mapToDouble(chromosome -> chromosome[chromosome.length - 1]).sum();
-        double totalNonnormalizedProbability = Arrays.stream(getPopulationValues()).mapToDouble(chromosome -> Math.pow(totalCost - chromosome[chromosome.length - 1], 2)).sum();
-        double[] selectionProbability = Arrays.stream(getPopulationValues()).mapToDouble(chromosome -> Math.pow(totalCost - chromosome[chromosome.length - 1], 2) / totalNonnormalizedProbability).toArray();
+        double totalNonnormalizedProbability = Arrays.stream(getPopulationValues()).mapToDouble(chromosome -> Math.pow(totalCost - chromosome[chromosome.length - 1], 4)).sum();
+        double[] selectionProbability = Arrays.stream(getPopulationValues()).mapToDouble(chromosome -> Math.pow(totalCost - chromosome[chromosome.length - 1], 4) / totalNonnormalizedProbability).toArray();
         double randomValue = Math.random();
         double currentProbabilitySum = 0d;
         for(int i = 0; i < selectionProbability.length; i++) {
@@ -323,7 +316,7 @@ public class GASplineTuner {
     }
 
     public static void setPopulationValues(double[][] populationValues) {
-        GASplineTuner.populationValues = populationValues;
+        GAMPCTuner.populationValues = populationValues;
     }
 
     public static double getMinTuneValue() {
@@ -346,6 +339,10 @@ public class GASplineTuner {
         return elitismCount;
     }
 
+    public static Time getTimeout() {
+        return timeout;
+    }
+
     public int getCurrentGeneration() {
         return currentGeneration;
     }
@@ -360,9 +357,5 @@ public class GASplineTuner {
 
     public void setImportedData(boolean importedData) {
         this.importedData = importedData;
-    }
-
-    public static boolean isPrintSpline() {
-        return PRINT_SPLINE;
     }
 }

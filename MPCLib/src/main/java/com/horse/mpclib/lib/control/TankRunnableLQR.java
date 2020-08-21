@@ -2,8 +2,8 @@ package com.horse.mpclib.lib.control;
 
 import com.horse.mpclib.lib.util.TimeProfiler;
 import com.horse.mpclib.lib.util.TimeUnits;
-import com.horse.mpclib.main.TankDriveAutonomousILQR;
-import com.horse.mpclib.main.TankDriveRobot;
+import com.horse.mpclib.examples.TankDriveAutonomousILQR;
+import com.horse.mpclib.examples.TankDriveRobot;
 
 public class TankRunnableLQR implements Runnable {
     private TimeProfiler timeProfiler;

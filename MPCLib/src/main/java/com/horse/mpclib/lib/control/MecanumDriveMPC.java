@@ -8,8 +8,8 @@ import com.horse.mpclib.lib.physics.MecanumDriveModel;
 import com.horse.mpclib.lib.physics.MotorModel;
 import com.horse.mpclib.lib.util.TimeUnits;
 import com.horse.mpclib.lib.util.TimeUtil;
-import com.horse.mpclib.main.Robot;
-import com.horse.mpclib.main.RobotMPC;
+import com.horse.mpclib.examples.Robot;
+import com.horse.mpclib.examples.RobotMPC;
 
 import java.util.ConcurrentModificationException;
 import java.util.NoSuchElementException;

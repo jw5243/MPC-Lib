@@ -2,7 +2,7 @@ package com.horse.mpclib.lib.control;
 
 import com.horse.mpclib.lib.util.TimeProfiler;
 import com.horse.mpclib.lib.util.TimeUnits;
-import com.horse.mpclib.main.Robot;
+import com.horse.mpclib.examples.Robot;
 
 public class MecanumRunnableLQR implements Runnable {
     private TimeProfiler timeProfiler;

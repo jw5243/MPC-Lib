@@ -1,4 +1,4 @@
-package com.horse.mpclib.main;
+package com.horse.mpclib.examples;
 
 import com.horse.mpclib.debugging.ComputerDebugger;
 import com.horse.mpclib.debugging.IllegalMessageTypeException;

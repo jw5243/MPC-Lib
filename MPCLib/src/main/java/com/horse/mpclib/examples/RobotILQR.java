@@ -1,4 +1,4 @@
-package com.horse.mpclib.main;
+package com.horse.mpclib.examples;
 
 import com.horse.mpclib.lib.control.MecanumDriveILQR;
 import com.horse.mpclib.lib.control.MecanumRunnableLQR;

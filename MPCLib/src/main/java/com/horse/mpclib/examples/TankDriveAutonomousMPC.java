@@ -1,4 +1,4 @@
-package com.horse.mpclib.main;
+package com.horse.mpclib.examples;
 
 import org.ejml.simple.SimpleMatrix;
 import com.horse.mpclib.debugging.ComputerDebugger;

@@ -4,7 +4,7 @@ import org.ejml.simple.SimpleMatrix;
 import com.horse.mpclib.lib.geometry.Pose2d;
 import com.horse.mpclib.lib.util.TimeProfiler;
 import com.horse.mpclib.lib.util.TimeUnits;
-import com.horse.mpclib.main.TankDriveRobot;
+import com.horse.mpclib.examples.TankDriveRobot;
 
 public class TankRunnableMPC implements Runnable {
     private static final int MAX_ITERATIONS = 25;

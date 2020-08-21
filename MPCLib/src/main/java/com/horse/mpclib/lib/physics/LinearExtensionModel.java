@@ -2,7 +2,7 @@ package com.horse.mpclib.lib.physics;
 
 import org.ejml.simple.SimpleMatrix;
 
-public class LinearExtensionModel {
+public class LinearExtensionModel implements LinearDynamicModel {
     private final MotorModel motorModel;
     private final double spoolDiameter; //m
 

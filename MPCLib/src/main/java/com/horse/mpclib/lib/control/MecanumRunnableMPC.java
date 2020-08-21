@@ -4,7 +4,7 @@ import org.ejml.simple.SimpleMatrix;
 import com.horse.mpclib.lib.geometry.Pose2d;
 import com.horse.mpclib.lib.util.TimeProfiler;
 import com.horse.mpclib.lib.util.TimeUnits;
-import com.horse.mpclib.main.Robot;
+import com.horse.mpclib.examples.Robot;
 
 public class MecanumRunnableMPC implements Runnable {
     private static int maxIterations = 5;

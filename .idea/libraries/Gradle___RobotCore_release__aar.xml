@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Gradle: :RobotCore-release:@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d23434822d58ad874b0d7344926b9c29/RobotCore-release/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d23434822d58ad874b0d7344926b9c29/RobotCore-release/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d23434822d58ad874b0d7344926b9c29/RobotCore-release/jars/libs/slf4j-api-1.7.26.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d23434822d58ad874b0d7344926b9c29/RobotCore-release/jars/libs/gson-2.8.0.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d23434822d58ad874b0d7344926b9c29/RobotCore-release/jars/libs/gson-extras-0.2.1.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d23434822d58ad874b0d7344926b9c29/RobotCore-release/jars/libs/Vuforia.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d23434822d58ad874b0d7344926b9c29/RobotCore-release/jars/libs/slf4j-handroid-1.7.27.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/jars/libs/slf4j-api-1.7.26.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/jars/libs/gson-2.8.0.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/jars/libs/gson-extras-0.2.1.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/jars/libs/Vuforia.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/jars/libs/slf4j-handroid-1.7.27.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

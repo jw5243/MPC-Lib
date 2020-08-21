@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: org.openftc:ftc-opmode-tuner-common:0.2@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/28a6c50f4d91e3745132085cc0411661/ftc-opmode-tuner-common-0.2/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/28a6c50f4d91e3745132085cc0411661/ftc-opmode-tuner-common-0.2/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5fa896a1212c4d6e90e2b5a994f4274e/ftc-opmode-tuner-common-0.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5fa896a1212c4d6e90e2b5a994f4274e/ftc-opmode-tuner-common-0.2/res" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.openftc/ftc-opmode-tuner-common/0.2/37856dfc21ff69c490b6c2fb8a728f0a309279df/ftc-opmode-tuner-common-0.2-javadoc.jar!/" />

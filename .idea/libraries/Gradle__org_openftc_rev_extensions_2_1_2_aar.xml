@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: org.openftc:rev-extensions-2:1.2@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a39076b5b0f8ac27cecfaff75ba681c3/rev-extensions-2-1.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a39076b5b0f8ac27cecfaff75ba681c3/rev-extensions-2-1.2/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.openftc/rev-extensions-2/1.2/50b58ea96f84da768368a1d1aa4b1eae52935d31/rev-extensions-2-1.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.openftc/rev-extensions-2/1.2/5545537f553286e6217406b694b4084c42f74546/rev-extensions-2-1.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

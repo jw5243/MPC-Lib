@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/jasonwong/Documents/GitHub/MPC-Lib/TeamCode/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v14/values-v14.xml",
+            "map": [
+                {
+                    "source": "/Users/jasonwong/.gradle/caches/transforms-2/files-2.1/d23434822d58ad874b0d7344926b9c29/RobotCore-release/res/values-v14/values-v14.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "4",
+                        "endColumns": "12",
+                        "endOffsets": "201"
+                    }
+                }
+            ]
+        }
+    ]
+}

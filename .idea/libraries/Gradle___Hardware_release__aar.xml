@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: :Hardware-release:@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0f7960db4907e78af9478d1bfd21a9dd/Hardware-release/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0f7960db4907e78af9478d1bfd21a9dd/Hardware-release/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/libs/Hardware-release-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

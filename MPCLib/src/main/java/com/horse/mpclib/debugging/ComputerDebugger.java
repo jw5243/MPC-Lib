@@ -1,5 +1,7 @@
 package com.horse.mpclib.debugging;
 
+import com.horse.mpclib.examples.CascadeLinearlyExtendingRobotPractice;
+import com.horse.mpclib.examples.RobotGVF;
 import com.horse.mpclib.lib.geometry.Line2d;
 import com.horse.mpclib.lib.geometry.Translation2d;
 import com.horse.mpclib.lib.util.TimeUnits;

@@ -16,17 +16,17 @@ public class CascadeLinearlyExtendingRobotPractice extends Robot {
     private final int stageCount = 7;
     private LinearExtensionModel linearExtensionModel;
 
-    private final double kS = 0d; //V
-    private final double kV = 0.8d * (12d - kS) / 15d; //V s / in
-    private final double kA = 0.22d; //V s^2 / in
-    private final double kP = 10d; //V / in
-    private final double kI = 2d; //V / (in s)
+    private final double kS = 4.64d; //V
+    private final double kV = 0.75d * (12d - kS) / 15d; //V s / in
+    private final double kA = 0.2d; //V s^2 / in
+    private final double kP = 8d; //V / in
+    private final double kI = 0d; //V / (in s)
     private final double kD = 0d; //V s / in
 
     private double lastError = 0d;
     private double runningSum = 0d;
 
-    private double setpoint = 15d / 2d;//5d; //in
+    private double setpoint = 15d;//5d; //in
 
     private IMotionProfile motionProfile;
 
@@ -49,7 +49,7 @@ public class CascadeLinearlyExtendingRobotPractice extends Robot {
         );
 
         //linearExtensionModel.overridePosition(15d * 0.0254d);
-        motionProfile = new ResidualVibrationReductionMotionProfilerGenerator(0, 15, 15, 20);
+        motionProfile = new ResidualVibrationReductionMotionProfilerGenerator(0d, 15d, 15d, 20d);
     }
 
     @Override
@@ -65,17 +65,15 @@ public class CascadeLinearlyExtendingRobotPractice extends Robot {
             double dt = getDt();
             if(dt != 0) {
                 double liftHeightInches = linearExtensionModel.getPosition() / 0.0254d;
-                double error = setpoint - liftHeightInches;
-                runningSum += error * dt;
+                double error = /*setpoint*/motionProfile.getPosition() - liftHeightInches;
                 double output =
                         kS +
+                        kV * motionProfile.getVelocity() +
+                        kA * motionProfile.getAcceleration() +
                         kP * error +
-                        kI * runningSum +
                         kD * ((error - lastError) / dt - motionProfile.getVelocity());
-                output = Math.min(12d, Math.max(-12d, output));
 
                 lastError = error;
-
                 linearExtensionModel.update(dt, output);
             }
 
@@ -91,7 +89,7 @@ public class CascadeLinearlyExtendingRobotPractice extends Robot {
         try {
             ComputerDebugger.send(MessageOption.LIFT_POSITION.setSendValue((int)(1000d * linearExtensionModel.getPosition() / 0.0254d) / 1000d));
             ComputerDebugger.send(MessageOption.LIFT_VELOCITY.setSendValue((int)(1000d * linearExtensionModel.getVelocity() / 0.0254d) / 1000d));
-            //ComputerDebugger.send(MessageOption.LIFT_JERK.setSendValue((int)(1000d * motionProfile.getVelocity()) / 1000d));
+            ComputerDebugger.send(MessageOption.LIFT_JERK.setSendValue((int)(1000d * motionProfile.getVelocity()) / 1000d));
         } catch (IllegalMessageTypeException e) {
             e.printStackTrace();
         }

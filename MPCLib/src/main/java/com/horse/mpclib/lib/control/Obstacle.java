@@ -4,7 +4,7 @@ import org.ejml.simple.SimpleEVD;
 import org.ejml.simple.SimpleMatrix;
 import com.horse.mpclib.lib.geometry.Translation2d;
 
-public class Obstacle {
+public class Obstacle implements Costable {
     private static final double ROBOT_RADIUS = Math.sqrt(2d) * 9d * 0.0254d; //in
     private double lengthScale; //m
     private double obstacleRadius; //m
@@ -152,5 +152,15 @@ public class Obstacle {
 
     public void setObstacleRadius(double obstacleRadius) {
         this.obstacleRadius = obstacleRadius;
+    }
+
+    @Override
+    public SimpleMatrix getQuadraticCost(SimpleMatrix state, int timeStep, double dt) {
+        return getQuadraticCost(state);
+    }
+
+    @Override
+    public SimpleMatrix getLinearCost(SimpleMatrix state, int timeStep, double dt) {
+        return getLinearCost(state);
     }
 }

@@ -6,7 +6,7 @@ import com.horse.mpclib.lib.geometry.Translation2d;
 import com.horse.mpclib.lib.util.TimeUnits;
 import com.horse.mpclib.lib.util.TimeUtil;
 
-public class Waypoint {
+public class Waypoint implements Costable {
     private SimpleMatrix costWeight;
     private double temporalSpread;
     private double desiredTime;
@@ -74,5 +74,15 @@ public class Waypoint {
 
     public void setLocation(Translation2d location) {
         this.location = location;
+    }
+
+    @Override
+    public SimpleMatrix getQuadraticCost(SimpleMatrix state, int timeStep, double dt) {
+        return getQuadraticCost(timeStep * dt);
+    }
+
+    @Override
+    public SimpleMatrix getLinearCost(SimpleMatrix state, int timeStep, double dt) {
+        return null;
     }
 }

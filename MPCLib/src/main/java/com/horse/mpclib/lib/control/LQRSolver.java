@@ -9,6 +9,31 @@ import org.ejml.simple.SimpleMatrix;
 
 import java.util.stream.IntStream;
 
+/**
+ * This {@code class} acts as an LQR solver for controlling both linear and non-linear models. LQR is
+ * a control system method by which an optimal feedback controller is generated. 'Optimal' in this sense
+ * is with respect to a quadratic cost function determined by the matrices {@see terminationCost},
+ * {@see intermediaryStateCost}, and {@see inputCost}. The quadratic nature ensures that the absolute minimum
+ * can be determined (as long as the cost matrices are positive semi-definite of course) with exact
+ * methods. This {@see class} uses a recursive, discrete (state-dependent) algebraic riccati equation (DARE)
+ * in order to find this minimum. The use of the riccati equation is one of the more efficient methods
+ * of quadratic optimization, with the drawback being that we must discretize the states over time,
+ * hence we are not using the continuous riccati equation. This allows for easier determination of
+ * the optimal control policy.
+ *
+ * To use this {@code class}, create a new instance of {@code LQRSolver} and to run an iteration of
+ * LQR for optimization, call {@code runLQR(SimpleMatrix)} and use
+ * {@code getOptimalInput(int, SimpleMatrix, SimpleMatrix)} to get the optimal control to supply to
+ * your system.
+ *
+ * Something important to note is that LQR stands for the Linear-Quadratic Regulator, hence the
+ * system must be linear in order to be optimal, not sub-optimal. Nonlinear dynamics supply a
+ * sub-optimal solution to the cost function, hence iLQR is likely a better option, or even MPC.
+ *
+ * @see DynamicModel
+ * @see #runLQR(SimpleMatrix)
+ * @see #getOptimalInput(int, SimpleMatrix, SimpleMatrix)
+ */
 public class LQRSolver {
     private int horizonStep;
     private double dt;

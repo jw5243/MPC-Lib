@@ -4,7 +4,6 @@ import org.ejml.simple.SimpleMatrix;
 import com.horse.mpclib.debugging.ComputerDebugger;
 import com.horse.mpclib.debugging.IllegalMessageTypeException;
 import com.horse.mpclib.debugging.MessageOption;
-import com.horse.mpclib.lib.control.MecanumRunnableMPC;
 import com.horse.mpclib.lib.util.Time;
 import com.horse.mpclib.lib.util.TimeUnits;
 import com.horse.mpclib.lib.util.TimeUtil;
@@ -17,6 +16,7 @@ import java.io.IOException;
 import java.util.Arrays;
 import java.util.concurrent.atomic.AtomicInteger;
 
+@Deprecated
 public class GAMPCTuner {
     private static final Time timeout = new Time(60d, TimeUnits.SECONDS);
 
@@ -105,8 +105,8 @@ public class GAMPCTuner {
     }
 
     public void runIteration(int index) {
-        MecanumRunnableMPC.setStateCost(SimpleMatrix.diag(Arrays.copyOfRange(getPopulationValues()[index], 0, getPopulationValues()[index].length - 1 - 4 /*- 4*/)));
-        MecanumRunnableMPC.setMaxIterations((int)((20d / getMaxTuneValue()) * getPopulationValues()[index][6]) + 1);
+        //MecanumRunnableMPC.setStateCost(SimpleMatrix.diag(Arrays.copyOfRange(getPopulationValues()[index], 0, getPopulationValues()[index].length - 1 - 4 /*- 4*/)));
+        //MecanumRunnableMPC.setMaxIterations((int)((20d / getMaxTuneValue()) * getPopulationValues()[index][6]) + 1);
         //MecanumRunnableMPC.setInputCost(SimpleMatrix.diag(Arrays.copyOfRange(getPopulationValues()[index], 6, getPopulationValues()[index].length - 1)).scale(1d / getMaxTuneValue()));
 
         RobotGAMPC robot = new RobotGAMPC();

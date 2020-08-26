@@ -4,10 +4,6 @@ import org.ejml.simple.SimpleMatrix;
 import com.horse.mpclib.debugging.ComputerDebugger;
 import com.horse.mpclib.debugging.MessageOption;
 import com.horse.mpclib.debugging.RobotDebug;
-import com.horse.mpclib.lib.control.MecanumDriveILQR;
-import com.horse.mpclib.lib.control.MecanumDriveMPC;
-import com.horse.mpclib.lib.control.MecanumRunnableLQR;
-import com.horse.mpclib.lib.control.MecanumRunnableMPC;
 import com.horse.mpclib.lib.control.Obstacle;
 import com.horse.mpclib.lib.drivers.Motor;
 import com.horse.mpclib.lib.geometry.Pose2d;
@@ -48,11 +44,6 @@ public abstract class Robot implements RobotDebug {
     private static SimpleMatrix wheelPositions;
 
     private static MecanumDriveModel driveModel;
-    private static MecanumDriveILQR mecanumDriveILQR;
-    private MecanumRunnableLQR mecanumDriveRunnableLQR;
-
-    private static MecanumDriveMPC mecanumDriveMPC;
-    private MecanumRunnableMPC mecanumRunnableMPC;
 
     private static List<Obstacle> obstacles = new ArrayList<>();
 
@@ -164,38 +155,6 @@ public abstract class Robot implements RobotDebug {
 
     public static void setInput(SimpleMatrix input) {
         Robot.input = input;
-    }
-
-    public static MecanumDriveILQR getMecanumDriveILQR() {
-        return mecanumDriveILQR;
-    }
-
-    public static void setMecanumDriveILQR(MecanumDriveILQR mecanumDriveILQR) {
-        Robot.mecanumDriveILQR = mecanumDriveILQR;
-    }
-
-    public MecanumRunnableLQR getMecanumDriveRunnableLQR() {
-        return mecanumDriveRunnableLQR;
-    }
-
-    public void setMecanumDriveRunnableLQR(MecanumRunnableLQR mecanumDriveRunnableLQR) {
-        this.mecanumDriveRunnableLQR = mecanumDriveRunnableLQR;
-    }
-
-    public static MecanumDriveMPC getMecanumDriveMPC() {
-        return mecanumDriveMPC;
-    }
-
-    public static void setMecanumDriveMPC(MecanumDriveMPC mecanumDriveMPC) {
-        Robot.mecanumDriveMPC = mecanumDriveMPC;
-    }
-
-    public MecanumRunnableMPC getMecanumRunnableMPC() {
-        return mecanumRunnableMPC;
-    }
-
-    public void setMecanumRunnableMPC(MecanumRunnableMPC mecanumRunnableMPC) {
-        this.mecanumRunnableMPC = mecanumRunnableMPC;
     }
 
     public void stopTimer() {

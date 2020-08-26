@@ -1,7 +1,5 @@
 package org.firstinspires.ftc.teamcode;
 
-import com.horse.mpclib.lib.control.MecanumDriveMPC;
-import com.horse.mpclib.lib.control.MecanumRunnableMPC;
 import com.horse.mpclib.lib.drivers.Motor;
 import com.horse.mpclib.lib.geometry.Pose2d;
 import com.horse.mpclib.lib.geometry.Rotation2d;

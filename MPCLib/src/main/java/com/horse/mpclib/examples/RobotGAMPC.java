@@ -4,9 +4,6 @@ import org.ejml.simple.SimpleMatrix;
 import com.horse.mpclib.debugging.ComputerDebugger;
 import com.horse.mpclib.debugging.IllegalMessageTypeException;
 import com.horse.mpclib.debugging.MessageOption;
-import com.horse.mpclib.lib.control.MecanumDriveILQR;
-import com.horse.mpclib.lib.control.MecanumDriveMPC;
-import com.horse.mpclib.lib.control.MecanumRunnableMPC;
 import com.horse.mpclib.lib.control.Obstacle;
 import com.horse.mpclib.lib.geometry.Circle2d;
 import com.horse.mpclib.lib.geometry.Line2d;
@@ -21,6 +18,7 @@ import com.horse.mpclib.lib.util.TimeUtil;
 import java.util.ArrayList;
 import java.util.List;
 
+@Deprecated
 public class RobotGAMPC extends Robot {
     private final int setpointCount;
 
@@ -71,18 +69,18 @@ public class RobotGAMPC extends Robot {
         getObstacles().add(new Obstacle(144d - (144d - 9d), 90d, 10.5d, 300d));
 
         setTimesHittingObstacle(0);
-        setMecanumDriveILQR(new MecanumDriveILQR(getDriveModel()));
-        setMecanumDriveMPC(new MecanumDriveMPC(getMecanumDriveILQR()));
+        //setMecanumDriveILQR(new MecanumDriveILQR(getDriveModel()));
+        //setMecanumDriveMPC(new MecanumDriveMPC(getMecanumDriveILQR()));
 
-        getMecanumDriveMPC().initialIteration(getState(), positions.get(0));
-        for(int i = 0; i < MecanumRunnableMPC.getMaxIterations(); i++) {
-            getMecanumDriveMPC().simulateIteration(getState(), positions.get(0));
-            getMecanumDriveMPC().runMPCIteration();
-        }
+        //getMecanumDriveMPC().initialIteration(getState(), positions.get(0));
+        //for(int i = 0; i < MecanumRunnableMPC.getMaxIterations(); i++) {
+        //    getMecanumDriveMPC().simulateIteration(getState(), positions.get(0));
+        //    getMecanumDriveMPC().runMPCIteration();
+        //}
 
-        setMecanumRunnableMPC(new MecanumRunnableMPC());
-        getMecanumRunnableMPC().setDesiredState(positions.get(0));
-        new Thread(getMecanumRunnableMPC()).start();
+        //setMecanumRunnableMPC(new MecanumRunnableMPC());
+        //getMecanumRunnableMPC().setDesiredState(positions.get(0));
+        //new Thread(getMecanumRunnableMPC()).start();
     }
 
     @Override
@@ -95,13 +93,13 @@ public class RobotGAMPC extends Robot {
     public void loop_debug() {
         super.loop_debug();
 
-        getMecanumRunnableMPC().updateSLQ();
-        setInput(getMecanumDriveMPC().getOptimalInput((int)((getMecanumRunnableMPC().getTimeProfiler().getDeltaTime(TimeUnits.SECONDS, false) +
-                getMecanumRunnableMPC().getPolicyLag()) / MecanumDriveILQR.getDt()), getState(), 0.001d));
+        //getMecanumRunnableMPC().updateSLQ();
+        //setInput(getMecanumDriveMPC().getOptimalInput((int)((getMecanumRunnableMPC().getTimeProfiler().getDeltaTime(TimeUnits.SECONDS, false) +
+        //        getMecanumRunnableMPC().getPolicyLag()) / MecanumDriveILQR.getDt()), getState(), 0.001d));
 
         if(getFieldPosition().getTranslation().epsilonEquals(positions.get(0).getTranslation(), 2.5d) && positions.size() > 1) {
             positions.remove(0);
-            getMecanumRunnableMPC().setDesiredState(positions.get(0));
+            //getMecanumRunnableMPC().setDesiredState(positions.get(0));
         } else if(getFieldPosition().getTranslation().epsilonEquals(positions.get(0).getTranslation(), 1d) && positions.size() == 1) {
             stopTimer();
             setDone(true);
@@ -137,7 +135,7 @@ public class RobotGAMPC extends Robot {
         }
 
         try {
-            for(int i = 0; i < getMecanumDriveMPC().getSimulatedStates().length - 1; i++) {
+            /*for(int i = 0; i < getMecanumDriveMPC().getSimulatedStates().length - 1; i++) {
                 if(!Double.isNaN(getMecanumDriveMPC().getSimulatedStates()[i].get(0)) &&
                         !Double.isNaN(getMecanumDriveMPC().getSimulatedStates()[i].get(2)) &&
                         !Double.isNaN(getMecanumDriveMPC().getSimulatedStates()[i + 1].get(0)) &&
@@ -152,7 +150,7 @@ public class RobotGAMPC extends Robot {
                             ))
                     ));
                 }
-            }
+            }*/
 
             for(int j = 0; j < getObstacles().size(); j++) {
                 ComputerDebugger.send(MessageOption.KEY_POINT.setSendValue(new Circle2d(

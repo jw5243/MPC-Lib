@@ -1,32 +1,28 @@
 package com.horse.mpclib.examples;
 
+import com.horse.mpclib.lib.control.MPCSolver;
+import com.horse.mpclib.lib.control.RunnableMPC;
+import com.horse.mpclib.lib.physics.InvalidDynamicModelException;
+
 import org.ejml.simple.SimpleMatrix;
-import com.horse.mpclib.debugging.ComputerDebugger;
-import com.horse.mpclib.debugging.IllegalMessageTypeException;
-import com.horse.mpclib.debugging.MessageOption;
-import com.horse.mpclib.lib.control.MecanumDriveILQR;
-import com.horse.mpclib.lib.control.MecanumDriveMPC;
-import com.horse.mpclib.lib.control.MecanumRunnableMPC;
-import com.horse.mpclib.lib.control.Obstacle;
-import com.horse.mpclib.lib.control.Waypoint;
-import com.horse.mpclib.lib.geometry.Circle2d;
-import com.horse.mpclib.lib.geometry.Line2d;
-import com.horse.mpclib.lib.geometry.Pose2d;
-import com.horse.mpclib.lib.geometry.Rotation2d;
-import com.horse.mpclib.lib.geometry.Translation2d;
-import com.horse.mpclib.lib.util.TimeUnits;
-import com.horse.mpclib.lib.util.TimeUtil;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class RobotMPC extends Robot {
-    private static List<Pose2d> positions   = new ArrayList<>();
-    private static List<Waypoint> waypoints = new ArrayList<>();
+    private MPCSolver mpcSolver;
+    private RunnableMPC runnableMPC;
 
-    static {
+    private List<SimpleMatrix> desiredStates;
+
+    {
+        setDesiredStates(new ArrayList<>());
+        getDesiredStates().add(new SimpleMatrix(6, 1, false, new double[] {
+                100d * 0.0254d, 0d, 100d * 0.0254d, 0d, Math.toRadians(90), 0d
+        }));
+
         //GF Path
-        positions.add(new Pose2d(38d, 34d, new Rotation2d(Math.toRadians(-90d), false)));
+        /*positions.add(new Pose2d(38d, 34d, new Rotation2d(Math.toRadians(-90d), false)));
         positions.add(new Pose2d(38d, 144d - 11d, new Rotation2d(Math.toRadians(-90d), false)));
         positions.add(new Pose2d(38d, 10d, new Rotation2d(Math.toRadians(-90d), false)));
         positions.add(new Pose2d(38d, 144d - 24d, new Rotation2d(Math.toRadians(-90d), false)));
@@ -39,7 +35,7 @@ public class RobotMPC extends Robot {
         positions.add(new Pose2d(30d, 144d - 19d - 9d - 6d, new Rotation2d(Math.toRadians(-90), false)));
         positions.add(new Pose2d(46d, 14d, new Rotation2d(Math.toRadians(-45d), false)));
         positions.add(new Pose2d(30d, 144d - 19d - 9d - 6d, new Rotation2d(Math.toRadians(-90), false)));
-        positions.add(new Pose2d(110d, 72d, new Rotation2d(Math.toRadians(-90d), false)));
+        positions.add(new Pose2d(110d, 72d, new Rotation2d(Math.toRadians(-90d), false)));*/
 
         ///////////////////////////////////////////////////////////////////////////////////////////
 
@@ -121,85 +117,55 @@ public class RobotMPC extends Robot {
     @Override
     public void init_debug() {
         super.init_debug();
-        getObstacles().clear();
-        getObstacles().add(new Obstacle(144d - 99d, 61d, 3d, 300d));
-        getObstacles().add(new Obstacle(144d - 99d, 84d, 3d, 300d));
-        getObstacles().add(new Obstacle(144d - (144d - 9d), 90d, 10.5d, 300d));
-
-        setMecanumDriveILQR(new MecanumDriveILQR(getDriveModel()));
-        setMecanumDriveMPC(new MecanumDriveMPC(getMecanumDriveILQR()));
-
-        getMecanumDriveMPC().initialIteration(getState(), positions.get(0));
-        for(int i = 0; i < MecanumRunnableMPC.getMaxIterations(); i++) {
-            getMecanumDriveMPC().simulateIteration(getState(), positions.get(0));
-            getMecanumDriveMPC().runMPCIteration();
+        setMpcSolver(new MPCSolver(1000, 0.002d, SimpleMatrix.diag(100d, 10, 100d, 10, 100d, 10),
+                SimpleMatrix.diag(100d, 10, 100d, 10, 100d, 10), SimpleMatrix.diag(1d, 1d, 1d, 1d), getDriveModel()));
+        try {
+            getMpcSolver().initializeAndIterate(5, getInitialState(), getDesiredStates().get(0));
+        } catch(InvalidDynamicModelException e) {
+            e.printStackTrace();
         }
 
-        setMecanumRunnableMPC(new MecanumRunnableMPC());
-        getMecanumRunnableMPC().setDesiredState(positions.get(0));
-        new Thread(getMecanumRunnableMPC()).start();
+        setRunnableMPC(new RunnableMPC(5, getMpcSolver().getLqrSolver(), RobotMPC::getState));
+        getRunnableMPC().setDesiredState(getDesiredStates().get(0));
+        new Thread(getRunnableMPC()).start();
     }
 
     @Override
     public void loop_debug() {
         super.loop_debug();
-        getMecanumRunnableMPC().updateSLQ();
-        setInput(getMecanumDriveMPC().getOptimalInput((int)((getMecanumRunnableMPC().getTimeProfiler().getDeltaTime(TimeUnits.SECONDS, false) +
-                getMecanumRunnableMPC().getPolicyLag()) / MecanumDriveILQR.getDt()), getState(), 0.001d));
-
-        if(getFieldPosition().getTranslation().epsilonEquals(positions.get(0).getTranslation(), 2.5d) && positions.size() > 1) {
-            positions.remove(0);
-            getMecanumRunnableMPC().setDesiredState(positions.get(0));
-        } else if(getFieldPosition().getTranslation().epsilonEquals(positions.get(0).getTranslation(), 1d) && positions.size() == 1) {
-            stopTimer();
-            setInput(new SimpleMatrix(4, 1, true, new double[] {
-                    0, 0, 0, 0
-            }));
+        MPCSolver updatedController = getRunnableMPC().getUpdatedMPC();
+        if(updatedController != null) {
+            setMpcSolver(updatedController);
         }
 
         try {
-            for(int i = 0; i < getMecanumDriveMPC().getSimulatedStates().length - 1; i++) {
-                if(!Double.isNaN(getMecanumDriveMPC().getSimulatedStates()[i].get(0)) &&
-                        !Double.isNaN(getMecanumDriveMPC().getSimulatedStates()[i].get(2)) &&
-                        !Double.isNaN(getMecanumDriveMPC().getSimulatedStates()[i + 1].get(0)) &&
-                        !Double.isNaN(getMecanumDriveMPC().getSimulatedStates()[i + 1].get(2))) {
-                    ComputerDebugger.send(MessageOption.LINE.setSendValue(
-                            new Line2d(new Translation2d(
-                                    getMecanumDriveMPC().getSimulatedStates()[i].get(0) / 0.0254d,
-                                    getMecanumDriveMPC().getSimulatedStates()[i].get(2) / 0.0254d
-                            ), new Translation2d(
-                                    getMecanumDriveMPC().getSimulatedStates()[i + 1].get(0) / 0.0254d,
-                                    getMecanumDriveMPC().getSimulatedStates()[i + 1].get(2) / 0.0254d
-                            ))
-                    ));
-                }
-            }
-
-            for(int i = 0; i < positions.size(); i++) {
-                //ComputerDebugger.send(MessageOption.KEY_POINT.setSendValue(positions.get(i).getTranslation()));
-            }
-
-            for(int j = 0; j < getObstacles().size(); j++) {
-                ComputerDebugger.send(MessageOption.KEY_POINT.setSendValue(new Circle2d(
-                        getObstacles().get(j).getLocation(), getObstacles().get(j).getObstacleRadius() / 0.0254d
-                )));
-            }
-
-            for(int j = 0; j < getWaypoints().size(); j++) {
-                if(getWaypoints().get(j).getDesiredTime() /*+ getWaypoints().get(j).getTemporalSpread()*/ < TimeUtil.getCurrentRuntime(TimeUnits.SECONDS)) {
-                    getWaypoints().remove(j--);
-                }
-
-                if(!getWaypoints().isEmpty() && j >= 0) {
-                    ComputerDebugger.send(MessageOption.KEY_POINT.setSendValue(getWaypoints().get(j).getLocation()));
-                }
-            }
-        } catch (IllegalMessageTypeException e) {
+            setInput(getMpcSolver().getOptimalInput(getRunnableMPC().controllerElapsedTime(), getState()));
+        } catch(InvalidDynamicModelException e) {
             e.printStackTrace();
         }
     }
 
-    public static List<Waypoint> getWaypoints() {
-        return waypoints;
+    public MPCSolver getMpcSolver() {
+        return mpcSolver;
+    }
+
+    public void setMpcSolver(MPCSolver mpcSolver) {
+        this.mpcSolver = mpcSolver;
+    }
+
+    public RunnableMPC getRunnableMPC() {
+        return runnableMPC;
+    }
+
+    public void setRunnableMPC(RunnableMPC runnableMPC) {
+        this.runnableMPC = runnableMPC;
+    }
+
+    public List<SimpleMatrix> getDesiredStates() {
+        return desiredStates;
+    }
+
+    public void setDesiredStates(List<SimpleMatrix> desiredStates) {
+        this.desiredStates = desiredStates;
     }
 }

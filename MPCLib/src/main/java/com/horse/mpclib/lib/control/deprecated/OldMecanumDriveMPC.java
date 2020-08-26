@@ -1,4 +1,4 @@
-package com.horse.mpclib.lib.control;
+package com.horse.mpclib.lib.control.deprecated;
 
 import org.ejml.simple.SimpleMatrix;
 import com.horse.mpclib.lib.geometry.Pose2d;

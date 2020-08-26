@@ -80,19 +80,19 @@ public class MPCSolver {
 
     public void simulateIteration(SimpleMatrix currentState, SimpleMatrix desiredState) throws InvalidDynamicModelException {
         if(getSimulatedStates() == null) {
-            setSimulatedStates(new SimpleMatrix[MecanumDriveILQR.getHorizonStep() + 1]);
-            setSimulatedInputs(new SimpleMatrix[MecanumDriveILQR.getHorizonStep()]);
+            setSimulatedStates(new SimpleMatrix[getLqrSolver().getHorizonStep() + 1]);
+            setSimulatedInputs(new SimpleMatrix[getLqrSolver().getHorizonStep()]);
             getSimulatedStates()[0] = currentState;
-            setA(new SimpleMatrix[MecanumDriveILQR.getHorizonStep()]);
-            setB(new SimpleMatrix[MecanumDriveILQR.getHorizonStep()]);
-            for(int i = 1; i <= MecanumDriveILQR.getHorizonStep(); i++) {
+            setA(new SimpleMatrix[getLqrSolver().getHorizonStep()]);
+            setB(new SimpleMatrix[getLqrSolver().getHorizonStep()]);
+            for(int i = 1; i <= getLqrSolver().getHorizonStep(); i++) {
                 getA()[i - 1] = getLqrSolver().getA(getSimulatedStates()[i - 1]);
                 getB()[i - 1] = getLqrSolver().getB(getSimulatedStates()[i - 1]);
                 getSimulatedInputs()[i - 1] = getLqrSolver().getOptimalInput(i - 1, getSimulatedStates()[i - 1], desiredState);
                 getSimulatedStates()[i] = getA()[i - 1].mult(getSimulatedStates()[i - 1]).plus(getB()[i - 1].mult(getSimulatedInputs()[i - 1]));
             }
         } else {
-            for(int i = 1; i <= MecanumDriveILQR.getHorizonStep(); i++) {
+            for(int i = 1; i <= getLqrSolver().getHorizonStep(); i++) {
                 getA()[i - 1] = getLqrSolver().getA(getSimulatedStates()[i - 1]);
                 getB()[i - 1] = getLqrSolver().getB(getSimulatedStates()[i - 1]);
                 getSimulatedInputs()[i - 1] = getOptimalInput(i - 1, getSimulatedStates()[i - 1]);

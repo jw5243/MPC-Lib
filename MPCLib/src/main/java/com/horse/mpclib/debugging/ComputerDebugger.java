@@ -2,6 +2,7 @@ package com.horse.mpclib.debugging;
 
 import com.horse.mpclib.examples.CascadeLinearlyExtendingRobotPractice;
 import com.horse.mpclib.examples.RobotGVF;
+import com.horse.mpclib.examples.RobotMPCBetter;
 import com.horse.mpclib.lib.geometry.Line2d;
 import com.horse.mpclib.lib.geometry.Translation2d;
 import com.horse.mpclib.lib.util.TimeUnits;
@@ -26,7 +27,7 @@ public class ComputerDebugger {
     }
 
     public static void main(String[] args) {
-        Robot robot = new RobotMPC();
+        Robot robot = new RobotMPCBetter();
         init(robot);
         robot.init_debug();
 

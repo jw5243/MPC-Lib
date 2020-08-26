@@ -51,6 +51,18 @@ public class MPCSolver {
         this(new LQRSolver(horizonStep, dt, terminationCost, intermediaryStateCost, inputCost, model), costables);
     }
 
+    public void initializeAndIterate(int iterations, SimpleMatrix currentState, SimpleMatrix desiredState) throws InvalidDynamicModelException {
+        initialIteration(currentState, desiredState);
+        iterate(iterations);
+    }
+
+    public void iterate(int iterations) throws InvalidDynamicModelException {
+        for(int i = 0; i < iterations; i++) {
+            simulateIteration();
+            runMPCIteration();
+        }
+    }
+
     public void initialIteration(SimpleMatrix currentState, SimpleMatrix desiredState) throws InvalidDynamicModelException {
         setCurrentState(currentState);
         setDesiredState(desiredState);
@@ -127,9 +139,24 @@ public class MPCSolver {
         solveRiccatiEquation(--timeStep);
     }
 
+    public SimpleMatrix getOptimalInput(double timeStamp, SimpleMatrix state) throws InvalidDynamicModelException {
+        return getOptimalInput((int)(timeStamp / getLqrSolver().getDt()), state);
+    }
+
     public SimpleMatrix getOptimalInput(int timeStep, SimpleMatrix state) throws InvalidDynamicModelException {
         if(getSimulatedInputs() != null && getP() != null && timeStep < getSimulatedInputs().length - 1) {
+            SimpleMatrix A = getLqrSolver().getA(state);
+            SimpleMatrix B = getLqrSolver().getB(state);
+            SimpleMatrix K;
+            try {
+                SimpleMatrix inverse = getLqrSolver().getInputCost().plus(B.transpose().mult(getP()[timeStep].mult(B))).invert();
+                K = inverse.mult(B.transpose()).mult(getP()[timeStep]).mult(A).negative();
+                return getLqrSolver().limitInput(getSimulatedInputs()[timeStep].plus(K.mult(state.minus(getSimulatedStates()[timeStep]))).minus(
+                        getLqrSolver().getInputCost().plus(getB()[timeStep].transpose().mult(getP()[timeStep])
+                                .mult(B)).invert().mult(B.transpose()).mult(getL()[timeStep]).scale(1 / 2d)));
+            } catch(SingularMatrixException e) {
 
+            }
         } else if(timeStep < getLqrSolver().getK().length - 1) {
             return getLqrSolver().getOptimalInput(timeStep, state, getDesiredState());
         }

@@ -112,5 +112,7 @@
     <orderEntry type="module" module-name="MPCLib" />
     <orderEntry type="module" module-name="FtcRobotController" />
     <orderEntry type="module" module-name="MPCLib" />
+    <orderEntry type="module" module-name="FtcRobotController" />
+    <orderEntry type="module" module-name="MPCLib" />
   </component>
 </module>

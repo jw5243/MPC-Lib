@@ -61,6 +61,11 @@ public class LQRSolver {
         setInputDimension(getInputCost().numRows());
     }
 
+    public LQRSolver(LQRSolver lqrSolver) {
+        this(lqrSolver.getHorizonStep(), lqrSolver.getDt(), lqrSolver.getTerminationCost(), lqrSolver.getIntermediaryStateCost(),
+                lqrSolver.getInputCost(), lqrSolver.getModel());
+    }
+
     public void runLQR(SimpleMatrix currentState) throws InvalidDynamicModelException {
         setP(new SimpleMatrix[getHorizonStep()]);
         setK(new SimpleMatrix[getHorizonStep() - 1]);

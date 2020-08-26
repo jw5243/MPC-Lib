@@ -34,6 +34,19 @@ public class RunnableMPC implements Runnable {
         setPolicyLag(0d);
     }
 
+    public RunnableMPC(int iterations, LQRSolver lqrSolver, Supplier<SimpleMatrix> currentState, SimpleMatrix desiredState) {
+        this(iterations, lqrSolver, currentState);
+        setDesiredState(desiredState);
+    }
+
+    public RunnableMPC(int iterations, MPCSolver mpcSolver, Supplier<SimpleMatrix> currentState) {
+        this(iterations, mpcSolver.getLqrSolver(), currentState);
+    }
+
+    public RunnableMPC(int iterations, MPCSolver mpcSolver, Supplier<SimpleMatrix> currentState, SimpleMatrix desiredState) {
+        this(iterations, mpcSolver.getLqrSolver(), currentState, desiredState);
+    }
+
     public MPCSolver mpc(SimpleMatrix desiredState) throws InvalidDynamicModelException {
         MPCSolver mpc = new MPCSolver(new LQRSolver(getLqrSolver()));
         mpc.initializeAndIterate(getIterations(), getCurrentState().get(), getDesiredState());

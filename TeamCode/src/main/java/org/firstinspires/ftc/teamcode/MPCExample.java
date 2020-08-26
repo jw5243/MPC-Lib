@@ -1,8 +1,11 @@
 package org.firstinspires.ftc.teamcode;
 
+import com.horse.mpclib.lib.control.MPCSolver;
+import com.horse.mpclib.lib.control.RunnableMPC;
 import com.horse.mpclib.lib.drivers.Motor;
 import com.horse.mpclib.lib.geometry.Pose2d;
 import com.horse.mpclib.lib.geometry.Rotation2d;
+import com.horse.mpclib.lib.physics.InvalidDynamicModelException;
 import com.horse.mpclib.lib.physics.MecanumDriveModel;
 import com.horse.mpclib.lib.physics.MotorModel;
 import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
@@ -21,13 +24,15 @@ public class MPCExample extends OpMode {
     private Pose2d fieldPosition = new Pose2d(0d, 0d, new Rotation2d(0d, false));
     private Pose2d desiredPose   = new Pose2d(144d, 144d, new Rotation2d(Math.toRadians(90d), false));
 
-    private static SimpleMatrix state;
-    private static SimpleMatrix input;
+    private SimpleMatrix desiredState = new SimpleMatrix(6, 1, false, new double[] {desiredPose.getTranslation().x() * 0.0254d, 0d,
+            desiredPose.getTranslation().y() * 0.0254d, 0d, desiredPose.getRotation().getRadians(), 0d});
 
-    private static MecanumDriveModel driveModel;
+    private SimpleMatrix state;
+    private SimpleMatrix input;
 
-    private static MecanumDriveMPC mecanumDriveMPC;
-    private MecanumRunnableMPC mecanumRunnableMPC;
+    private MecanumDriveModel driveModel;
+    private MPCSolver mpcSolver;
+    private RunnableMPC runnableMPC;
 
     @Override
     public void init() {
@@ -43,10 +48,30 @@ public class MPCExample extends OpMode {
                 0.315d * (3d * (0.1d * 0.1d + 0.032d * 0.032d) + 0.05d * 0.05d) / 12d, 0.5613d,
                 0.1d / 2d, 7d * 0.0254d, 7d * 0.0254d, 6d * 0.0254d, 6d * 0.0254d,
                 MotorModel.generateMotorModel(Motor.NEVEREST_20, null));
+        mpcSolver = new MPCSolver(1000, 0.002d, SimpleMatrix.diag(100d, 10, 100d, 10, 100d, 10),
+                SimpleMatrix.diag(100d, 10, 100d, 10, 100d, 10), SimpleMatrix.diag(1d, 1d, 1d, 1d), driveModel);
+        try {
+            mpcSolver.initializeAndIterate(5, state, desiredState);
+        } catch(InvalidDynamicModelException e) {
+            e.printStackTrace();
+        }
+
+        runnableMPC = new RunnableMPC(5, mpcSolver, () -> state, desiredState);
+        new Thread(runnableMPC).start();
     }
 
     @Override
     public void loop() {
+        MPCSolver updatedController = runnableMPC.getUpdatedMPC();
+        if(updatedController != null) {
+            mpcSolver = updatedController;
+        }
+
+        try {
+            input = mpcSolver.getOptimalInput(runnableMPC.controllerElapsedTime(), state);
+        } catch(InvalidDynamicModelException e) {
+            e.printStackTrace();
+        }
 
         applyInput();
     }

@@ -227,6 +227,10 @@ public class MotorModel {
         return generateMotorModel(motorType, 1, 1d, weightAppliedTorque);
     }
 
+    public static MotorModel generateMotorModel(Motor motorType) {
+        return generateMotorModel(motorType, null);
+    }
+
     public static void main(String... args) {
         MotorModel motorModel = new MotorModel(
                 20d, 12d, 3.36d, 166d,

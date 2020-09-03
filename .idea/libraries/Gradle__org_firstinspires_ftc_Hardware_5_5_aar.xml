@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: org.firstinspires.ftc:Hardware:5.5@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/101a62ed47fbd54abd26b99fbf7d07c9/Hardware-5.5/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/101a62ed47fbd54abd26b99fbf7d07c9/Hardware-5.5/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.firstinspires.ftc/Hardware/5.5/769f879d8d8efa48204cbc2016cc60bbffe8fd44/Hardware-5.5-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.firstinspires.ftc/Hardware/5.5/c139f9baa4e5b5b5f1046516448e6fa1cf13b20e/Hardware-5.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

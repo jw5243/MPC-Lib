@@ -21,11 +21,12 @@ import java.util.List;
 public abstract class Robot implements RobotDebug {
     private static final SimpleMatrix INITIAL_STATE = new SimpleMatrix(6, 1, false, new double[] {
             //(12d * 12d - 9d) * 0.0254d, 0d, 48d * 0.0254d, 0d, Math.toRadians(-180d), 0d
-            9d * 0.0254d, 0d, 9d * 0.0254d, 0d, Math.toRadians(0d), 0d
+            //9d * 0.0254d, 0d, 9d * 0.0254d, 0d, Math.toRadians(0d), 0d
 
             //9d * 0.0254d, 0d, 48d * 0.0254d, 0d, Math.toRadians(0d), 0d
             //9d * 0.0254d, 0d, (4d + 8d * 5d) * 0.0254d, 0d, Math.toRadians(0d), 0d
             //9d * 0.0254d, 0d, 40d * 0.0254d, 0d, Math.toRadians(-90d), 0d
+            36d * 0.0254d, 0d, 70d * 0.0254d, 0d, Math.toRadians(-90d), 0d
     });
 
     private static final Pose2d INITIAL_POSE = new Pose2d(getInitialState().get(0) / 0.0254d, getInitialState().get(2) / 0.0254d, new Rotation2d(getInitialState().get(4), false));
@@ -68,6 +69,7 @@ public abstract class Robot implements RobotDebug {
     }
 
     int frame = 0;
+    double time = 0d;
 
     @Override
     public void loop_debug() {
@@ -75,32 +77,33 @@ public abstract class Robot implements RobotDebug {
             ComputerDebugger.send(MessageOption.TIME);
         }
 
-        setDt(getTimeProfiler().getDeltaTime(TimeUnits.SECONDS, true));
-        //setDt(1 / 240d);
-        setState(getDriveModel().simulate(getState(), getInput(), getDt()));
-        //setState(getDriveModel().simulateDynamics(getState(), getInput(), getDt()));
+        //setDt(getTimeProfiler().getDeltaTime(TimeUnits.SECONDS, true));
+        setDt(1 / 240d);
+        time += 1 / 240d;
+        //setState(getDriveModel().simulate(getState(), getInput(), getDt()));
+        setState(getDriveModel().simulateDynamics(getState(), getInput(), getDt()));
 
-        /*if(!stopTimer) {
+        if(!stopTimer) {
             setWheelPositions(getDriveModel().updateWheelAngularPositions(getWheelPositions(), getState(), getDt()));
             SimpleMatrix positions = getWheelPositions().scale(180d / Math.PI);
             if(frame % 8 == 0) {
                 SimpleMatrix relativeState = getState().minus(getInitialState()).plus(new SimpleMatrix(6, 1, false, new double[] {
-                        -1.4827d, 0d, -1.809d, 0d, Math.toRadians(0d), 0d
+                        0d, 0d, 0d, 0d, Math.toRadians(0d), 0d
                 }));
 
-                double x = getInitialState().get(2) - getState().get(2);*/
+                /*double x = getInitialState().get(2) - getState().get(2);
 
-                /*System.out.println((int)(frame / 8d) + 1 + "\t" + x + "\t" +
+                System.out.println((int)(frame / 8d) + 1 + "\t" + x + "\t" +
                         relativeState.get(0) + "\t" + (relativeState.get(4) * 180d / Math.PI) + "\t" + positions.get(0) + "\t" +
                         positions.get(1) + "\t" + positions.get(2) + "\t" + positions.get(3));*/
 
-                /*System.out.println((int)(frame / 8d) + 1 + "\t" + relativeState.get(0) + "\t" +
+                System.out.println((int)(frame / 8d) + 1 + "\t" + relativeState.get(0) + "\t" +
                         relativeState.get(2) + "\t" + (relativeState.get(4) * 180d / Math.PI) + "\t" + positions.get(0) + "\t" +
                         positions.get(1) + "\t" + positions.get(2) + "\t" + positions.get(3));
             }
 
             frame++;
-        }*/
+        }
     }
 
     @Override

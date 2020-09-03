@@ -2,10 +2,67 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="82e69647-51b5-4df3-baea-73f717676d10" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__Blocks_5_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__FtcCommon_5_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__Hardware_5_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__Inspection_5_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__OnBotJava_5_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__RobotCore_5_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__RobotServer_5_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__collections_28_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__common_1_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_firstinspires_ftc_Blocks_5_5_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_firstinspires_ftc_FtcCommon_5_5_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_firstinspires_ftc_Hardware_5_5_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_firstinspires_ftc_Inspection_5_5_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_firstinspires_ftc_OnBotJava_5_5_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_firstinspires_ftc_RobotCore_5_5_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_firstinspires_ftc_RobotServer_5_5_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__runtime_1_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__support_annotations_28_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__support_compat_28_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__versionedparcelable_28_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MPCLib/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/control/KalmanFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/physics/PWMMotorModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FtcRobotController/FtcRobotController.iml" beforeDir="false" afterPath="$PROJECT_DIR$/FtcRobotController/FtcRobotController.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FtcRobotController/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/FtcRobotController/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FtcRobotController/build.release.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/FtcRobotController/build.release.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/manifest_merge_blame_file/debugAndroidTest/manifest-merger-blame-debug-androidTest-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/FtcRobotController/build/intermediates/manifest_merge_blame_file/debugAndroidTest/manifest-merger-blame-debug-androidTest-report.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/merged_manifests/debugAndroidTest/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FtcRobotController/build/intermediates/merged_manifests/debugAndroidTest/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MPCLib/MPCLib.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MPCLib/MPCLib.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MPCLib/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/MPCLib/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/examples/Robot.java" beforeDir="false" afterPath="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/examples/Robot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/physics/MotorModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/physics/MotorModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/examples/RobotMPC.java" beforeDir="false" afterPath="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/examples/RobotMPC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/control/LQRSolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/control/LQRSolver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/control/MPCSolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/control/MPCSolver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/control/RunnableMPC.java" beforeDir="false" afterPath="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/control/RunnableMPC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/control/deprecated/OldMecanumDriveMPC.java" beforeDir="false" afterPath="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/control/deprecated/OldMecanumDriveMPC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/physics/DynamicModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/physics/DynamicModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/physics/MecanumDriveModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/physics/MecanumDriveModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/util/TimeProfiler.java" beforeDir="false" afterPath="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/util/TimeProfiler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/util/TimeUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/util/TimeUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/util/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/util/Util.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TeamCode/TeamCode.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/TeamCode.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/bundle_manifest/debug/processDebugManifest/bundle-manifest/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/bundle_manifest/debug/processDebugManifest/bundle-manifest/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/instant_app_manifest/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/instant_app_manifest/debug/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/merged_manifests/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/merged_manifests/debug/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/outputs/logs/manifest-merger-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/outputs/logs/manifest-merger-debug-report.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/MPCExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/MPCExample.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,8 +90,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/debugging/ComputerDebugger.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+            <state relative-caret-position="285">
+              <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -43,30 +100,58 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/physics/MotorModel.java">
+        <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/physics/PWMMotorModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="125" column="46" selection-start-line="125" selection-start-column="46" selection-end-line="125" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/states/StateMachine.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+            <state relative-caret-position="75">
+              <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/control/LQRSolver.java">
+        <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/physics/MotorModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="36" column="24" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
+            <state relative-caret-position="2490">
+              <caret line="168" column="11" selection-start-line="168" selection-start-column="11" selection-end-line="168" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/examples/RobotMPC.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="36" column="22" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/MPCExample.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="263">
+              <caret line="38" column="41" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/examples/Robot.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="975">
+              <caret line="81" column="25" selection-start-line="81" selection-start-column="25" selection-end-line="81" selection-end-column="25" />
+              <folding>
+                <element signature="e#5206#5207#0" expanded="true" />
+                <element signature="e#5241#5242#0" expanded="true" />
+                <element signature="e#5567#5568#0" expanded="true" />
+                <element signature="e#5602#5603#0" expanded="true" />
+                <element signature="e#5933#5934#0" expanded="true" />
+                <element signature="e#5968#5969#0" expanded="true" />
+                <element signature="e#6298#6299#0" expanded="true" />
+                <element signature="e#6333#6334#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -77,10 +162,26 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>getMecanumDriveMPC</find>
+      <find>positions</find>
+      <find>new Pose2d</find>
+      <find>System.</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>getMpcSolver</replace>
+      <replace>getDesiredStates</replace>
+      <replace>Util.convertPoseToState(new Pose2d(</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/MPCLib</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -88,25 +189,20 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/ComputerCode/src/main/java/com/horse/computercode/Main.java" />
         <option value="$PROJECT_DIR$/build.common.gradle" />
         <option value="$PROJECT_DIR$/TeamCode/build.gradle" />
         <option value="$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/main/Robot.java" />
         <option value="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/main/CascadeLinearlyExtendingRobot.java" />
         <option value="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/main/CascadeLinearlyExtendingRobotMPC.java" />
-        <option value="$PROJECT_DIR$/MPCLib/build.gradle" />
         <option value="$PROJECT_DIR$/MPCLib/src/main/java/org/firstinspires/ftc/teamcode/lib/util/TimeUtil.java" />
         <option value="$PROJECT_DIR$/MPCLib/src/main/java/org/firstinspires/ftc/teamcode/lib/util/Util.java" />
         <option value="$PROJECT_DIR$/MPCLib/src/main/java/org/firstinspires/ftc/teamcode/debugging/UdpServer.java" />
         <option value="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/main/Robot.java" />
         <option value="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/main/GAMPCTuner.java" />
         <option value="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/main/GASplineTuner.java" />
-        <option value="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/physics/DynamicModel.java" />
         <option value="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/physics/LinearDynamicModel.java" />
         <option value="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/physics/LinearExtensionModel.java" />
         <option value="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/physics/NonlinearDynamicModel.java" />
-        <option value="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/physics/MecanumDriveModel.java" />
         <option value="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/physics/InvalidDynamicModelException.java" />
         <option value="$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/Test.java" />
         <option value="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/examples/CascadeLinearlyExtendingRobotPractice.java" />
@@ -115,26 +211,43 @@
         <option value="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/control/Costable.java" />
         <option value="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/control/Obstacle.java" />
         <option value="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/control/Waypoint.java" />
-        <option value="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/control/LQRSolver.java" />
         <option value="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/debugging/ComputerDebugger.java" />
         <option value="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/control/RunnableLQR.java" />
         <option value="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/examples/RobotMPCBetter.java" />
         <option value="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/examples/GAMPCTuner.java" />
         <option value="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/examples/RobotGAMPC.java" />
-        <option value="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/control/MPCSolver.java" />
-        <option value="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/control/RunnableMPC.java" />
-        <option value="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/examples/RobotMPC.java" />
+        <option value="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/states/SimpleState.java" />
+        <option value="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/states/StateMachine.java" />
+        <option value="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/states/TimedState.java" />
+        <option value="$PROJECT_DIR$/FtcRobotController/build.gradle" />
+        <option value="$PROJECT_DIR$/FtcRobotController/build.release.gradle" />
         <option value="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/physics/MotorModel.java" />
-        <option value="$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/MPCExample.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/control/RiccatiUtil.java" />
+        <option value="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/physics/DynamicModel.java" />
+        <option value="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/control/deprecated/OldMecanumDriveMPC.java" />
+        <option value="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/control/KalmanFilter.java" />
+        <option value="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/control/LQRSolver.java" />
+        <option value="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/control/MPCSolver.java" />
+        <option value="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/util/Util.java" />
+        <option value="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/control/RunnableMPC.java" />
+        <option value="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/physics/PWMMotorModel.java" />
+        <option value="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/physics/MecanumDriveModel.java" />
+        <option value="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/util/TimeProfiler.java" />
         <option value="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/examples/Robot.java" />
+        <option value="$PROJECT_DIR$/MPCLib/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/examples/RobotMPC.java" />
+        <option value="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/util/TimeUtil.java" />
+        <option value="$PROJECT_DIR$/MPCLib/build.gradle" />
+        <option value="$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/MPCExample.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1" />
-    <option name="y" value="53" />
-    <option name="width" value="1680" />
-    <option name="height" value="970" />
+    <option name="x" value="24" />
+    <option name="y" value="25" />
+    <option name="width" value="1632" />
+    <option name="height" value="954" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -142,13 +255,48 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="MPC-Lib" type="b2602c69:ProjectViewProjectNode" />
               <item name="MPC-Lib" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="MPC-Lib" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MPC-Lib" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="MPCLib" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="MPC-Lib" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MPC-Lib" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="MPCLib" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MPC-Lib" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MPC-Lib" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="MPCLib" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MPC-Lib" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MPC-Lib" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="TeamCode" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="MPC-Lib" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MPC-Lib" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="TeamCode" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MPC-Lib" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MPC-Lib" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="TeamCode" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -159,38 +307,40 @@
           <expand>
             <path>
               <item name="MPC-Lib" type="1abcf292:AndroidViewProjectNode" />
-              <item name="MPCLib" type="e9137016:NonAndroidModuleNode" />
+              <item name="MPCLib" type="feadf853:AndroidModuleNode" />
             </path>
             <path>
               <item name="MPC-Lib" type="1abcf292:AndroidViewProjectNode" />
-              <item name="MPCLib" type="e9137016:NonAndroidModuleNode" />
-              <item name="java" type="f7eae187:NonAndroidSourceTypeNode" />
+              <item name="TeamCode" type="feadf853:AndroidModuleNode" />
             </path>
             <path>
               <item name="MPC-Lib" type="1abcf292:AndroidViewProjectNode" />
-              <item name="MPCLib" type="e9137016:NonAndroidModuleNode" />
-              <item name="java" type="f7eae187:NonAndroidSourceTypeNode" />
-              <item name="mpclib" type="462c0819:PsiDirectoryNode" />
+              <item name="TeamCode" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
             </path>
             <path>
               <item name="MPC-Lib" type="1abcf292:AndroidViewProjectNode" />
-              <item name="MPCLib" type="e9137016:NonAndroidModuleNode" />
-              <item name="java" type="f7eae187:NonAndroidSourceTypeNode" />
-              <item name="mpclib" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="TeamCode" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="teamcode" type="cbb59c9e:AndroidPsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MPC-Lib" type="1abcf292:AndroidViewProjectNode" />
+              <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/MPCLib/src/main/java/org/firstinspires/ftc" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/MPCLib/src/main" />
+    <property name="project.structure.last.edited" value="Dependencies" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
@@ -201,15 +351,16 @@
     <option name="LAST_EDITED_BUILD_TYPE" value="debug" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/MPCLib/src/main/java/org/firstinspires/ftc" />
-      <recent name="$PROJECT_DIR$/MPCLib/src/main/java" />
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.horse.mpclib.lib.control" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/MPCLib/src/main" />
+      <recent name="$PROJECT_DIR$/MPCLib/src/main/java/org/firstinspires/ftc" />
+      <recent name="$PROJECT_DIR$/MPCLib/src/main/java" />
       <recent name="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib" />
     </key>
   </component>
@@ -338,7 +489,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="23" width="1680" height="970" extended-state="6" />
+    <frame x="0" y="23" width="1680" height="967" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
@@ -350,14 +501,14 @@
       <window_info id="Designer" order="6" />
       <window_info id="Resources Explorer" order="7" />
       <window_info id="Capture Tool" order="8" />
-      <window_info anchor="bottom" id="Run" order="0" weight="0.32914287" />
+      <window_info anchor="bottom" id="Run" order="0" weight="0.328" />
       <window_info anchor="bottom" id="Logcat" order="1" />
       <window_info anchor="bottom" id="TODO" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" />
       <window_info anchor="bottom" id="Terminal" order="4" />
       <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="6" />
-      <window_info anchor="bottom" id="Build" order="7" weight="0.32764506" />
+      <window_info anchor="bottom" id="Build" order="7" visible="true" weight="0.328" />
       <window_info anchor="bottom" id="Find" order="8" weight="0.32914287" />
       <window_info anchor="bottom" id="Messages" order="9" weight="0.32914287" />
       <window_info anchor="bottom" id="Android Profiler" order="10" show_stripe_button="false" />
@@ -375,141 +526,6 @@
     </SUITE>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/physics/InvalidDynamicModelException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="61" lean-forward="true" selection-start-line="3" selection-start-column="61" selection-end-line="3" selection-end-column="61" />
-          <folding>
-            <element signature="e#163#164#0" expanded="true" />
-            <element signature="e#185#186#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.ejml/ejml-simple/0.38/cd7516e71525d51adcb07fab4688acb25b0d8f5d/ejml-simple-0.38-sources.jar!/org/ejml/simple/SimpleMatrix.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="87" column="41" selection-start-line="87" selection-start-column="41" selection-end-line="87" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.ejml/ejml-core/0.38/3605fc3e3b3de0343e4d0c365cd5207918ac6058/ejml-core-0.38-sources.jar!/org/ejml/data/Matrix.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="535">
-          <caret line="66" column="9" selection-start-line="66" selection-start-column="9" selection-end-line="66" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.ejml/ejml-simple/0.38/cd7516e71525d51adcb07fab4688acb25b0d8f5d/ejml-simple-0.38-sources.jar!/org/ejml/simple/SimpleBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="798" column="14" lean-forward="true" selection-start-line="798" selection-start-column="14" selection-end-line="798" selection-end-column="14" />
-          <folding>
-            <element signature="e#23322#23323#0" expanded="true" />
-            <element signature="e#23349#23350#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/Test.java" />
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#128#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FtcRobotController/build.release.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="54" lean-forward="true" selection-start-line="2" selection-start-column="54" selection-end-line="2" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FtcRobotController/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#2#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MPCLib/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="43" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/libs/RobotCore-release-sources.jar!/com/qualcomm/robotcore/hardware/DcMotor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="32" column="34" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TeamCode/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#2#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TeamCode/build.release.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="37" lean-forward="true" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/jre/jdk/Contents/Home/jre/lib/rt.jar!/java/util/NoSuchElementException.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/control/Costable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="76" lean-forward="true" selection-start-line="6" selection-start-column="76" selection-end-line="6" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/control/Obstacle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2115">
-          <caret line="163" column="35" selection-start-line="163" selection-start-column="35" selection-end-line="163" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/control/Waypoint.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="618">
-          <caret line="80" column="47" selection-start-line="80" selection-start-column="47" selection-end-line="80" selection-end-column="47" />
-          <folding>
-            <element signature="e#2625#2626#0" expanded="true" />
-            <element signature="e#2652#2653#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/jre/jdk/Contents/Home/jre/lib/rt.jar!/java/util/function/Predicate.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/control/MecanumRunnableMPC.java" />
-    <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/examples/TankDriveAutonomousILQR.java" />
     <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/control/TankRunnableMPC.java" />
     <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/control/TankRunnableLQR.java" />
     <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/control/MecanumDriveILQR.java" />
@@ -521,13 +537,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/control/deprecated/OldMecanumDriveMPC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -611,54 +620,104 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/control/RunnableMPC.java">
+    <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/states/StateMachine.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="46" column="79" lean-forward="true" selection-start-line="46" selection-start-column="79" selection-end-line="46" selection-end-column="79" />
+        <state relative-caret-position="105">
+          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/states/SimpleState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="41" column="13" lean-forward="true" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#326#327#0" expanded="true" />
+            <element signature="e#364#365#0" expanded="true" />
+            <element signature="e#422#423#0" expanded="true" />
+            <element signature="e#449#450#0" expanded="true" />
+            <element signature="e#514#515#0" expanded="true" />
+            <element signature="e#561#562#0" expanded="true" />
+            <element signature="e#621#622#0" expanded="true" />
+            <element signature="e#681#682#0" expanded="true" />
+            <element signature="e#722#723#0" expanded="true" />
+            <element signature="e#750#751#0" expanded="true" />
+            <element signature="e#798#799#0" expanded="true" />
+            <element signature="e#833#834#0" expanded="true" />
+            <element signature="e#1164#1165#0" expanded="true" />
+            <element signature="e#1198#1199#0" expanded="true" />
+            <element signature="e#1243#1244#0" expanded="true" />
+            <element signature="e#1279#1280#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/examples/RobotMPC.java">
+    <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/states/TimedState.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="55" column="106" lean-forward="true" selection-start-line="55" selection-start-column="106" selection-end-line="55" selection-end-column="106" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/examples/Robot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="549">
-          <caret line="60" column="63" selection-start-line="60" selection-start-column="63" selection-end-line="60" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/MPCExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="49" column="66" lean-forward="true" selection-start-line="49" selection-start-column="66" selection-end-line="49" selection-end-column="66" />
+        <state relative-caret-position="825">
+          <caret line="55" column="5" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#472#473#0" expanded="true" />
+            <element signature="e#510#511#0" expanded="true" />
+            <element signature="e#908#909#0" expanded="true" />
+            <element signature="e#968#969#0" expanded="true" />
+            <element signature="e#1009#1010#0" expanded="true" />
+            <element signature="e#1037#1038#0" expanded="true" />
+            <element signature="e#1085#1086#0" expanded="true" />
+            <element signature="e#1120#1121#0" expanded="true" />
+            <element signature="e#1495#1496#0" expanded="true" />
+            <element signature="e#1529#1530#0" expanded="true" />
+            <element signature="e#1574#1575#0" expanded="true" />
+            <element signature="e#1610#1611#0" expanded="true" />
+            <element signature="e#1658#1659#0" expanded="true" />
+            <element signature="e#1693#1694#0" expanded="true" />
+            <element signature="e#1758#1759#0" expanded="true" />
+            <element signature="e#1806#1807#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/control/MPCSolver.java">
+    <entry file="file://$PROJECT_DIR$/FtcRobotController/build.release.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1646">
-          <caret line="83" column="62" selection-start-line="83" selection-start-column="62" selection-end-line="83" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="120">
+          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/debugging/ComputerDebugger.java">
+    <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/control/RiccatiUtil.java" />
+    <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/physics/DynamicModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        <state relative-caret-position="420">
+          <caret line="28" column="66" lean-forward="true" selection-start-line="28" selection-start-column="66" selection-end-line="28" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/control/deprecated/OldMecanumDriveMPC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/control/Obstacle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1422">
+          <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/util/MatrixUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/util/Util.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="60" column="133" selection-start-line="60" selection-start-column="133" selection-end-line="60" selection-end-column="133" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -667,25 +726,173 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/control/LQRSolver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="36" column="24" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
+        <state relative-caret-position="181">
+          <caret line="142" column="11" selection-start-line="142" selection-start-column="11" selection-end-line="142" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/physics/MotorModel.java">
+    <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/control/KalmanFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="125" column="46" selection-start-line="125" selection-start-column="46" selection-end-line="125" selection-end-column="46" />
+        <state relative-caret-position="510">
+          <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1059#1060#0" expanded="true" />
+            <element signature="e#1104#1105#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/states/StateMachine.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.ejml/ejml-simple/0.38/cd7516e71525d51adcb07fab4688acb25b0d8f5d/ejml-simple-0.38-sources.jar!/org/ejml/simple/SimpleMatrix.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+        <state relative-caret-position="188">
+          <caret line="87" column="13" selection-start-line="87" selection-start-column="13" selection-end-line="87" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/control/RunnableMPC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="59" column="79" lean-forward="true" selection-start-line="59" selection-start-column="79" selection-end-line="59" selection-end-column="79" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5327#5328#0" expanded="true" />
+            <element signature="e#5359#5360#0" expanded="true" />
+            <element signature="e#5427#5428#0" expanded="true" />
+            <element signature="e#5469#5470#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/control/MPCSolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="445">
+          <caret line="53" column="16" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/physics/MecanumDriveModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="387" column="72" selection-start-line="387" selection-start-column="72" selection-end-line="387" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="18" lean-forward="true" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#128#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TeamCode/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#2#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FtcRobotController/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#2#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MPCLib/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="39" selection-start-line="1" selection-start-column="39" selection-end-line="1" selection-end-column="39" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-manifest" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/debugging/ComputerDebugger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/physics/PWMMotorModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/physics/MotorModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2490">
+          <caret line="168" column="11" selection-start-line="168" selection-start-column="11" selection-end-line="168" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/examples/Robot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="975">
+          <caret line="81" column="25" selection-start-line="81" selection-start-column="25" selection-end-line="81" selection-end-column="25" />
+          <folding>
+            <element signature="e#5206#5207#0" expanded="true" />
+            <element signature="e#5241#5242#0" expanded="true" />
+            <element signature="e#5567#5568#0" expanded="true" />
+            <element signature="e#5602#5603#0" expanded="true" />
+            <element signature="e#5933#5934#0" expanded="true" />
+            <element signature="e#5968#5969#0" expanded="true" />
+            <element signature="e#6298#6299#0" expanded="true" />
+            <element signature="e#6333#6334#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/util/TimeProfiler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="25" column="42" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/util/TimeUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="25" column="89" lean-forward="true" selection-start-line="25" selection-start-column="89" selection-end-line="25" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MPCLib/build.gradle">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/examples/RobotMPC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="36" column="22" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/MPCExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="38" column="41" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

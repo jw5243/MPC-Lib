@@ -144,7 +144,20 @@
             android:name="org.firstinspires.ftc.ftccommon.internal.ProgramAndManageActivity"
             android:configChanges="orientation|screenSize"
             android:label="@string/program_and_manage_activity" >
-        </activity> <!-- Service that keeps desktop folders up to date with respect to actual phone file system contents -->
+        </activity>
+        <!--
+    Needed to support sending logs from log viewer on Nougat and later.
+    Note: DON'T need to shift meta-data to 'androidx' from 'android.support.FILE_PROVIDER_PATHS'
+        -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.qualcomm.ftcrobotcontroller.test.provider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_provider_paths" />
+        </provider> <!-- Service that keeps desktop folders up to date with respect to actual phone file system contents -->
         <service
             android:name="org.firstinspires.ftc.robotcore.internal.files.MediaTransferProtocolMonitorService"
             android:enabled="true" />

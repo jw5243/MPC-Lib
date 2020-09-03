@@ -1,0 +1,20 @@
+<component name="libraryTable">
+  <library name="Gradle: org.firstinspires.ftc:RobotCore:5.5@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/32992527553b644095c59d37ed6bf472/RobotCore-5.5/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/32992527553b644095c59d37ed6bf472/RobotCore-5.5/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/32992527553b644095c59d37ed6bf472/RobotCore-5.5/jars/libs/slf4j-api-1.7.26.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/32992527553b644095c59d37ed6bf472/RobotCore-5.5/jars/libs/gson-2.8.0.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/32992527553b644095c59d37ed6bf472/RobotCore-5.5/jars/libs/gson-extras-0.2.1.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/32992527553b644095c59d37ed6bf472/RobotCore-5.5/jars/libs/androidx-rs.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/32992527553b644095c59d37ed6bf472/RobotCore-5.5/jars/libs/Vuforia.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/32992527553b644095c59d37ed6bf472/RobotCore-5.5/jars/libs/slf4j-handroid-1.7.27.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.firstinspires.ftc/RobotCore/5.5/b68df40520031627f148607bf578e08c98d50dfa/RobotCore-5.5-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.firstinspires.ftc/RobotCore/5.5/586a417ce56ed90b5b8f6ad18895a14b2ddae1dd/RobotCore-5.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

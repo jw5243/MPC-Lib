@@ -1,5 +1,10 @@
 package com.horse.mpclib.lib.util;
 
+import com.horse.mpclib.lib.geometry.Pose2d;
+import com.horse.mpclib.lib.geometry.Rotation2d;
+
+import org.ejml.simple.SimpleMatrix;
+
 public class Util {
     private static final double kEpsilon = 1E-12;
 
@@ -45,5 +50,15 @@ public class Util {
 
     public static double getEpsilon() {
         return kEpsilon;
+    }
+
+    public static Pose2d convertStateToPose(SimpleMatrix state) {
+        return new Pose2d(state.get(0) / 0.0254d, state.get(2) / 0.0254d, new Rotation2d(state.get(4), false));
+    }
+
+    public static SimpleMatrix convertPoseToState(Pose2d pose) {
+        return new SimpleMatrix(6, 1, false, new double[] {
+                pose.getTranslation().x() * 0.0254d, 0d, pose.getTranslation().y() * 0.0254d, 0d, pose.getRotation().getRadians(), 0d
+        });
     }
 }

@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: org.firstinspires.ftc:Inspection:5.5@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/96f06ab184d4c8e8bcaaca2dc6f56cd1/Inspection-5.5/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/96f06ab184d4c8e8bcaaca2dc6f56cd1/Inspection-5.5/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.firstinspires.ftc/Inspection/5.5/bf6f0a3e12b6fe7026b06e072b28848c63cb968c/Inspection-5.5-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.firstinspires.ftc/Inspection/5.5/e777f02718c1f4f3ec28975d2dc436fc6225b16e/Inspection-5.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -30,23 +30,102 @@ import java.util.stream.IntStream;
  * system must be linear in order to be optimal, not sub-optimal. Nonlinear dynamics supply a
  * sub-optimal solution to the cost function, hence iLQR is likely a better option, or even MPC.
  *
+ * Link to MPC slides from Stanford: https://stanford.edu/class/ee364b/lectures/mpc_slides.pdf
+ *
  * @see DynamicModel
  * @see #runLQR(SimpleMatrix)
  * @see #getOptimalInput(int, SimpleMatrix, SimpleMatrix)
  */
 public class LQRSolver {
+    /**
+     * This value represents the amount of time steps to optimize in the future. This value is highly
+     * dependent on {@code dt} to determine the total time over which to optimize. Quantitatively,
+     * the amount of time being optimized over is the {@code horizonStep} multiplied by {@code dt}.
+     *
+     * Ideally, this value should be very high, but this value is strictly limited by memory and
+     * computational power. Therefore, this value should be tuned so that the feedback controller
+     * is as optimal as possible.
+     *
+     * @see #getDt()
+     */
     private int horizonStep;
+
+    /**
+     * This value is the amount of time each time step takes up. Each time step should be small, as
+     * in less than one second, and for very non-linear systems on the order of 0.01 to 0.001 seconds.
+     * The smallness of {@code dt} can be mitigated by using a runge-kutta 4th-order approximation
+     * for state simulation, rather than running a vector form of Newton's alglrotihm for state
+     * evolution.
+     */
     private double dt;
 
+    /**
+     * This matrix adds to the cost function a penalty at the end of the time horizon the error from
+     * the desired state and the final state using the to-be-determined optimal feedback controller.
+     * While this value in many cases is set equal to {@code intermediaryStateCost}, allowing for a
+     * different value for the termination cost factor provides additional degrees of freedom when
+     * tuning LQR.
+     *
+     * @see #getIntermediaryStateCost()
+     */
     private SimpleMatrix terminationCost;
+
+    /**
+     * This matrix induces a penalty to the cost function for the deviation from the desired state
+     * throughout the time horizon. Generally speaking, larger values (along the diagonals at least)
+     * correspond to the desire for the system to reach the desired state more aggressively so as to
+     * minimize the cost.
+     */
     private SimpleMatrix intermediaryStateCost;
+
+    /**
+     * This matrix induces a penalty for actuating the system over the time horizon. Larger values
+     * in this matrix typically correspond to less aggressive motion as more aggressive actuation
+     * would lead to a higher penalty for the cost function.
+     */
     private SimpleMatrix inputCost;
 
+    /**
+     * A {@code DynamicModel} represents the system which we are trying to optimize with LQR. In the
+     * case of a {@code LinearDynamicModel}, LQR finds the optimal control policy with respect to the
+     * given cost function. For the {@code NonlinearDynamicModel}, an sub-optimal control policy is
+     * calculated, since the non-linearities are series expanded to linear order.
+     */
     private DynamicModel model;
+
+    /**
+     * These matrices store valuable information regarding the calculation of the optimal control
+     * policy matrices {@code K}. While it may not be completely necessary to store these matrices,
+     * the state-dependence of the riccati equation speeds up the calculations for running the optimal
+     * controller. Removal of storing this would require the adjustment of the parameters for some methods
+     * and a slower calculation for the optimal control input after LQR has finished, if using the
+     * state-dependence of the riccati solution. The advantage, to this however, is that we would
+     * save a lot of memory, and thus we would be able to increase the time horizon over which we are
+     * optimizing.
+     *
+     * @see #getK()
+     */
     private SimpleMatrix[] P;
+
+    /**
+     * These matrices act as the optimal feedback controller for LQR. This is an {@code array} of
+     * matrices since we are considering the general assumption that the dynamic model may be non-linear.
+     * A linear controller should yield equivalent matrices for every index of {@code K}.
+     */
     private SimpleMatrix[] K;
 
+    /**
+     * This value represents the amount of state variables that the state-space model contains in the
+     * dynamic model. The number of dimensions can differ from the dynamic model in the case of augmenting
+     * the system for non-linearities in the case of KRONIC-MPC, i.e., a variant of Koopman MPC, or
+     * adding the actuation changes to the state in order to minimize the input change as well by
+     * adjusting the cost function accordingly.
+     */
     private int stateDimension;
+
+    /**
+     *
+     */
     private int inputDimension;
 
     public LQRSolver(int horizonStep, double dt, SimpleMatrix terminationCost, SimpleMatrix intermediaryStateCost,
@@ -130,13 +209,17 @@ public class LQRSolver {
     }
 
     public SimpleMatrix getA(SimpleMatrix currentState) throws InvalidDynamicModelException {
+        return getA(currentState, getDt());
+    }
+
+    public SimpleMatrix getA(SimpleMatrix currentState, double dt) throws InvalidDynamicModelException {
         SimpleMatrix A;
         if(getModel() instanceof LinearDynamicModel) {
             LinearDynamicModel linearModel = (LinearDynamicModel)(getModel());
-            A = linearModel.stateTransitionMatrix(getDt());
+            A = linearModel.stateTransitionMatrix(dt);
         } else if(getModel() instanceof NonlinearDynamicModel) {
             NonlinearDynamicModel nonlinearModel = (NonlinearDynamicModel)(getModel());
-            A = nonlinearModel.stateTransitionMatrix(currentState, getDt());
+            A = nonlinearModel.stateTransitionMatrix(currentState, dt);
         } else {
             throw new InvalidDynamicModelException("Failed to incorporate dynamic model into LQRSolve.java. " +
                     "Make sure to use either the LinearDynamicMode.java or NonlinearDynamicModel.java interfaces to define your model.");
@@ -146,13 +229,17 @@ public class LQRSolver {
     }
 
     public SimpleMatrix getB(SimpleMatrix currentState) throws InvalidDynamicModelException {
+        return getB(currentState, getDt());
+    }
+
+    public SimpleMatrix getB(SimpleMatrix currentState, double dt) throws InvalidDynamicModelException {
         SimpleMatrix B;
         if(getModel() instanceof LinearDynamicModel) {
             LinearDynamicModel linearModel = (LinearDynamicModel)(getModel());
-            B = linearModel.inputTransitionMatrix(getDt());
+            B = linearModel.inputTransitionMatrix(dt);
         } else if(getModel() instanceof NonlinearDynamicModel) {
             NonlinearDynamicModel nonlinearModel = (NonlinearDynamicModel)(getModel());
-            B = nonlinearModel.inputTransitionMatrix(currentState, getDt());
+            B = nonlinearModel.inputTransitionMatrix(currentState, dt);
         } else {
             throw new InvalidDynamicModelException("Failed to incorporate dynamic model into LQRSolve.java. " +
                     "Make sure to use either the LinearDynamicMode.java or NonlinearDynamicModel.java interfaces to define your model.");

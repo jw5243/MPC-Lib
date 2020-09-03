@@ -6,6 +6,8 @@ import com.horse.mpclib.lib.util.TimeUnits;
 
 import org.ejml.simple.SimpleMatrix;
 
+import java.util.LinkedList;
+import java.util.List;
 import java.util.function.Supplier;
 
 public class RunnableMPC implements Runnable {
@@ -20,13 +22,19 @@ public class RunnableMPC implements Runnable {
     private double policyLag;
 
     private SimpleMatrix desiredState;
+    private List<? extends Costable> costables;
 
     private Supplier<SimpleMatrix> currentState;
 
     public RunnableMPC(int iterations, LQRSolver lqrSolver, Supplier<SimpleMatrix> currentState) {
+        this(iterations, lqrSolver, currentState, new LinkedList<>());
+    }
+
+    public RunnableMPC(int iterations, LQRSolver lqrSolver, Supplier<SimpleMatrix> currentState, List<? extends Costable> costables) {
         setIterations(iterations);
         setLqrSolver(lqrSolver);
         setCurrentState(currentState);
+        setCostables(costables);
         setTimeProfiler(new TimeProfiler(false));
         setPolicyTimeProfiler(new TimeProfiler(false));
         setReadyToUpdate(false);
@@ -39,6 +47,11 @@ public class RunnableMPC implements Runnable {
         setDesiredState(desiredState);
     }
 
+    public RunnableMPC(int iterations, LQRSolver lqrSolver, Supplier<SimpleMatrix> currentState, SimpleMatrix desiredState, List<? extends Costable> costables) {
+        this(iterations, lqrSolver, currentState, costables);
+        setDesiredState(desiredState);
+    }
+
     public RunnableMPC(int iterations, MPCSolver mpcSolver, Supplier<SimpleMatrix> currentState) {
         this(iterations, mpcSolver.getLqrSolver(), currentState);
     }
@@ -47,8 +60,12 @@ public class RunnableMPC implements Runnable {
         this(iterations, mpcSolver.getLqrSolver(), currentState, desiredState);
     }
 
+    public RunnableMPC(int iterations, MPCSolver mpcSolver, Supplier<SimpleMatrix> currentState, SimpleMatrix desiredState, List<? extends Costable> costables) {
+        this(iterations, mpcSolver.getLqrSolver(), currentState, desiredState, costables);
+    }
+
     public MPCSolver mpc(SimpleMatrix desiredState) throws InvalidDynamicModelException {
-        MPCSolver mpc = new MPCSolver(new LQRSolver(getLqrSolver()));
+        MPCSolver mpc = new MPCSolver(new LQRSolver(getLqrSolver()), getCostables());
         mpc.initializeAndIterate(getIterations(), getCurrentState().get(), getDesiredState());
         return mpc;
     }
@@ -165,5 +182,13 @@ public class RunnableMPC implements Runnable {
 
     public void setCurrentState(Supplier<SimpleMatrix> currentState) {
         this.currentState = currentState;
+    }
+
+    public List<? extends Costable> getCostables() {
+        return costables;
+    }
+
+    public void setCostables(List<? extends Costable> costables) {
+        this.costables = costables;
     }
 }

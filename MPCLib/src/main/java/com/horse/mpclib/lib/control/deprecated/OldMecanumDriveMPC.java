@@ -6,6 +6,7 @@ import com.horse.mpclib.lib.geometry.Rotation2d;
 import com.horse.mpclib.lib.physics.MecanumDriveModel;
 import com.horse.mpclib.examples.Robot;
 
+@Deprecated
 public class OldMecanumDriveMPC {
     public static final int HORIZON_STEP = 1000;
     public static final double dt = 0.001d;

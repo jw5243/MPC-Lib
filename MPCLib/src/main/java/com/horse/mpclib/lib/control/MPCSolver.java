@@ -26,7 +26,7 @@ public class MPCSolver {
     private SimpleMatrix currentState;
     private SimpleMatrix desiredState;
 
-    private List<Costable> costables;
+    private List<? extends Costable> costables;
 
     private double currentRuntime;
     private boolean isFirstIteration;
@@ -35,7 +35,7 @@ public class MPCSolver {
         this(lqrSolver, new ArrayList<>());
     }
 
-    public MPCSolver(LQRSolver lqrSolver, List<Costable> costables) {
+    public MPCSolver(LQRSolver lqrSolver, List<? extends Costable> costables) {
         setLqrSolver(lqrSolver);
         setFirstIteration(true);
         setCostables(costables);
@@ -47,7 +47,7 @@ public class MPCSolver {
     }
 
     public MPCSolver(int horizonStep, double dt, SimpleMatrix terminationCost, SimpleMatrix intermediaryStateCost,
-                     SimpleMatrix inputCost, DynamicModel model, List<Costable> costables) {
+                     SimpleMatrix inputCost, DynamicModel model, List<? extends Costable> costables) {
         this(new LQRSolver(horizonStep, dt, terminationCost, intermediaryStateCost, inputCost, model), costables);
     }
 
@@ -310,11 +310,11 @@ public class MPCSolver {
         isFirstIteration = firstIteration;
     }
 
-    public List<Costable> getCostables() {
+    public List<? extends Costable> getCostables() {
         return costables;
     }
 
-    public void setCostables(List<Costable> costables) {
+    public void setCostables(List<? extends Costable> costables) {
         this.costables = costables;
     }
 }

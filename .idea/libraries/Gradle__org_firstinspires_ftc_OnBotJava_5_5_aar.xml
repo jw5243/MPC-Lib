@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: org.firstinspires.ftc:OnBotJava:5.5@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d43c2ae4850e4e65977a66a517c0cf31/OnBotJava-5.5/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d43c2ae4850e4e65977a66a517c0cf31/OnBotJava-5.5/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d43c2ae4850e4e65977a66a517c0cf31/OnBotJava-5.5/jars/libs/javac.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.firstinspires.ftc/OnBotJava/5.5/bc7bddc5aaea25fd5a733de89744f927b64b911b/OnBotJava-5.5-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.firstinspires.ftc/OnBotJava/5.5/234eb92d6d4e876f3b94b0ce514deeb4b2a9a22a/OnBotJava-5.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

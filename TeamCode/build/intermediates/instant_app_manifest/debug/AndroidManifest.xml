@@ -82,8 +82,6 @@
     -->
     <uses-feature android:name="android.hardware.camera" />
 
-    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
-
     <application
         android:name="org.firstinspires.ftc.robotcore.internal.system.RobotApplication"
         android:allowBackup="true"
@@ -357,22 +355,6 @@
         <service
             android:name="org.firstinspires.ftc.ftccommon.internal.FtcRobotControllerWatchdogService"
             android:enabled="true" />
-
-        <activity
-            android:name="org.firstinspires.inspection.DsInspectionActivity"
-            android:configChanges="orientation|screenSize"
-            android:label="@string/inspection_activity" >
-        </activity>
-        <activity
-            android:name="org.firstinspires.inspection.RcInspectionActivity"
-            android:configChanges="orientation|screenSize"
-            android:label="@string/inspection_activity" >
-        </activity>
-        <activity
-            android:name="org.firstinspires.ftc.ftccommon.internal.ProgramAndManageActivity"
-            android:configChanges="orientation|screenSize"
-            android:label="@string/program_and_manage_activity" >
-        </activity>
     </application>
 
 </manifest>

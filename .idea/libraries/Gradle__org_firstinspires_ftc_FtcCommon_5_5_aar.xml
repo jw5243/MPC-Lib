@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: org.firstinspires.ftc:FtcCommon:5.5@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2a1f467f1da94fe540646ea5fc99f214/FtcCommon-5.5/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2a1f467f1da94fe540646ea5fc99f214/FtcCommon-5.5/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.firstinspires.ftc/FtcCommon/5.5/656c47629dfe50ff09ba8602c9f3849aa533f426/FtcCommon-5.5-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.firstinspires.ftc/FtcCommon/5.5/62527701b969838d3d019ad28bb804857cac6d0c/FtcCommon-5.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

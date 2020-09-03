@@ -8,6 +8,7 @@ import com.horse.mpclib.lib.geometry.Rotation2d;
 import com.horse.mpclib.lib.physics.InvalidDynamicModelException;
 import com.horse.mpclib.lib.physics.MecanumDriveModel;
 import com.horse.mpclib.lib.physics.MotorModel;
+import com.horse.mpclib.lib.util.TimeUtil;
 import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 import com.qualcomm.robotcore.hardware.DcMotor;
@@ -33,6 +34,10 @@ public class MPCExample extends OpMode {
     private MecanumDriveModel driveModel;
     private MPCSolver mpcSolver;
     private RunnableMPC runnableMPC;
+
+    static {
+        TimeUtil.isUsingComputer = false;
+    }
 
     @Override
     public void init() {

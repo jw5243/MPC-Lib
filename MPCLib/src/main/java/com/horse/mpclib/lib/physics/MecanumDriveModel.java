@@ -3,7 +3,11 @@ package com.horse.mpclib.lib.physics;
 import org.ejml.data.SingularMatrixException;
 import org.ejml.simple.SimpleMatrix;
 
+import java.util.Random;
+
 public class MecanumDriveModel implements NonlinearDynamicModel {
+    private static final Random noiseGenerator = new Random();
+
     private final double dt;
 
     //Roller angles 2 and 3 are -45 degrees
@@ -377,11 +381,11 @@ public class MecanumDriveModel implements NonlinearDynamicModel {
                 0, A13(heading), 0, A23(heading), 0, A33(heading)
         }).invert().mult(new SimpleMatrix(6, 1, false, new double[] {
                 state.get(1),
-                motorTorqueAccelerationX(torques, heading) + 2d * (Math.pow(Math.random(), 2) - 0.5d) * noiseFactor - state.get(5) * (A14 * state.get(1) + A15 * state.get(3) + A16 * state.get(5)),
+                motorTorqueAccelerationX(torques, heading) + 2d * (Math.pow(noiseGenerator.nextGaussian(), 2) - 0.5d) * noiseFactor - state.get(5) * (A14 * state.get(1) + A15 * state.get(3) + A16 * state.get(5)),
                 state.get(3),
-                motorTorqueAccelerationY(torques, heading) + 2d * (Math.pow(Math.random(), 2) - 0.5d) * noiseFactor - state.get(5) * (A24 * state.get(1) + A25 * state.get(3) + A26 * state.get(5)),
+                motorTorqueAccelerationY(torques, heading) + 2d * (Math.pow(noiseGenerator.nextGaussian(), 2) - 0.5d) * noiseFactor - state.get(5) * (A24 * state.get(1) + A25 * state.get(3) + A26 * state.get(5)),
                 state.get(5),
-                motorTorqueAccelerationHeading(torques, heading) + 2d * (Math.pow(Math.random(), 2) - 0.5d) * noiseFactor - state.get(5) * (A34 * state.get(1) + A35 * state.get(3))
+                motorTorqueAccelerationHeading(torques, heading) + 0d * 2d * (Math.pow(noiseGenerator.nextGaussian(), 2) - 0.5d) * noiseFactor - state.get(5) * (A34 * state.get(1) + A35 * state.get(3))
         }).scale(dt)));
     }
 

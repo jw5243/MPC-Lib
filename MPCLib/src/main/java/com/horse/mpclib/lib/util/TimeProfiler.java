@@ -22,6 +22,10 @@ public class TimeProfiler {
         }
     }
 
+    public void reset() {
+        setLastUpdateTime(TimeUtil.getAbsoluteTimeMilliseconds());
+    }
+
     public double getDeltaTime(TimeUnits units) {
         return TimeUnits.MILLISECONDS.in(units, getDeltaTime());
     }

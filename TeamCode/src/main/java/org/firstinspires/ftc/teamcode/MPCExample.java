@@ -8,6 +8,8 @@ import com.horse.mpclib.lib.geometry.Rotation2d;
 import com.horse.mpclib.lib.physics.InvalidDynamicModelException;
 import com.horse.mpclib.lib.physics.MecanumDriveModel;
 import com.horse.mpclib.lib.physics.MotorModel;
+import com.horse.mpclib.lib.util.TimeProfiler;
+import com.horse.mpclib.lib.util.TimeUnits;
 import com.horse.mpclib.lib.util.TimeUtil;
 import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
@@ -17,6 +19,8 @@ import org.ejml.simple.SimpleMatrix;
 
 @Autonomous
 public class MPCExample extends OpMode {
+    private static final boolean MOTORS_CONFIGURED = false;
+
     private DcMotor frontLeft;
     private DcMotor frontRight;
     private DcMotor backLeft;
@@ -35,6 +39,8 @@ public class MPCExample extends OpMode {
     private MPCSolver mpcSolver;
     private RunnableMPC runnableMPC;
 
+    private TimeProfiler timeProfiler;
+
     static {
         TimeUtil.isUsingComputer = false;
     }
@@ -43,10 +49,15 @@ public class MPCExample extends OpMode {
     public void init() {
         state = new SimpleMatrix(6, 1);
         input = new SimpleMatrix(4, 1);
-        frontLeft = hardwareMap.get(DcMotor.class, "frontLeft");
-        frontRight = hardwareMap.get(DcMotor.class, "frontRight");
-        backLeft = hardwareMap.get(DcMotor.class, "backLeft");
-        backRight = hardwareMap.get(DcMotor.class, "backRight");
+
+        if(MOTORS_CONFIGURED) {
+            frontLeft = hardwareMap.get(DcMotor.class, "frontLeft");
+            frontRight = hardwareMap.get(DcMotor.class, "frontRight");
+            backLeft = hardwareMap.get(DcMotor.class, "backLeft");
+            backRight = hardwareMap.get(DcMotor.class, "backRight");
+        }
+
+        timeProfiler = new TimeProfiler(false);
 
         driveModel = new MecanumDriveModel(
                 0.001d, 18.4d, 0.315d, 0.315d * (0.1d * 0.1d + 0.032d * 0.032d) / 2d,
@@ -66,6 +77,11 @@ public class MPCExample extends OpMode {
     }
 
     @Override
+    public void start() {
+        timeProfiler.start();
+    }
+
+    @Override
     public void loop() {
         MPCSolver updatedController = runnableMPC.getUpdatedMPC();
         if(updatedController != null) {
@@ -78,7 +94,19 @@ public class MPCExample extends OpMode {
             e.printStackTrace();
         }
 
-        applyInput();
+        state = driveModel.simulate(state, input, timeProfiler.getDeltaTime(TimeUnits.SECONDS, true));
+
+        if(MOTORS_CONFIGURED) {
+            applyInput();
+        }
+        
+        telemetry.addLine("Time taken for " + runnableMPC.getIterations() + " iterations for MPC controller (ms): " + runnableMPC.getPolicyLag());
+        telemetry.addLine("Field position (x,y,theta): " + state);
+        telemetry.addLine("Motor actuations: " + input);
+    }
+
+    public Pose2d getFieldPosition() {
+        return new Pose2d(state.get(0) / 0.0254d, state.get(2) / 0.0254d, new Rotation2d(state.get(4), false));
     }
 
     private void applyInput() {

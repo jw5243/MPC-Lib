@@ -99,7 +99,7 @@ public class MPCExample extends OpMode {
         if(MOTORS_CONFIGURED) {
             applyInput();
         }
-        
+
         telemetry.addLine("Time taken for " + runnableMPC.getIterations() + " iterations for MPC controller (ms): " + runnableMPC.getPolicyLag());
         telemetry.addLine("Field position (x,y,theta): " + state);
         telemetry.addLine("Motor actuations: " + input);

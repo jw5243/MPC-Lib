@@ -110,5 +110,15 @@
     <orderEntry type="library" name="Gradle: :tensorflow-lite-0.0.0-nightly:@aar" level="project" />
     <orderEntry type="module" module-name="FtcRobotController" />
     <orderEntry type="module" module-name="MPCLib" />
+    <orderEntry type="module" module-name="FtcRobotController" />
+    <orderEntry type="module" module-name="MPCLib" />
+    <orderEntry type="module" module-name="FtcRobotController" />
+    <orderEntry type="module" module-name="MPCLib" />
+    <orderEntry type="module" module-name="FtcRobotController" />
+    <orderEntry type="module" module-name="MPCLib" />
+    <orderEntry type="module" module-name="FtcRobotController" />
+    <orderEntry type="module" module-name="MPCLib" />
+    <orderEntry type="module" module-name="FtcRobotController" />
+    <orderEntry type="module" module-name="MPCLib" />
   </component>
 </module>

@@ -10,7 +10,7 @@ import com.horse.mpclib.lib.physics.LinearExtensionModel;
 import com.horse.mpclib.lib.physics.MotorModel;
 
 public class CascadeLinearlyExtendingRobot extends Robot {
-    private final double mechanismWeight = 4.448d * 16.5d; //N, 16.5 lbs
+    private final double mechanismWeight = 0d;//4.448d * 16.5d; //N, 16.5 lbs
     private final double spoolDiameter = 2d * 0.0254d; //m, 2 in
     private final double stageLength = 18d; //in
     private final int stageCount = 7;

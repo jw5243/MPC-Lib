@@ -4,6 +4,7 @@ import com.horse.mpclib.debugging.ComputerDebugger;
 import com.horse.mpclib.debugging.IllegalMessageTypeException;
 import com.horse.mpclib.debugging.MessageOption;
 import com.horse.mpclib.lib.control.MPCSolver;
+import com.horse.mpclib.lib.control.Obstacle;
 import com.horse.mpclib.lib.control.RunnableMPC;
 import com.horse.mpclib.lib.geometry.Circle2d;
 import com.horse.mpclib.lib.geometry.Line2d;
@@ -31,14 +32,14 @@ public class RobotMPC extends Robot {
     {
         setDesiredStates(new ArrayList<>());
 
-        getDesiredStates().add(Util.convertPoseToState(new Pose2d(32d, 144d - 20d - 9d - 8d, new Rotation2d(Math.toRadians(-90d), false))));
+        /*getDesiredStates().add(Util.convertPoseToState(new Pose2d(32d, 144d - 20d - 9d - 8d, new Rotation2d(Math.toRadians(-90d), false))));
         getDesiredStates().add(Util.convertPoseToState(new Pose2d(32d, 144d - 20d - 9d - 2d, new Rotation2d(Math.toRadians(-90d), false))));
         getDesiredStates().add(Util.convertPoseToState(new Pose2d(32d, 144d - 20d - 9d - 12d, new Rotation2d(Math.toRadians(-90d), false))));
         getDesiredStates().add(Util.convertPoseToState(new Pose2d(11d, 144d - 20d - 9d - 12d, new Rotation2d(Math.toRadians(-85d), false))));
-        getDesiredStates().add(Util.convertPoseToState(new Pose2d(12d, 144d - 20d - 9d - 4d, new Rotation2d(Math.toRadians(-75d), false))));
+        getDesiredStates().add(Util.convertPoseToState(new Pose2d(12d, 144d - 20d - 9d - 4d, new Rotation2d(Math.toRadians(-75d), false))));*/
 
         //GF Path
-        /*getDesiredStates().add(Util.convertPoseToState(new Pose2d(38d, 34d, new Rotation2d(Math.toRadians(-90d), false))));
+        getDesiredStates().add(Util.convertPoseToState(new Pose2d(38d, 34d, new Rotation2d(Math.toRadians(-90d), false))));
         getDesiredStates().add(Util.convertPoseToState(new Pose2d(38d, 144d - 11d, new Rotation2d(Math.toRadians(-90d), false))));
         getDesiredStates().add(Util.convertPoseToState(new Pose2d(38d, 10d, new Rotation2d(Math.toRadians(-90d), false))));
         getDesiredStates().add(Util.convertPoseToState(new Pose2d(38d, 144d - 24d, new Rotation2d(Math.toRadians(-90d), false))));
@@ -51,17 +52,17 @@ public class RobotMPC extends Robot {
         getDesiredStates().add(Util.convertPoseToState(new Pose2d(30d, 144d - 19d - 9d - 6d, new Rotation2d(Math.toRadians(-90), false))));
         getDesiredStates().add(Util.convertPoseToState(new Pose2d(46d, 14d, new Rotation2d(Math.toRadians(-45d), false))));
         getDesiredStates().add(Util.convertPoseToState(new Pose2d(30d, 144d - 19d - 9d - 6d, new Rotation2d(Math.toRadians(-90), false))));
-        getDesiredStates().add(Util.convertPoseToState(new Pose2d(110d, 72d, new Rotation2d(Math.toRadians(-90d), false))));*/
+        getDesiredStates().add(Util.convertPoseToState(new Pose2d(110d, 72d, new Rotation2d(Math.toRadians(-90d), false))));
     }
 
     @Override
     public void init_debug() {
         super.init_debug();
-        //getObstacles().add(new Obstacle(144d - 92d, 65d, 3d, 20d));
-        //getObstacles().add(new Obstacle(144d - 92d, 80d, 3d, 20d));
-        //getObstacles().add(new Obstacle(144d - (144d - 9d), 90d, 10.5d, 20d));
+        getObstacles().add(new Obstacle(144d - 92d - 4d, 65d, 3d, 200d));
+        getObstacles().add(new Obstacle(144d - 92d - 4d, 80d, 3d, 200d));
+        getObstacles().add(new Obstacle(144d - (144d - 9d), 90d, 10.5d, 200d));
         setMpcSolver(new MPCSolver(1000, 0.002d, SimpleMatrix.diag(100d, 10, 100d, 10, 100d, 10),
-                SimpleMatrix.diag(100d, 25d, 100d, 25d, 10d, 1d), SimpleMatrix.diag(1d, 1d, 1d, 1d), getDriveModel(), getObstacles()));
+                SimpleMatrix.diag(1000d, 50d, 200d, 25d, 10d, 1d), SimpleMatrix.diag(1d, 1d, 1d, 1d), getDriveModel(), getObstacles()));
         try {
             getMpcSolver().initializeAndIterate(5, getInitialState(), getDesiredStates().get(0));
         } catch(InvalidDynamicModelException e) {
@@ -88,7 +89,7 @@ public class RobotMPC extends Robot {
             e.printStackTrace();
         }
 
-        if(getDesiredStates().size() > 1 && Util.convertStateToPose(getDesiredStates().get(0)).distance(getFieldPosition()) < 1d
+        if(getDesiredStates().size() > 1 && Util.convertStateToPose(getDesiredStates().get(0)).distance(getFieldPosition()) < 2d
                 && Math.abs(getDesiredStates().get(0).get(4) - getFieldPosition().getRotation().getRadians()) < Math.toRadians(1d)) {
             if(!timerStarted) {
                 timerStarted = true;
@@ -96,12 +97,12 @@ public class RobotMPC extends Robot {
                 waitTimer.reset();
             }
 
-            if((/*waitTimer.getDeltaTime(TimeUnits.SECONDS, false) > 1d*/ time - lastResetTime > 1d && timerStarted) || getDesiredStates().size() < 3) {
+            if(waitTimer.getDeltaTime(TimeUnits.SECONDS, false) > 0d /*time - lastResetTime > 1d && timerStarted)*/ || getDesiredStates().size() < 3) {
                 getDesiredStates().remove(0);
                 getRunnableMPC().setDesiredState(getDesiredStates().get(0));
                 timerStarted = false;
             }
-        } else if(getDesiredStates().size() == 1 && Util.convertStateToPose(getDesiredStates().get(0)).distance(getFieldPosition()) < 0.5d
+        } else if(getDesiredStates().size() == 1 && Util.convertStateToPose(getDesiredStates().get(0)).distance(getFieldPosition()) < 1d
                 && Math.abs(getDesiredStates().get(0).get(4) - getFieldPosition().getRotation().getRadians()) < Math.toRadians(1d)) {
             stopTimer();
             setInput(new SimpleMatrix(4, 1));

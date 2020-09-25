@@ -41,9 +41,19 @@ public class MPCSolver {
         setCostables(costables);
     }
 
+    public MPCSolver(int horizonStep, double dt, SimpleMatrix stateCost,
+                     SimpleMatrix inputCost, DynamicModel model) {
+        this(new LQRSolver(horizonStep, dt, stateCost, stateCost, inputCost, model));
+    }
+
     public MPCSolver(int horizonStep, double dt, SimpleMatrix terminationCost, SimpleMatrix intermediaryStateCost,
                       SimpleMatrix inputCost, DynamicModel model) {
         this(new LQRSolver(horizonStep, dt, terminationCost, intermediaryStateCost, inputCost, model));
+    }
+
+    public MPCSolver(int horizonStep, double dt, SimpleMatrix stateCost,
+                     SimpleMatrix inputCost, DynamicModel model, List<? extends Costable> costables) {
+        this(new LQRSolver(horizonStep, dt, stateCost, stateCost, inputCost, model), costables);
     }
 
     public MPCSolver(int horizonStep, double dt, SimpleMatrix terminationCost, SimpleMatrix intermediaryStateCost,

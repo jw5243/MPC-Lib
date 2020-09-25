@@ -1,0 +1,722 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/jasonwong/Documents/GitHub/MPC-Lib/TeamCode/src/main/AndroidManifest.xml:8:1-12:12
+INJECTED from /Users/jasonwong/Documents/GitHub/MPC-Lib/TeamCode/src/main/AndroidManifest.xml:8:1-12:12
+INJECTED from /Users/jasonwong/Documents/GitHub/MPC-Lib/TeamCode/src/main/AndroidManifest.xml:8:1-12:12
+INJECTED from /Users/jasonwong/Documents/GitHub/MPC-Lib/TeamCode/src/main/AndroidManifest.xml:8:1-12:12
+MERGED from [:FtcRobotController] /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-65:12
+MERGED from [:MPCLib] /Users/jasonwong/Documents/GitHub/MPC-Lib/MPCLib/build/intermediates/library_manifest/release/AndroidManifest.xml:2:1-9:12
+MERGED from [:RobotCore-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/AndroidManifest.xml:2:1-116:12
+MERGED from [:Hardware-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/58e6203d031286b2f171feb22cb83d2c/Hardware-release/AndroidManifest.xml:2:1-11:12
+MERGED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:3:1-235:12
+MERGED from [:WirelessP2p-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/069120841fb49898804fa13ed3782dee/WirelessP2p-release/AndroidManifest.xml:2:1-11:12
+MERGED from [:tfod-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/1d2d316e391a748610ced8fa66586326/tfod-release/AndroidManifest.xml:2:1-11:12
+MERGED from [:tensorflow-lite-0.0.0-nightly:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/3c2ccc5dfcccd6cee6965dc1b501903f/tensorflow-lite-0.0.0-nightly/AndroidManifest.xml:2:1-6:12
+MERGED from [org.openftc:ftc-opmode-tuner-common:0.2] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/5fa896a1212c4d6e90e2b5a994f4274e/ftc-opmode-tuner-common-0.2/AndroidManifest.xml:2:1-11:12
+MERGED from [org.openftc:rev-extensions-2:1.2] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/e0fcebe126e05bd96d56899abf73f619/rev-extensions-2-1.2/AndroidManifest.xml:2:1-12:12
+MERGED from [:Inspection-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/bbe3a4f6ca7efa02c4144a2d43007cea/Inspection-release/AndroidManifest.xml:2:1-32:12
+MERGED from [:Blocks-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/699bb0d11cbf36f56722687fc3efc93e/Blocks-release/AndroidManifest.xml:2:1-26:12
+MERGED from [:RobotServer-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/b46d8963359571975eafae80a14768fc/RobotServer-release/AndroidManifest.xml:2:1-11:12
+MERGED from [:OnBotJava-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/99168b635ccf7e038f0a6ab5682bf59b/OnBotJava-release/AndroidManifest.xml:34:1-43:12
+MERGED from [com.android.support:support-compat:28.0.0] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/64d53c0489b5cd949a8aabd2488c44f6/support-compat-28.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/a48c2832482dad7c466f542d9bb6ad67/versionedparcelable-28.0.0/AndroidManifest.xml:17:1-25:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/757ba3f9c280c69407d39b90b5496020/runtime-1.1.1/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/jasonwong/Documents/GitHub/MPC-Lib/TeamCode/src/main/AndroidManifest.xml:8:1-12:12
+INJECTED from /Users/jasonwong/Documents/GitHub/MPC-Lib/TeamCode/src/main/AndroidManifest.xml:8:1-12:12
+INJECTED from /Users/jasonwong/Documents/GitHub/MPC-Lib/TeamCode/src/main/AndroidManifest.xml:8:1-12:12
+	package
+		ADDED from /Users/jasonwong/Documents/GitHub/MPC-Lib/TeamCode/src/main/AndroidManifest.xml:9:5-45
+		INJECTED from /Users/jasonwong/Documents/GitHub/MPC-Lib/TeamCode/src/main/AndroidManifest.xml
+		INJECTED from /Users/jasonwong/Documents/GitHub/MPC-Lib/TeamCode/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/jasonwong/Documents/GitHub/MPC-Lib/TeamCode/src/main/AndroidManifest.xml
+		ADDED from /Users/jasonwong/Documents/GitHub/MPC-Lib/TeamCode/src/main/AndroidManifest.xml:8:1-12:12
+		INJECTED from /Users/jasonwong/Documents/GitHub/MPC-Lib/TeamCode/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/jasonwong/Documents/GitHub/MPC-Lib/TeamCode/src/main/AndroidManifest.xml
+		ADDED from /Users/jasonwong/Documents/GitHub/MPC-Lib/TeamCode/src/main/AndroidManifest.xml:8:1-12:12
+		INJECTED from /Users/jasonwong/Documents/GitHub/MPC-Lib/TeamCode/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/jasonwong/Documents/GitHub/MPC-Lib/TeamCode/src/main/AndroidManifest.xml:10:5-63
+application
+ADDED from /Users/jasonwong/Documents/GitHub/MPC-Lib/TeamCode/src/main/AndroidManifest.xml:11:5-19
+MERGED from [:FtcRobotController] /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/build/intermediates/library_manifest/release/AndroidManifest.xml:14:5-63:19
+MERGED from [:FtcRobotController] /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/build/intermediates/library_manifest/release/AndroidManifest.xml:14:5-63:19
+MERGED from [:RobotCore-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/AndroidManifest.xml:86:5-114:19
+MERGED from [:RobotCore-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/AndroidManifest.xml:86:5-114:19
+MERGED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:23:5-233:19
+MERGED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:23:5-233:19
+MERGED from [:tensorflow-lite-0.0.0-nightly:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/3c2ccc5dfcccd6cee6965dc1b501903f/tensorflow-lite-0.0.0-nightly/AndroidManifest.xml:4:5-5:19
+MERGED from [:tensorflow-lite-0.0.0-nightly:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/3c2ccc5dfcccd6cee6965dc1b501903f/tensorflow-lite-0.0.0-nightly/AndroidManifest.xml:4:5-5:19
+MERGED from [:Inspection-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/bbe3a4f6ca7efa02c4144a2d43007cea/Inspection-release/AndroidManifest.xml:19:5-30:19
+MERGED from [:Inspection-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/bbe3a4f6ca7efa02c4144a2d43007cea/Inspection-release/AndroidManifest.xml:19:5-30:19
+MERGED from [:Blocks-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/699bb0d11cbf36f56722687fc3efc93e/Blocks-release/AndroidManifest.xml:18:5-24:19
+MERGED from [:Blocks-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/699bb0d11cbf36f56722687fc3efc93e/Blocks-release/AndroidManifest.xml:18:5-24:19
+MERGED from [com.android.support:support-compat:28.0.0] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/64d53c0489b5cd949a8aabd2488c44f6/support-compat-28.0.0/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/64d53c0489b5cd949a8aabd2488c44f6/support-compat-28.0.0/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/a48c2832482dad7c466f542d9bb6ad67/versionedparcelable-28.0.0/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/a48c2832482dad7c466f542d9bb6ad67/versionedparcelable-28.0.0/AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/64d53c0489b5cd949a8aabd2488c44f6/support-compat-28.0.0/AndroidManifest.xml:22:18-91
+	android:label
+		ADDED from [:FtcRobotController] /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/build/intermediates/library_manifest/release/AndroidManifest.xml:17:9-41
+	android:largeHeap
+		ADDED from [:FtcRobotController] /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/build/intermediates/library_manifest/release/AndroidManifest.xml:18:9-33
+	android:icon
+		ADDED from [:FtcRobotController] /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/build/intermediates/library_manifest/release/AndroidManifest.xml:16:9-45
+	android:allowBackup
+		ADDED from [:FtcRobotController] /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/build/intermediates/library_manifest/release/AndroidManifest.xml:15:9-35
+	android:theme
+		ADDED from [:FtcRobotController] /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/build/intermediates/library_manifest/release/AndroidManifest.xml:19:9-45
+	android:name
+		ADDED from [:RobotCore-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/AndroidManifest.xml:86:18-97
+uses-sdk
+INJECTED from /Users/jasonwong/Documents/GitHub/MPC-Lib/TeamCode/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/jasonwong/Documents/GitHub/MPC-Lib/TeamCode/src/main/AndroidManifest.xml
+INJECTED from /Users/jasonwong/Documents/GitHub/MPC-Lib/TeamCode/src/main/AndroidManifest.xml
+MERGED from [:FtcRobotController] /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/build/intermediates/library_manifest/release/AndroidManifest.xml:8:5-10:41
+MERGED from [:FtcRobotController] /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/build/intermediates/library_manifest/release/AndroidManifest.xml:8:5-10:41
+MERGED from [:MPCLib] /Users/jasonwong/Documents/GitHub/MPC-Lib/MPCLib/build/intermediates/library_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:MPCLib] /Users/jasonwong/Documents/GitHub/MPC-Lib/MPCLib/build/intermediates/library_manifest/release/AndroidManifest.xml:5:5-7:41
+MERGED from [:RobotCore-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/AndroidManifest.xml:7:5-9:41
+MERGED from [:RobotCore-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/AndroidManifest.xml:7:5-9:41
+MERGED from [:Hardware-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/58e6203d031286b2f171feb22cb83d2c/Hardware-release/AndroidManifest.xml:7:5-9:41
+MERGED from [:Hardware-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/58e6203d031286b2f171feb22cb83d2c/Hardware-release/AndroidManifest.xml:7:5-9:41
+MERGED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:8:5-10:41
+MERGED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:8:5-10:41
+MERGED from [:WirelessP2p-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/069120841fb49898804fa13ed3782dee/WirelessP2p-release/AndroidManifest.xml:5:5-7:41
+MERGED from [:WirelessP2p-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/069120841fb49898804fa13ed3782dee/WirelessP2p-release/AndroidManifest.xml:5:5-7:41
+MERGED from [:tfod-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/1d2d316e391a748610ced8fa66586326/tfod-release/AndroidManifest.xml:7:5-9:41
+MERGED from [:tfod-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/1d2d316e391a748610ced8fa66586326/tfod-release/AndroidManifest.xml:7:5-9:41
+MERGED from [org.openftc:ftc-opmode-tuner-common:0.2] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/5fa896a1212c4d6e90e2b5a994f4274e/ftc-opmode-tuner-common-0.2/AndroidManifest.xml:7:5-9:41
+MERGED from [org.openftc:ftc-opmode-tuner-common:0.2] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/5fa896a1212c4d6e90e2b5a994f4274e/ftc-opmode-tuner-common-0.2/AndroidManifest.xml:7:5-9:41
+MERGED from [org.openftc:rev-extensions-2:1.2] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/e0fcebe126e05bd96d56899abf73f619/rev-extensions-2-1.2/AndroidManifest.xml:8:5-10:41
+MERGED from [org.openftc:rev-extensions-2:1.2] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/e0fcebe126e05bd96d56899abf73f619/rev-extensions-2-1.2/AndroidManifest.xml:8:5-10:41
+MERGED from [:Inspection-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/bbe3a4f6ca7efa02c4144a2d43007cea/Inspection-release/AndroidManifest.xml:7:5-9:41
+MERGED from [:Inspection-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/bbe3a4f6ca7efa02c4144a2d43007cea/Inspection-release/AndroidManifest.xml:7:5-9:41
+MERGED from [:Blocks-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/699bb0d11cbf36f56722687fc3efc93e/Blocks-release/AndroidManifest.xml:7:5-9:41
+MERGED from [:Blocks-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/699bb0d11cbf36f56722687fc3efc93e/Blocks-release/AndroidManifest.xml:7:5-9:41
+MERGED from [:RobotServer-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/b46d8963359571975eafae80a14768fc/RobotServer-release/AndroidManifest.xml:7:5-9:41
+MERGED from [:RobotServer-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/b46d8963359571975eafae80a14768fc/RobotServer-release/AndroidManifest.xml:7:5-9:41
+MERGED from [:OnBotJava-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/99168b635ccf7e038f0a6ab5682bf59b/OnBotJava-release/AndroidManifest.xml:39:5-41:41
+MERGED from [:OnBotJava-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/99168b635ccf7e038f0a6ab5682bf59b/OnBotJava-release/AndroidManifest.xml:39:5-41:41
+MERGED from [com.android.support:support-compat:28.0.0] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/64d53c0489b5cd949a8aabd2488c44f6/support-compat-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/64d53c0489b5cd949a8aabd2488c44f6/support-compat-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/a48c2832482dad7c466f542d9bb6ad67/versionedparcelable-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/a48c2832482dad7c466f542d9bb6ad67/versionedparcelable-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/757ba3f9c280c69407d39b90b5496020/runtime-1.1.1/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/757ba3f9c280c69407d39b90b5496020/runtime-1.1.1/AndroidManifest.xml:20:5-44
+INJECTED from /Users/jasonwong/Documents/GitHub/MPC-Lib/TeamCode/src/main/AndroidManifest.xml
+INJECTED from /Users/jasonwong/Documents/GitHub/MPC-Lib/TeamCode/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/jasonwong/Documents/GitHub/MPC-Lib/TeamCode/src/main/AndroidManifest.xml
+		ADDED from /Users/jasonwong/Documents/GitHub/MPC-Lib/TeamCode/src/main/AndroidManifest.xml
+		INJECTED from /Users/jasonwong/Documents/GitHub/MPC-Lib/TeamCode/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/jasonwong/Documents/GitHub/MPC-Lib/TeamCode/src/main/AndroidManifest.xml
+		ADDED from /Users/jasonwong/Documents/GitHub/MPC-Lib/TeamCode/src/main/AndroidManifest.xml
+		INJECTED from /Users/jasonwong/Documents/GitHub/MPC-Lib/TeamCode/src/main/AndroidManifest.xml
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from [:FtcRobotController] /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/build/intermediates/library_manifest/release/AndroidManifest.xml:12:5-81
+	android:name
+		ADDED from [:FtcRobotController] /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/build/intermediates/library_manifest/release/AndroidManifest.xml:12:22-78
+meta-data#org.firstinspires.latestSupportedControlHubVersion
+ADDED from [:FtcRobotController] /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/build/intermediates/library_manifest/release/AndroidManifest.xml:22:9-24:33
+	android:value
+		ADDED from [:FtcRobotController] /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/build/intermediates/library_manifest/release/AndroidManifest.xml:24:13-30
+	android:name
+		ADDED from [:FtcRobotController] /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/build/intermediates/library_manifest/release/AndroidManifest.xml:23:13-78
+activity#org.firstinspires.ftc.robotcontroller.internal.PermissionValidatorWrapper
+ADDED from [:FtcRobotController] /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/build/intermediates/library_manifest/release/AndroidManifest.xml:27:9-38:20
+	android:screenOrientation
+		ADDED from [:FtcRobotController] /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/build/intermediates/library_manifest/release/AndroidManifest.xml:32:13-49
+	android:label
+		ADDED from [:FtcRobotController] /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/build/intermediates/library_manifest/release/AndroidManifest.xml:30:13-45
+	android:launchMode
+		ADDED from [:FtcRobotController] /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/build/intermediates/library_manifest/release/AndroidManifest.xml:31:13-44
+	android:configChanges
+		ADDED from [:FtcRobotController] /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/build/intermediates/library_manifest/release/AndroidManifest.xml:29:13-59
+	android:name
+		ADDED from [:FtcRobotController] /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/build/intermediates/library_manifest/release/AndroidManifest.xml:28:13-101
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from [:FtcRobotController] /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/build/intermediates/library_manifest/release/AndroidManifest.xml:33:13-37:29
+category#android.intent.category.LAUNCHER
+ADDED from [:FtcRobotController] /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/build/intermediates/library_manifest/release/AndroidManifest.xml:34:17-77
+	android:name
+		ADDED from [:FtcRobotController] /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/build/intermediates/library_manifest/release/AndroidManifest.xml:34:27-74
+action#android.intent.action.MAIN
+ADDED from [:FtcRobotController] /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/build/intermediates/library_manifest/release/AndroidManifest.xml:36:17-69
+	android:name
+		ADDED from [:FtcRobotController] /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/build/intermediates/library_manifest/release/AndroidManifest.xml:36:25-66
+activity#org.firstinspires.ftc.robotcontroller.internal.FtcRobotControllerActivity
+ADDED from [:FtcRobotController] /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/build/intermediates/library_manifest/release/AndroidManifest.xml:39:9-57:20
+	android:screenOrientation
+		ADDED from [:FtcRobotController] /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/build/intermediates/library_manifest/release/AndroidManifest.xml:44:13-49
+	android:label
+		ADDED from [:FtcRobotController] /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/build/intermediates/library_manifest/release/AndroidManifest.xml:42:13-45
+	android:launchMode
+		ADDED from [:FtcRobotController] /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/build/intermediates/library_manifest/release/AndroidManifest.xml:43:13-44
+	android:configChanges
+		ADDED from [:FtcRobotController] /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/build/intermediates/library_manifest/release/AndroidManifest.xml:41:13-59
+	android:name
+		ADDED from [:FtcRobotController] /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/build/intermediates/library_manifest/release/AndroidManifest.xml:40:13-101
+intent-filter#action:name:android.hardware.usb.action.USB_DEVICE_ATTACHED
+ADDED from [:FtcRobotController] /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/build/intermediates/library_manifest/release/AndroidManifest.xml:45:13-47:29
+action#android.hardware.usb.action.USB_DEVICE_ATTACHED
+ADDED from [:FtcRobotController] /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/build/intermediates/library_manifest/release/AndroidManifest.xml:46:17-90
+	android:name
+		ADDED from [:FtcRobotController] /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/build/intermediates/library_manifest/release/AndroidManifest.xml:46:25-87
+meta-data#android.hardware.usb.action.USB_DEVICE_ATTACHED
+ADDED from [:FtcRobotController] /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/build/intermediates/library_manifest/release/AndroidManifest.xml:49:13-51:57
+	android:resource
+		ADDED from [:FtcRobotController] /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/build/intermediates/library_manifest/release/AndroidManifest.xml:51:17-54
+	android:name
+		ADDED from [:FtcRobotController] /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/build/intermediates/library_manifest/release/AndroidManifest.xml:50:17-79
+meta-data#org.firstinspires.main.entry
+ADDED from [:FtcRobotController] /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/build/intermediates/library_manifest/release/AndroidManifest.xml:54:13-56:40
+	android:value
+		ADDED from [:FtcRobotController] /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/build/intermediates/library_manifest/release/AndroidManifest.xml:56:17-37
+	android:name
+		ADDED from [:FtcRobotController] /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/build/intermediates/library_manifest/release/AndroidManifest.xml:55:17-60
+service#com.qualcomm.ftccommon.FtcRobotControllerService
+ADDED from [:FtcRobotController] /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/build/intermediates/library_manifest/release/AndroidManifest.xml:60:9-62:38
+	android:enabled
+		ADDED from [:FtcRobotController] /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/build/intermediates/library_manifest/release/AndroidManifest.xml:62:13-35
+	android:name
+		ADDED from [:FtcRobotController] /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/build/intermediates/library_manifest/release/AndroidManifest.xml:61:13-76
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from [:RobotCore-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/AndroidManifest.xml:11:5-13:35
+MERGED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:12:5-76
+MERGED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:12:5-76
+MERGED from [:Inspection-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/bbe3a4f6ca7efa02c4144a2d43007cea/Inspection-release/AndroidManifest.xml:11:5-76
+MERGED from [:Inspection-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/bbe3a4f6ca7efa02c4144a2d43007cea/Inspection-release/AndroidManifest.xml:11:5-76
+	android:required
+		ADDED from [:RobotCore-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/AndroidManifest.xml:13:9-32
+	android:name
+		ADDED from [:RobotCore-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/AndroidManifest.xml:12:9-60
+uses-permission#android.permission.CHANGE_WIFI_STATE
+ADDED from [:RobotCore-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/AndroidManifest.xml:14:5-16:35
+MERGED from [:WirelessP2p-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/069120841fb49898804fa13ed3782dee/WirelessP2p-release/AndroidManifest.xml:9:5-76
+MERGED from [:WirelessP2p-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/069120841fb49898804fa13ed3782dee/WirelessP2p-release/AndroidManifest.xml:9:5-76
+MERGED from [:Inspection-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/bbe3a4f6ca7efa02c4144a2d43007cea/Inspection-release/AndroidManifest.xml:13:5-76
+MERGED from [:Inspection-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/bbe3a4f6ca7efa02c4144a2d43007cea/Inspection-release/AndroidManifest.xml:13:5-76
+	android:required
+		ADDED from [:RobotCore-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/AndroidManifest.xml:16:9-32
+	android:name
+		ADDED from [:RobotCore-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/AndroidManifest.xml:15:9-60
+uses-permission#android.permission.BLUETOOTH
+ADDED from [:RobotCore-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/AndroidManifest.xml:17:5-68
+MERGED from [:Inspection-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/bbe3a4f6ca7efa02c4144a2d43007cea/Inspection-release/AndroidManifest.xml:17:5-68
+MERGED from [:Inspection-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/bbe3a4f6ca7efa02c4144a2d43007cea/Inspection-release/AndroidManifest.xml:17:5-68
+	android:name
+		ADDED from [:RobotCore-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/AndroidManifest.xml:17:22-65
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [:RobotCore-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/AndroidManifest.xml:18:5-20:35
+MERGED from [:Inspection-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/bbe3a4f6ca7efa02c4144a2d43007cea/Inspection-release/AndroidManifest.xml:16:5-79
+MERGED from [:Inspection-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/bbe3a4f6ca7efa02c4144a2d43007cea/Inspection-release/AndroidManifest.xml:16:5-79
+	android:required
+		ADDED from [:RobotCore-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/AndroidManifest.xml:20:9-32
+	android:name
+		ADDED from [:RobotCore-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/AndroidManifest.xml:19:9-63
+uses-permission#android.permission.CHANGE_NETWORK_STATE
+ADDED from [:RobotCore-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/AndroidManifest.xml:21:5-23:35
+MERGED from [:Inspection-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/bbe3a4f6ca7efa02c4144a2d43007cea/Inspection-release/AndroidManifest.xml:14:5-79
+MERGED from [:Inspection-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/bbe3a4f6ca7efa02c4144a2d43007cea/Inspection-release/AndroidManifest.xml:14:5-79
+	android:required
+		ADDED from [:RobotCore-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/AndroidManifest.xml:23:9-32
+	android:name
+		ADDED from [:RobotCore-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/AndroidManifest.xml:22:9-63
+uses-permission#android.permission.INTERNET
+ADDED from [:RobotCore-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/AndroidManifest.xml:24:5-26:35
+MERGED from [:Inspection-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/bbe3a4f6ca7efa02c4144a2d43007cea/Inspection-release/AndroidManifest.xml:15:5-67
+MERGED from [:Inspection-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/bbe3a4f6ca7efa02c4144a2d43007cea/Inspection-release/AndroidManifest.xml:15:5-67
+	android:required
+		ADDED from [:RobotCore-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/AndroidManifest.xml:26:9-32
+	android:name
+		ADDED from [:RobotCore-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/AndroidManifest.xml:25:9-51
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from [:RobotCore-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/AndroidManifest.xml:29:5-31:35
+MERGED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:13:5-15:35
+MERGED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:13:5-15:35
+MERGED from [:Blocks-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/699bb0d11cbf36f56722687fc3efc93e/Blocks-release/AndroidManifest.xml:11:5-13:35
+MERGED from [:Blocks-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/699bb0d11cbf36f56722687fc3efc93e/Blocks-release/AndroidManifest.xml:11:5-13:35
+	android:required
+		ADDED from [:RobotCore-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/AndroidManifest.xml:31:9-32
+	android:name
+		ADDED from [:RobotCore-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/AndroidManifest.xml:30:9-65
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from [:RobotCore-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/AndroidManifest.xml:33:5-35:35
+MERGED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:16:5-18:35
+MERGED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:16:5-18:35
+MERGED from [:Blocks-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/699bb0d11cbf36f56722687fc3efc93e/Blocks-release/AndroidManifest.xml:14:5-16:35
+MERGED from [:Blocks-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/699bb0d11cbf36f56722687fc3efc93e/Blocks-release/AndroidManifest.xml:14:5-16:35
+	android:required
+		ADDED from [:RobotCore-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/AndroidManifest.xml:35:9-32
+	android:name
+		ADDED from [:RobotCore-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/AndroidManifest.xml:34:9-64
+uses-permission#android.permission.WRITE_SETTINGS
+ADDED from [:RobotCore-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/AndroidManifest.xml:38:5-40:35
+MERGED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:19:5-21:35
+MERGED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:19:5-21:35
+	android:required
+		ADDED from [:RobotCore-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/AndroidManifest.xml:40:9-32
+	android:name
+		ADDED from [:RobotCore-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/AndroidManifest.xml:39:9-57
+uses-permission#android.permission.SET_TIME_ZONE
+ADDED from [:RobotCore-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/AndroidManifest.xml:43:5-45:35
+	android:required
+		ADDED from [:RobotCore-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/AndroidManifest.xml:45:9-32
+	android:name
+		ADDED from [:RobotCore-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/AndroidManifest.xml:44:9-56
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [:RobotCore-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/AndroidManifest.xml:52:5-54:35
+	android:required
+		ADDED from [:RobotCore-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/AndroidManifest.xml:54:9-32
+	android:name
+		ADDED from [:RobotCore-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/AndroidManifest.xml:53:9-52
+uses-permission#android.permission.CAMERA
+ADDED from [:RobotCore-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/AndroidManifest.xml:55:5-65
+	android:name
+		ADDED from [:RobotCore-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/AndroidManifest.xml:55:22-62
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from [:RobotCore-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/AndroidManifest.xml:56:5-58:35
+	android:required
+		ADDED from [:RobotCore-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/AndroidManifest.xml:58:9-32
+	android:name
+		ADDED from [:RobotCore-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/AndroidManifest.xml:57:9-65
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from [:RobotCore-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/AndroidManifest.xml:59:5-61:35
+	android:required
+		ADDED from [:RobotCore-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/AndroidManifest.xml:61:9-32
+	android:name
+		ADDED from [:RobotCore-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/AndroidManifest.xml:60:9-63
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from [:RobotCore-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/AndroidManifest.xml:62:5-64:35
+	android:required
+		ADDED from [:RobotCore-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/AndroidManifest.xml:64:9-32
+	android:name
+		ADDED from [:RobotCore-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/AndroidManifest.xml:63:9-59
+uses-permission#com.revrobotics.permission.UPDATE_CONTROL_HUB
+ADDED from [:RobotCore-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/AndroidManifest.xml:65:5-67:35
+	android:required
+		ADDED from [:RobotCore-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/AndroidManifest.xml:67:9-32
+	android:name
+		ADDED from [:RobotCore-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/AndroidManifest.xml:66:9-69
+uses-feature#android.hardware.usb.accessory
+ADDED from [:RobotCore-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/AndroidManifest.xml:69:5-67
+	android:name
+		ADDED from [:RobotCore-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/AndroidManifest.xml:69:19-64
+uses-feature#0x00020000
+ADDED from [:RobotCore-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/AndroidManifest.xml:70:5-54
+	android:glEsVersion
+		ADDED from [:RobotCore-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/AndroidManifest.xml:70:19-51
+uses-feature#android.hardware.camera
+ADDED from [:RobotCore-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/AndroidManifest.xml:84:5-60
+	android:name
+		ADDED from [:RobotCore-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/AndroidManifest.xml:84:19-57
+service#org.firstinspires.ftc.robotcore.internal.files.MediaTransferProtocolMonitorService
+ADDED from [:RobotCore-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/AndroidManifest.xml:89:9-91:38
+	android:enabled
+		ADDED from [:RobotCore-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/AndroidManifest.xml:91:13-35
+	android:name
+		ADDED from [:RobotCore-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/AndroidManifest.xml:90:13-110
+meta-data#autoStartService.org.firstinspires.ftc.robotcore.internal.files.MediaTransferProtocolMonitorService
+ADDED from [:RobotCore-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/AndroidManifest.xml:93:9-95:41
+	android:value
+		ADDED from [:RobotCore-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/AndroidManifest.xml:95:13-38
+	android:name
+		ADDED from [:RobotCore-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/AndroidManifest.xml:94:13-127
+service#org.firstinspires.ftc.onbotjava.OnBotJavaService
+ADDED from [:RobotCore-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/AndroidManifest.xml:98:9-100:38
+	android:enabled
+		ADDED from [:RobotCore-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/AndroidManifest.xml:100:13-35
+	android:name
+		ADDED from [:RobotCore-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/AndroidManifest.xml:99:13-76
+meta-data#autoStartService.org.firstinspires.ftc.onbotjava.OnBotJavaService
+ADDED from [:RobotCore-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/AndroidManifest.xml:102:9-104:39
+	android:value
+		ADDED from [:RobotCore-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/AndroidManifest.xml:104:13-36
+	android:name
+		ADDED from [:RobotCore-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/AndroidManifest.xml:103:13-93
+receiver#org.firstinspires.ftc.robotserver.internal.webserver.controlhubupdater.ChUpdaterCommManager$ChUpdaterBroadcastReceiver
+ADDED from [:RobotCore-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/AndroidManifest.xml:106:9-113:20
+	android:exported
+		ADDED from [:RobotCore-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/AndroidManifest.xml:108:13-36
+	android:permission
+		ADDED from [:RobotCore-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/AndroidManifest.xml:109:13-69
+	android:name
+		ADDED from [:RobotCore-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/AndroidManifest.xml:107:13-146
+intent-filter#action:name:com.revrobotics.controlhubupdater.broadcast.RESULT_BROADCAST
+ADDED from [:RobotCore-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/AndroidManifest.xml:110:13-112:29
+action#com.revrobotics.controlhubupdater.broadcast.RESULT_BROADCAST
+ADDED from [:RobotCore-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/AndroidManifest.xml:111:17-103
+	android:name
+		ADDED from [:RobotCore-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/6caebadb203133324935739f121b66d7/RobotCore-release/AndroidManifest.xml:111:25-100
+activity#com.qualcomm.ftccommon.FtcRobotControllerSettingsActivity
+ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:26:9-30:20
+	android:label
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:29:13-54
+	android:exported
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:28:13-36
+	android:name
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:27:13-85
+activity#com.qualcomm.ftccommon.configuration.FtcLoadFileActivity
+ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:31:9-36:20
+	android:label
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:35:13-55
+	android:exported
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:34:13-36
+	android:configChanges
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:33:13-59
+	android:name
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:32:13-84
+activity#com.qualcomm.ftccommon.configuration.ConfigureFromTemplateActivity
+ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:37:9-42:20
+	android:label
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:41:13-70
+	android:exported
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:40:13-36
+	android:configChanges
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:39:13-59
+	android:name
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:38:13-94
+activity#com.qualcomm.ftccommon.ViewLogsActivity
+ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:43:9-48:20
+	android:label
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:47:13-55
+	android:exported
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:46:13-36
+	android:configChanges
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:45:13-59
+	android:name
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:44:13-67
+activity#com.qualcomm.ftccommon.configuration.FtcConfigurationActivity
+ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:49:9-53:20
+	android:label
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:52:13-45
+	android:configChanges
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:51:13-59
+	android:name
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:50:13-89
+activity#com.qualcomm.ftccommon.configuration.FtcNewFileActivity
+ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:54:9-58:20
+	android:label
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:57:13-45
+	android:configChanges
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:56:13-59
+	android:name
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:55:13-83
+activity#com.qualcomm.ftccommon.ConfigWifiDirectActivity
+ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:59:9-62:73
+	android:label
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:62:13-70
+	android:exported
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:61:13-36
+	android:name
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:60:13-75
+activity#com.qualcomm.ftccommon.FtcAdvancedRCSettingsActivity
+ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:63:9-67:20
+	android:label
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:66:13-60
+	android:exported
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:65:13-36
+	android:name
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:64:13-80
+activity#com.qualcomm.ftccommon.FtcLynxFirmwareUpdateActivity
+ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:68:9-71:20
+	android:exported
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:70:13-36
+	android:name
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:69:13-80
+activity#com.qualcomm.ftccommon.FtcLynxModuleAddressUpdateActivity
+ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:72:9-75:20
+	android:exported
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:74:13-36
+	android:name
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:73:13-85
+activity#com.qualcomm.ftccommon.FtcWifiDirectChannelSelectorActivity
+ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:76:9-80:20
+	android:label
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:79:13-73
+	android:exported
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:78:13-36
+	android:name
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:77:13-87
+activity#com.qualcomm.ftccommon.FtcWifiDirectRememberedGroupsActivity
+ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:81:9-85:20
+	android:label
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:84:13-81
+	android:exported
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:83:13-36
+	android:name
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:82:13-88
+activity#com.qualcomm.ftccommon.AboutActivity
+ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:86:9-89:20
+	android:label
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:88:13-51
+	android:name
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:87:13-64
+activity#com.qualcomm.ftccommon.FtcAboutActivity
+ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:90:9-93:20
+	android:label
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:92:13-55
+	android:name
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:91:13-67
+activity#com.qualcomm.ftccommon.configuration.EditSwapUsbDevices
+ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:94:9-99:20
+	android:label
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:97:13-63
+	android:windowSoftInputMode
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:98:13-54
+	android:configChanges
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:96:13-59
+	android:name
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:95:13-83
+activity#com.qualcomm.ftccommon.configuration.EditMotorControllerActivity
+ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:100:9-105:20
+	android:label
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:103:13-67
+	android:windowSoftInputMode
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:104:13-54
+	android:configChanges
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:102:13-59
+	android:name
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:101:13-92
+activity#com.qualcomm.ftccommon.configuration.EditLegacyMotorControllerActivity
+ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:106:9-111:20
+	android:label
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:109:13-67
+	android:windowSoftInputMode
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:110:13-54
+	android:configChanges
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:108:13-59
+	android:name
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:107:13-98
+activity#com.qualcomm.ftccommon.configuration.EditMotorListActivity
+ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:112:9-117:20
+	android:label
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:115:13-67
+	android:windowSoftInputMode
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:116:13-54
+	android:configChanges
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:114:13-59
+	android:name
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:113:13-86
+activity#com.qualcomm.ftccommon.configuration.EditServoControllerActivity
+ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:118:9-123:20
+	android:label
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:121:13-67
+	android:windowSoftInputMode
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:122:13-67
+	android:configChanges
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:120:13-59
+	android:name
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:119:13-92
+activity#com.qualcomm.ftccommon.configuration.EditLegacyServoControllerActivity
+ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:124:9-129:20
+	android:label
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:127:13-67
+	android:windowSoftInputMode
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:128:13-67
+	android:configChanges
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:126:13-59
+	android:name
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:125:13-98
+activity#com.qualcomm.ftccommon.configuration.EditServoListActivity
+ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:130:9-135:20
+	android:label
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:133:13-67
+	android:windowSoftInputMode
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:134:13-67
+	android:configChanges
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:132:13-59
+	android:name
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:131:13-86
+activity#com.qualcomm.ftccommon.configuration.EditLegacyModuleControllerActivity
+ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:136:9-141:20
+	android:label
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:139:13-75
+	android:windowSoftInputMode
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:140:13-67
+	android:configChanges
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:138:13-59
+	android:name
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:137:13-99
+activity#com.qualcomm.ftccommon.configuration.EditMatrixControllerActivity
+ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:142:9-147:20
+	android:label
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:145:13-68
+	android:windowSoftInputMode
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:146:13-67
+	android:configChanges
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:144:13-59
+	android:name
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:143:13-93
+activity#com.qualcomm.ftccommon.configuration.EditDeviceInterfaceModuleActivity
+ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:148:9-153:20
+	android:label
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:151:13-90
+	android:windowSoftInputMode
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:152:13-67
+	android:configChanges
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:150:13-59
+	android:name
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:149:13-98
+activity#com.qualcomm.ftccommon.configuration.EditLynxModuleActivity
+ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:154:9-159:20
+	android:label
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:157:13-73
+	android:windowSoftInputMode
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:158:13-67
+	android:configChanges
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:156:13-59
+	android:name
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:155:13-87
+activity#com.qualcomm.ftccommon.configuration.EditLynxUsbDeviceActivity
+ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:160:9-165:20
+	android:label
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:163:13-66
+	android:windowSoftInputMode
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:164:13-67
+	android:configChanges
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:162:13-59
+	android:name
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:161:13-90
+activity#com.qualcomm.ftccommon.configuration.EditWebcamActivity
+ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:166:9-171:20
+	android:label
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:169:13-57
+	android:windowSoftInputMode
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:170:13-67
+	android:configChanges
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:168:13-59
+	android:name
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:167:13-83
+activity#com.qualcomm.ftccommon.configuration.EditPWMDevicesActivity
+ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:172:9-177:20
+	android:label
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:175:13-62
+	android:windowSoftInputMode
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:176:13-67
+	android:configChanges
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:174:13-59
+	android:name
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:173:13-87
+activity#com.qualcomm.ftccommon.configuration.EditAnalogInputDevicesActivity
+ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:178:9-183:20
+	android:label
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:181:13-71
+	android:windowSoftInputMode
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:182:13-67
+	android:configChanges
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:180:13-59
+	android:name
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:179:13-95
+activity#com.qualcomm.ftccommon.configuration.EditDigitalDevicesActivity
+ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:184:9-189:20
+	android:label
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:187:13-66
+	android:windowSoftInputMode
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:188:13-67
+	android:configChanges
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:186:13-59
+	android:name
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:185:13-91
+activity#com.qualcomm.ftccommon.configuration.EditDigitalDevicesActivityLynx
+ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:190:9-195:20
+	android:label
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:193:13-71
+	android:windowSoftInputMode
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:194:13-67
+	android:configChanges
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:192:13-59
+	android:name
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:191:13-95
+activity#com.qualcomm.ftccommon.configuration.EditI2cDevicesActivity
+ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:196:9-201:20
+	android:label
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:199:13-62
+	android:windowSoftInputMode
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:200:13-67
+	android:configChanges
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:198:13-59
+	android:name
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:197:13-87
+activity#com.qualcomm.ftccommon.configuration.EditI2cDevicesActivityLynx
+ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:202:9-207:20
+	android:label
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:205:13-62
+	android:windowSoftInputMode
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:206:13-67
+	android:configChanges
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:204:13-59
+	android:name
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:203:13-91
+activity#com.qualcomm.ftccommon.configuration.EditAnalogOutputDevicesActivity
+ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:208:9-213:20
+	android:label
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:211:13-72
+	android:windowSoftInputMode
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:212:13-67
+	android:configChanges
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:210:13-59
+	android:name
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:209:13-96
+receiver#org.firstinspires.ftc.ftccommon.internal.RunOnBoot
+ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:216:9-227:20
+	android:enabled
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:218:13-35
+	android:exported
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:219:13-36
+	android:permission
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:220:13-75
+	android:name
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:217:13-78
+intent-filter#action:name:android.intent.action.BOOT_COMPLETED+action:name:android.intent.action.QUICKBOOT_POWERON+category:name:android.intent.category.DEFAULT
+ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:221:13-226:29
+category#android.intent.category.DEFAULT
+ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:222:17-76
+	android:name
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:222:27-73
+action#android.intent.action.BOOT_COMPLETED
+ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:224:17-79
+	android:name
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:224:25-76
+action#android.intent.action.QUICKBOOT_POWERON
+ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:225:17-82
+	android:name
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:225:25-79
+service#org.firstinspires.ftc.ftccommon.internal.FtcRobotControllerWatchdogService
+ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:230:9-232:38
+	android:enabled
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:232:13-35
+	android:name
+		ADDED from [:FtcCommon-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/85695972c9b2333c43cfd5d54a1f9704/FtcCommon-release/AndroidManifest.xml:231:13-102
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from [:Inspection-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/bbe3a4f6ca7efa02c4144a2d43007cea/Inspection-release/AndroidManifest.xml:12:5-74
+	android:name
+		ADDED from [:Inspection-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/bbe3a4f6ca7efa02c4144a2d43007cea/Inspection-release/AndroidManifest.xml:12:22-71
+activity#org.firstinspires.inspection.DsInspectionActivity
+ADDED from [:Inspection-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/bbe3a4f6ca7efa02c4144a2d43007cea/Inspection-release/AndroidManifest.xml:20:9-24:20
+	android:label
+		ADDED from [:Inspection-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/bbe3a4f6ca7efa02c4144a2d43007cea/Inspection-release/AndroidManifest.xml:23:13-56
+	android:configChanges
+		ADDED from [:Inspection-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/bbe3a4f6ca7efa02c4144a2d43007cea/Inspection-release/AndroidManifest.xml:22:13-59
+	android:name
+		ADDED from [:Inspection-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/bbe3a4f6ca7efa02c4144a2d43007cea/Inspection-release/AndroidManifest.xml:21:13-77
+activity#org.firstinspires.inspection.RcInspectionActivity
+ADDED from [:Inspection-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/bbe3a4f6ca7efa02c4144a2d43007cea/Inspection-release/AndroidManifest.xml:25:9-29:20
+	android:label
+		ADDED from [:Inspection-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/bbe3a4f6ca7efa02c4144a2d43007cea/Inspection-release/AndroidManifest.xml:28:13-56
+	android:configChanges
+		ADDED from [:Inspection-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/bbe3a4f6ca7efa02c4144a2d43007cea/Inspection-release/AndroidManifest.xml:27:13-59
+	android:name
+		ADDED from [:Inspection-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/bbe3a4f6ca7efa02c4144a2d43007cea/Inspection-release/AndroidManifest.xml:26:13-77
+activity#org.firstinspires.ftc.ftccommon.internal.ProgramAndManageActivity
+ADDED from [:Blocks-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/699bb0d11cbf36f56722687fc3efc93e/Blocks-release/AndroidManifest.xml:19:9-23:20
+	android:label
+		ADDED from [:Blocks-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/699bb0d11cbf36f56722687fc3efc93e/Blocks-release/AndroidManifest.xml:22:13-64
+	android:configChanges
+		ADDED from [:Blocks-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/699bb0d11cbf36f56722687fc3efc93e/Blocks-release/AndroidManifest.xml:21:13-59
+	android:name
+		ADDED from [:Blocks-release:] /Users/jasonwong/.gradle/caches/transforms-2/files-2.1/699bb0d11cbf36f56722687fc3efc93e/Blocks-release/AndroidManifest.xml:20:13-93

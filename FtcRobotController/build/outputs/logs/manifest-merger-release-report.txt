@@ -1,0 +1,119 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:2:1-64:12
+INJECTED from /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:2:1-64:12
+INJECTED from /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:2:1-64:12
+INJECTED from /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:2:1-64:12
+INJECTED from /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:2:1-64:12
+INJECTED from /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:2:1-64:12
+INJECTED from /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:2:1-64:12
+	package
+		ADDED from /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:4:11-52
+		INJECTED from /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml
+		INJECTED from /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml
+	android:versionName
+		ADDED from /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:6:11-36
+		INJECTED from /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml
+		INJECTED from /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:3:11-57
+	xmlns:android
+		ADDED from /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:5:11-35
+		INJECTED from /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml
+		INJECTED from /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:8:3-79
+	android:name
+		ADDED from /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:8:20-76
+application
+ADDED from /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:10:3-62:17
+	android:label
+		ADDED from /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:14:5-37
+	android:largeHeap
+		ADDED from /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:12:5-29
+	android:icon
+		ADDED from /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:13:5-41
+	android:allowBackup
+		ADDED from /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:11:5-31
+	android:theme
+		ADDED from /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:15:5-41
+meta-data#org.firstinspires.latestSupportedControlHubVersion
+ADDED from /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:18:5-20:29
+	android:value
+		ADDED from /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:20:9-26
+	android:name
+		ADDED from /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:19:9-74
+activity#org.firstinspires.ftc.robotcontroller.internal.PermissionValidatorWrapper
+ADDED from /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:23:5-34:16
+	android:screenOrientation
+		ADDED from /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:24:15-51
+	android:label
+		ADDED from /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:26:15-47
+	android:launchMode
+		ADDED from /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:27:15-46
+	android:configChanges
+		ADDED from /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:25:15-61
+	android:name
+		ADDED from /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:23:15-103
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:29:7-32:23
+category#android.intent.category.LAUNCHER
+ADDED from /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:30:9-69
+	android:name
+		ADDED from /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:30:19-66
+action#android.intent.action.MAIN
+ADDED from /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:31:9-61
+	android:name
+		ADDED from /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:31:17-58
+activity#org.firstinspires.ftc.robotcontroller.internal.FtcRobotControllerActivity
+ADDED from /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:36:5-55:16
+	android:screenOrientation
+		ADDED from /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:38:7-43
+	android:label
+		ADDED from /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:40:7-39
+	android:launchMode
+		ADDED from /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:41:7-38
+	android:configChanges
+		ADDED from /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:39:7-53
+	android:name
+		ADDED from /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:37:7-95
+intent-filter#action:name:android.hardware.usb.action.USB_DEVICE_ATTACHED
+ADDED from /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:43:7-45:23
+action#android.hardware.usb.action.USB_DEVICE_ATTACHED
+ADDED from /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:44:9-82
+	android:name
+		ADDED from /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:44:17-79
+meta-data#android.hardware.usb.action.USB_DEVICE_ATTACHED
+ADDED from /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:47:7-49:49
+	android:resource
+		ADDED from /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:49:9-46
+	android:name
+		ADDED from /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:48:9-71
+meta-data#org.firstinspires.main.entry
+ADDED from /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:52:7-54:34
+	android:value
+		ADDED from /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:54:11-31
+	android:name
+		ADDED from /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:53:11-54
+service#com.qualcomm.ftccommon.FtcRobotControllerService
+ADDED from /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:58:5-60:32
+	android:enabled
+		ADDED from /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:60:7-29
+	android:name
+		ADDED from /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:59:7-70
+uses-sdk
+INJECTED from /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml
+INJECTED from /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml
+INJECTED from /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml
+INJECTED from /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml
+		ADDED from /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml
+		INJECTED from /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml
+		ADDED from /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml
+		INJECTED from /Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml

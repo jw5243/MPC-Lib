@@ -1,5 +1,6 @@
 package com.horse.mpclib.debugging;
 
+import com.horse.mpclib.examples.CascadeLinearlyExtendingRobot;
 import com.horse.mpclib.examples.RobotMPC;
 import com.horse.mpclib.lib.geometry.Line2d;
 import com.horse.mpclib.lib.geometry.Translation2d;

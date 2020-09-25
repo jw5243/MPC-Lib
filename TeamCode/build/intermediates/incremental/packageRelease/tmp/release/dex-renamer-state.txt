@@ -1,0 +1,4 @@
+#Fri Sep 25 15:44:19 EDT 2020
+base.0=/Users/jasonwong/Documents/GitHub/MPC-Lib/TeamCode/build/intermediates/dex/release/mergeDexRelease/out/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

@@ -1,0 +1,107 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    xmlns:tools="http://schemas.android.com/tools"
+4    package="com.qualcomm.ftcrobotcontroller"
+5    android:versionCode="36"
+6    android:versionName="5.4" >
+7
+8    <uses-sdk
+9        android:minSdkVersion="24"
+9-->/Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml
+10        android:targetSdkVersion="28" />
+10-->/Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml
+11
+12    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+12-->/Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:8:3-79
+12-->/Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:8:20-76
+13
+14    <application
+14-->/Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:10:3-62:17
+15        android:allowBackup="true"
+15-->/Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:11:5-31
+16        android:icon="@drawable/ic_launcher"
+16-->/Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:13:5-41
+17        android:label="@string/app_name"
+17-->/Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:14:5-37
+18        android:largeHeap="true"
+18-->/Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:12:5-29
+19        android:theme="@style/AppThemeRedRC" >
+19-->/Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:15:5-41
+20
+21        <!-- Indicates to the ControlHubUpdater what the latest version of the Control Hub is that this app supports -->
+22        <meta-data
+22-->/Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:18:5-20:29
+23            android:name="org.firstinspires.latestSupportedControlHubVersion"
+23-->/Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:19:9-74
+24            android:value="1" />
+24-->/Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:20:9-26
+25
+26        <!-- The main robot controller activity -->
+27        <activity
+27-->/Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:23:5-34:16
+28            android:name="org.firstinspires.ftc.robotcontroller.internal.PermissionValidatorWrapper"
+28-->/Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:23:15-103
+29            android:configChanges="orientation|screenSize"
+29-->/Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:25:15-61
+30            android:label="@string/app_name"
+30-->/Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:26:15-47
+31            android:launchMode="singleTask"
+31-->/Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:27:15-46
+32            android:screenOrientation="fullUser" >
+32-->/Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:24:15-51
+33            <intent-filter>
+33-->/Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:29:7-32:23
+34                <category android:name="android.intent.category.LAUNCHER" />
+34-->/Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:30:9-69
+34-->/Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:30:19-66
+35
+36                <action android:name="android.intent.action.MAIN" />
+36-->/Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:31:9-61
+36-->/Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:31:17-58
+37            </intent-filter>
+38        </activity>
+39        <activity
+39-->/Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:36:5-55:16
+40            android:name="org.firstinspires.ftc.robotcontroller.internal.FtcRobotControllerActivity"
+40-->/Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:37:7-95
+41            android:configChanges="orientation|screenSize"
+41-->/Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:39:7-53
+42            android:label="@string/app_name"
+42-->/Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:40:7-39
+43            android:launchMode="singleTask"
+43-->/Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:41:7-38
+44            android:screenOrientation="fullUser" >
+44-->/Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:38:7-43
+45            <intent-filter>
+45-->/Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:43:7-45:23
+46                <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+46-->/Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:44:9-82
+46-->/Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:44:17-79
+47            </intent-filter>
+48
+49            <meta-data
+49-->/Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:47:7-49:49
+50                android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
+50-->/Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:48:9-71
+51                android:resource="@xml/device_filter" />
+51-->/Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:49:9-46
+52
+53            <!-- org.firstinspires.main.entry indicates that this app is compatible with the Dragonboard Control Hub -->
+54            <meta-data
+54-->/Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:52:7-54:34
+55                android:name="org.firstinspires.main.entry"
+55-->/Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:53:11-54
+56                android:value="true" />
+56-->/Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:54:11-31
+57        </activity>
+58
+59        <!-- The robot controller service in which most of the robot functionality is managed -->
+60        <service
+60-->/Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:58:5-60:32
+61            android:name="com.qualcomm.ftccommon.FtcRobotControllerService"
+61-->/Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:59:7-70
+62            android:enabled="true" />
+62-->/Users/jasonwong/Documents/GitHub/MPC-Lib/FtcRobotController/src/main/AndroidManifest.xml:60:7-29
+63    </application>
+64
+65</manifest>

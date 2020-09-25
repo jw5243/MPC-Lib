@@ -1,16 +1,140 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="82e69647-51b5-4df3-baea-73f717676d10" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/controllers/MecanumMPCController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/controllers/ControllerBehavior.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/physics/RingSimulator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FtcRobotController/FtcRobotController.iml" beforeDir="false" afterPath="$PROJECT_DIR$/FtcRobotController/FtcRobotController.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FtcRobotController/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/FtcRobotController/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FtcRobotController/build.release.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/FtcRobotController/build.release.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/compile_library_classes/debug/classes.jar" beforeDir="false" afterPath="$PROJECT_DIR$/FtcRobotController/build/intermediates/compile_library_classes/debug/classes.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/compile_only_not_namespaced_r_class_jar/debug/R.jar" beforeDir="false" afterPath="$PROJECT_DIR$/FtcRobotController/build/intermediates/compile_only_not_namespaced_r_class_jar/debug/R.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/javac/debug/classes/org/firstinspires/ftc/robotcontroller/external/samples/ConceptTensorFlowObjectDetection.class" beforeDir="false" afterPath="$PROJECT_DIR$/FtcRobotController/build/intermediates/javac/debug/classes/org/firstinspires/ftc/robotcontroller/external/samples/ConceptTensorFlowObjectDetection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/javac/debug/classes/org/firstinspires/ftc/robotcontroller/external/samples/ConceptTensorFlowObjectDetectionWebcam.class" beforeDir="false" afterPath="$PROJECT_DIR$/FtcRobotController/build/intermediates/javac/debug/classes/org/firstinspires/ftc/robotcontroller/external/samples/ConceptTensorFlowObjectDetectionWebcam.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/javac/debug/classes/org/firstinspires/ftc/robotcontroller/internal/FtcRobotControllerActivity$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/FtcRobotController/build/intermediates/javac/debug/classes/org/firstinspires/ftc/robotcontroller/internal/FtcRobotControllerActivity$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/javac/debug/classes/org/firstinspires/ftc/robotcontroller/internal/FtcRobotControllerActivity$2$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/FtcRobotController/build/intermediates/javac/debug/classes/org/firstinspires/ftc/robotcontroller/internal/FtcRobotControllerActivity$2$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/javac/debug/classes/org/firstinspires/ftc/robotcontroller/internal/FtcRobotControllerActivity$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/FtcRobotController/build/intermediates/javac/debug/classes/org/firstinspires/ftc/robotcontroller/internal/FtcRobotControllerActivity$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/javac/debug/classes/org/firstinspires/ftc/robotcontroller/internal/FtcRobotControllerActivity$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/FtcRobotController/build/intermediates/javac/debug/classes/org/firstinspires/ftc/robotcontroller/internal/FtcRobotControllerActivity$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/javac/debug/classes/org/firstinspires/ftc/robotcontroller/internal/FtcRobotControllerActivity$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/FtcRobotController/build/intermediates/javac/debug/classes/org/firstinspires/ftc/robotcontroller/internal/FtcRobotControllerActivity$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/javac/debug/classes/org/firstinspires/ftc/robotcontroller/internal/FtcRobotControllerActivity$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/FtcRobotController/build/intermediates/javac/debug/classes/org/firstinspires/ftc/robotcontroller/internal/FtcRobotControllerActivity$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/javac/debug/classes/org/firstinspires/ftc/robotcontroller/internal/FtcRobotControllerActivity$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/FtcRobotController/build/intermediates/javac/debug/classes/org/firstinspires/ftc/robotcontroller/internal/FtcRobotControllerActivity$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/javac/debug/classes/org/firstinspires/ftc/robotcontroller/internal/FtcRobotControllerActivity$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/FtcRobotController/build/intermediates/javac/debug/classes/org/firstinspires/ftc/robotcontroller/internal/FtcRobotControllerActivity$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/javac/debug/classes/org/firstinspires/ftc/robotcontroller/internal/FtcRobotControllerActivity$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/FtcRobotController/build/intermediates/javac/debug/classes/org/firstinspires/ftc/robotcontroller/internal/FtcRobotControllerActivity$8.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/javac/debug/classes/org/firstinspires/ftc/robotcontroller/internal/FtcRobotControllerActivity$RobotRestarter.class" beforeDir="false" afterPath="$PROJECT_DIR$/FtcRobotController/build/intermediates/javac/debug/classes/org/firstinspires/ftc/robotcontroller/internal/FtcRobotControllerActivity$RobotRestarter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/javac/debug/classes/org/firstinspires/ftc/robotcontroller/internal/FtcRobotControllerActivity$SharedPreferencesListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/FtcRobotController/build/intermediates/javac/debug/classes/org/firstinspires/ftc/robotcontroller/internal/FtcRobotControllerActivity$SharedPreferencesListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/javac/debug/classes/org/firstinspires/ftc/robotcontroller/internal/FtcRobotControllerActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/FtcRobotController/build/intermediates/javac/debug/classes/org/firstinspires/ftc/robotcontroller/internal/FtcRobotControllerActivity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/manifest_merge_blame_file/debugAndroidTest/manifest-merger-blame-debug-androidTest-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/FtcRobotController/build/intermediates/manifest_merge_blame_file/debugAndroidTest/manifest-merger-blame-debug-androidTest-report.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FtcRobotController/build/intermediates/merged_manifests/debugAndroidTest/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FtcRobotController/build/intermediates/merged_manifests/debugAndroidTest/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/external/samples/ConceptTensorFlowObjectDetection.java" beforeDir="false" afterPath="$PROJECT_DIR$/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/external/samples/ConceptTensorFlowObjectDetection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/external/samples/ConceptTensorFlowObjectDetectionWebcam.java" beforeDir="false" afterPath="$PROJECT_DIR$/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/external/samples/ConceptTensorFlowObjectDetectionWebcam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/internal/FtcRobotControllerActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/internal/FtcRobotControllerActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/debugging/ComputerDebugger.java" beforeDir="false" afterPath="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/debugging/ComputerDebugger.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/examples/CascadeLinearlyExtendingRobot.java" beforeDir="false" afterPath="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/examples/CascadeLinearlyExtendingRobot.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/examples/Robot.java" beforeDir="false" afterPath="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/examples/Robot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/examples/RobotMPC.java" beforeDir="false" afterPath="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/examples/RobotMPC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/control/MPCSolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/control/MPCSolver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/controllers/MecanumMPCController.java" beforeDir="false" afterPath="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/controllers/MecanumMPCController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TeamCode/TeamCode.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/TeamCode.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/MPCExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/MPCExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/bundle_manifest/debug/processDebugManifest/bundle-manifest/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/bundle_manifest/debug/processDebugManifest/bundle-manifest/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/mergeDebugResources/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/incremental/mergeDebugResources/merger.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/instant_app_manifest/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/instant_app_manifest/debug/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/javac/debug/classes/org/firstinspires/ftc/teamcode/debugging/ComputerDebugger.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/javac/debug/classes/org/firstinspires/ftc/teamcode/debugging/IllegalMessageTypeException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/javac/debug/classes/org/firstinspires/ftc/teamcode/debugging/MessageOption.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/javac/debug/classes/org/firstinspires/ftc/teamcode/debugging/RobotDebug.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/javac/debug/classes/org/firstinspires/ftc/teamcode/debugging/UdpServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/javac/debug/classes/org/firstinspires/ftc/teamcode/lib/control/ControlConstants.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/javac/debug/classes/org/firstinspires/ftc/teamcode/lib/control/DynamicModel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/javac/debug/classes/org/firstinspires/ftc/teamcode/lib/control/LinearExtensionLQR.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/javac/debug/classes/org/firstinspires/ftc/teamcode/lib/control/MecanumDriveILQR.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/javac/debug/classes/org/firstinspires/ftc/teamcode/lib/control/MecanumDriveMPC.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/javac/debug/classes/org/firstinspires/ftc/teamcode/lib/control/MecanumRunnableLQR.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/javac/debug/classes/org/firstinspires/ftc/teamcode/lib/control/MecanumRunnableMPC.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/javac/debug/classes/org/firstinspires/ftc/teamcode/lib/control/Obstacle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/javac/debug/classes/org/firstinspires/ftc/teamcode/lib/control/OldMecanumDriveMPC.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/javac/debug/classes/org/firstinspires/ftc/teamcode/lib/control/TankDriveILQR.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/javac/debug/classes/org/firstinspires/ftc/teamcode/lib/control/TankDriveMPC.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/javac/debug/classes/org/firstinspires/ftc/teamcode/lib/control/TankRunnableLQR.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/javac/debug/classes/org/firstinspires/ftc/teamcode/lib/control/TankRunnableMPC.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/javac/debug/classes/org/firstinspires/ftc/teamcode/lib/control/Waypoint.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/javac/debug/classes/org/firstinspires/ftc/teamcode/lib/drivers/Motor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/javac/debug/classes/org/firstinspires/ftc/teamcode/lib/geometry/Circle2d.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/javac/debug/classes/org/firstinspires/ftc/teamcode/lib/geometry/Displacement1d.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/javac/debug/classes/org/firstinspires/ftc/teamcode/lib/geometry/ICurvature.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/javac/debug/classes/org/firstinspires/ftc/teamcode/lib/geometry/IPose2d.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/javac/debug/classes/org/firstinspires/ftc/teamcode/lib/geometry/IRotation2d.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/javac/debug/classes/org/firstinspires/ftc/teamcode/lib/geometry/ITranslation2d.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/javac/debug/classes/org/firstinspires/ftc/teamcode/lib/geometry/Line2d.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/javac/debug/classes/org/firstinspires/ftc/teamcode/lib/geometry/Pose2d.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/javac/debug/classes/org/firstinspires/ftc/teamcode/lib/geometry/Pose2dWithCurvature.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/javac/debug/classes/org/firstinspires/ftc/teamcode/lib/geometry/Rectangle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/javac/debug/classes/org/firstinspires/ftc/teamcode/lib/geometry/Rotation2d.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/javac/debug/classes/org/firstinspires/ftc/teamcode/lib/geometry/State.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/javac/debug/classes/org/firstinspires/ftc/teamcode/lib/geometry/Translation2d.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/javac/debug/classes/org/firstinspires/ftc/teamcode/lib/geometry/Twist2d.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/javac/debug/classes/org/firstinspires/ftc/teamcode/lib/motion/IMotionProfile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/javac/debug/classes/org/firstinspires/ftc/teamcode/lib/motion/ParametricFunction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/javac/debug/classes/org/firstinspires/ftc/teamcode/lib/motion/ResidualVibrationReductionMotionProfilerGenerator$Phase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/javac/debug/classes/org/firstinspires/ftc/teamcode/lib/motion/ResidualVibrationReductionMotionProfilerGenerator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/javac/debug/classes/org/firstinspires/ftc/teamcode/lib/motion/SCurveMotionProfilerGenerator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/javac/debug/classes/org/firstinspires/ftc/teamcode/lib/motion/Spline$Axis.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/javac/debug/classes/org/firstinspires/ftc/teamcode/lib/motion/Spline.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/javac/debug/classes/org/firstinspires/ftc/teamcode/lib/motion/SplineGenerator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/javac/debug/classes/org/firstinspires/ftc/teamcode/lib/motion/TrapezoidalMotionProfileGenerator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/javac/debug/classes/org/firstinspires/ftc/teamcode/lib/physics/CoefficientManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/javac/debug/classes/org/firstinspires/ftc/teamcode/lib/physics/LinearExtensionModel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/javac/debug/classes/org/firstinspires/ftc/teamcode/lib/physics/MecanumDriveModel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/javac/debug/classes/org/firstinspires/ftc/teamcode/lib/physics/MotorModel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/javac/debug/classes/org/firstinspires/ftc/teamcode/lib/physics/OldTankDriveModel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/javac/debug/classes/org/firstinspires/ftc/teamcode/lib/physics/TankDriveModel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/javac/debug/classes/org/firstinspires/ftc/teamcode/lib/util/Interpolable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/javac/debug/classes/org/firstinspires/ftc/teamcode/lib/util/MatrixUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/javac/debug/classes/org/firstinspires/ftc/teamcode/lib/util/Time.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/javac/debug/classes/org/firstinspires/ftc/teamcode/lib/util/TimeProfiler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/javac/debug/classes/org/firstinspires/ftc/teamcode/lib/util/TimeUnits.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/javac/debug/classes/org/firstinspires/ftc/teamcode/lib/util/TimeUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/javac/debug/classes/org/firstinspires/ftc/teamcode/lib/util/Units.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/javac/debug/classes/org/firstinspires/ftc/teamcode/lib/util/Util.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/javac/debug/classes/org/firstinspires/ftc/teamcode/main/CascadeLinearlyExtendingRobot.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/javac/debug/classes/org/firstinspires/ftc/teamcode/main/CascadeLinearlyExtendingRobotMPC.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/javac/debug/classes/org/firstinspires/ftc/teamcode/main/CascadeLinearlyExtendingRobotPractice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/javac/debug/classes/org/firstinspires/ftc/teamcode/main/ContinuousLinearlyExtendingRobot.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/javac/debug/classes/org/firstinspires/ftc/teamcode/main/GAMPCTuner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/javac/debug/classes/org/firstinspires/ftc/teamcode/main/GASplineTuner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/javac/debug/classes/org/firstinspires/ftc/teamcode/main/PurePursuitRobot.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/javac/debug/classes/org/firstinspires/ftc/teamcode/main/Robot.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/javac/debug/classes/org/firstinspires/ftc/teamcode/main/RobotGAMPC.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/javac/debug/classes/org/firstinspires/ftc/teamcode/main/RobotGVF.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/javac/debug/classes/org/firstinspires/ftc/teamcode/main/RobotILQR.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/javac/debug/classes/org/firstinspires/ftc/teamcode/main/RobotMPC.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/javac/debug/classes/org/firstinspires/ftc/teamcode/main/RobotPIDF.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/javac/debug/classes/org/firstinspires/ftc/teamcode/main/TankDriveAutonomousILQR.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/javac/debug/classes/org/firstinspires/ftc/teamcode/main/TankDriveAutonomousMPC.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/javac/debug/classes/org/firstinspires/ftc/teamcode/main/TankDriveRobot.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/merged_manifests/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/merged_manifests/debug/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/intermediates/processed_res/debug/processDebugResources/out/resources-debug.ap_" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/intermediates/processed_res/debug/processDebugResources/out/resources-debug.ap_" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeamCode/build/outputs/logs/manifest-merger-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TeamCode/build/outputs/logs/manifest-merger-debug-report.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.common.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.common.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/javadoc/org/firstinspires/ftc/robotcore/external/Telemetry.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/javadoc/org/firstinspires/ftc/robotcore/external/Telemetry.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,8 +161,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/debugging/ComputerDebugger.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="185">
+              <caret line="20" column="47" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -47,28 +171,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/physics/MotorModel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2490">
-              <caret line="168" column="11" selection-start-line="168" selection-start-column="11" selection-end-line="168" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/examples/RobotMPC.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="36" column="22" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/MPCExample.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1050">
-              <caret line="70" column="46" selection-start-line="70" selection-start-column="46" selection-end-line="70" selection-end-column="46" />
+            <state relative-caret-position="660">
+              <caret line="44" column="39" lean-forward="true" selection-start-line="44" selection-start-column="39" selection-end-line="44" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#3138#3139#0" expanded="true" />
@@ -78,64 +184,61 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/controllers/MecanumMPCController.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/build.common.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="558">
+              <caret line="98" column="21" lean-forward="true" selection-start-line="98" selection-start-column="21" selection-end-line="98" selection-end-column="21" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#443#444#0" expanded="true" />
-                <element signature="e#475#476#0" expanded="true" />
-                <element signature="e#528#529#0" expanded="true" />
-                <element signature="e#570#571#0" expanded="true" />
-                <element signature="e#613#614#0" expanded="true" />
-                <element signature="e#647#648#0" expanded="true" />
-                <element signature="e#706#707#0" expanded="true" />
-                <element signature="e#752#753#0" expanded="true" />
-                <element signature="e#807#808#0" expanded="true" />
-                <element signature="e#847#848#0" expanded="true" />
+                <element signature="e#0#656#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/examples/Robot.java">
+        <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/physics/MotorModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="81" column="10" selection-start-line="81" selection-start-column="10" selection-end-line="81" selection-end-column="10" />
+            <state relative-caret-position="517">
+              <caret line="389" column="5" selection-start-line="389" selection-start-column="5" selection-end-line="389" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/examples/RobotMPC.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="517">
+              <caret line="103" column="13" selection-start-line="103" selection-start-column="13" selection-end-line="103" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/physics/MecanumDriveModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="35" column="41" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/physics/RingSimulator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="765">
+              <caret line="51" column="26" selection-start-line="51" selection-start-column="26" selection-end-line="51" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/controllers/MecanumMPCController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="41" column="85" selection-start-line="41" selection-start-column="85" selection-end-line="41" selection-end-column="85" />
               <folding>
-                <element signature="e#5087#5088#0" expanded="true" />
-                <element signature="e#5115#5116#0" expanded="true" />
-                <element signature="e#5144#5145#0" expanded="true" />
-                <element signature="e#5169#5170#0" expanded="true" />
-                <element signature="e#5214#5215#0" expanded="true" />
-                <element signature="e#5249#5250#0" expanded="true" />
-                <element signature="e#5311#5312#0" expanded="true" />
-                <element signature="e#5359#5360#0" expanded="true" />
-                <element signature="e#5411#5412#0" expanded="true" />
-                <element signature="e#5447#5448#0" expanded="true" />
-                <element signature="e#5492#5493#0" expanded="true" />
-                <element signature="e#5520#5521#0" expanded="true" />
-                <element signature="e#5575#5576#0" expanded="true" />
-                <element signature="e#5610#5611#0" expanded="true" />
-                <element signature="e#5665#5666#0" expanded="true" />
-                <element signature="e#5698#5699#0" expanded="true" />
-                <element signature="e#5858#5859#0" expanded="true" />
-                <element signature="e#5886#5887#0" expanded="true" />
-                <element signature="e#5941#5942#0" expanded="true" />
-                <element signature="e#5976#5977#0" expanded="true" />
-                <element signature="e#6007#6008#0" expanded="true" />
-                <element signature="e#6044#6045#0" expanded="true" />
-                <element signature="e#6098#6099#0" expanded="true" />
-                <element signature="e#6135#6136#0" expanded="true" />
-                <element signature="e#6306#6307#0" expanded="true" />
-                <element signature="e#6341#6342#0" expanded="true" />
-                <element signature="e#6392#6393#0" expanded="true" />
-                <element signature="e#6424#6425#0" expanded="true" />
-                <element signature="e#6489#6490#0" expanded="true" />
-                <element signature="e#6532#6533#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -147,6 +250,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Enum" />
+        <option value="Kotlin File" />
         <option value="Class" />
       </list>
     </option>
@@ -173,13 +278,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/TeamCode/build.gradle" />
-        <option value="$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/main/Robot.java" />
-        <option value="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/main/CascadeLinearlyExtendingRobot.java" />
-        <option value="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/main/CascadeLinearlyExtendingRobotMPC.java" />
-        <option value="$PROJECT_DIR$/MPCLib/src/main/java/org/firstinspires/ftc/teamcode/lib/util/TimeUtil.java" />
-        <option value="$PROJECT_DIR$/MPCLib/src/main/java/org/firstinspires/ftc/teamcode/lib/util/Util.java" />
-        <option value="$PROJECT_DIR$/MPCLib/src/main/java/org/firstinspires/ftc/teamcode/debugging/UdpServer.java" />
         <option value="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/main/Robot.java" />
         <option value="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/main/GAMPCTuner.java" />
         <option value="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/main/GASplineTuner.java" />
@@ -200,8 +298,6 @@
         <option value="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/states/SimpleState.java" />
         <option value="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/states/StateMachine.java" />
         <option value="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/states/TimedState.java" />
-        <option value="$PROJECT_DIR$/FtcRobotController/build.gradle" />
-        <option value="$PROJECT_DIR$/FtcRobotController/build.release.gradle" />
         <option value="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/physics/MotorModel.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/control/RiccatiUtil.java" />
@@ -209,29 +305,37 @@
         <option value="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/control/deprecated/OldMecanumDriveMPC.java" />
         <option value="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/control/KalmanFilter.java" />
         <option value="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/control/LQRSolver.java" />
-        <option value="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/control/MPCSolver.java" />
         <option value="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/util/Util.java" />
         <option value="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/control/RunnableMPC.java" />
         <option value="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/physics/PWMMotorModel.java" />
-        <option value="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/physics/MecanumDriveModel.java" />
         <option value="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/util/TimeProfiler.java" />
         <option value="$PROJECT_DIR$/MPCLib/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/examples/RobotMPC.java" />
         <option value="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/util/TimeUtil.java" />
         <option value="$PROJECT_DIR$/MPCLib/build.gradle" />
         <option value="$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/MPCExample.java" />
+        <option value="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/control/MPCSolver.java" />
+        <option value="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/controllers/ControllerBehavior.java" />
         <option value="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/controllers/MecanumMPCController.java" />
         <option value="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/examples/Robot.java" />
+        <option value="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/examples/RobotMPC.java" />
         <option value="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/examples/CascadeLinearlyExtendingRobot.java" />
         <option value="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/debugging/ComputerDebugger.java" />
+        <option value="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/physics/MecanumDriveModel.java" />
+        <option value="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/physics/MecanumDriveModel.kt" />
+        <option value="$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/physics/RingSimulator.java" />
+        <option value="$PROJECT_DIR$/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/external/samples/ConceptTensorFlowObjectDetection.java" />
+        <option value="$PROJECT_DIR$/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/external/samples/ConceptTensorFlowObjectDetectionWebcam.java" />
+        <option value="$PROJECT_DIR$/FtcRobotController/build.release.gradle" />
+        <option value="$PROJECT_DIR$/FtcRobotController/build.gradle" />
+        <option value="$PROJECT_DIR$/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/internal/FtcRobotControllerActivity.java" />
+        <option value="$PROJECT_DIR$/build.common.gradle" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="24" />
-    <option name="y" value="25" />
-    <option name="width" value="1632" />
-    <option name="height" value="954" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1680" />
+    <option name="height" value="967" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -239,6 +343,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -255,18 +360,95 @@
               <item name="MPC-Lib" type="b2602c69:ProjectViewProjectNode" />
               <item name="MPC-Lib" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="MPCLib" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MPC-Lib" type="b2602c69:ProjectViewProjectNode" />
               <item name="MPC-Lib" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="MPCLib" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MPC-Lib" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MPC-Lib" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="MPCLib" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MPC-Lib" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MPC-Lib" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="MPCLib" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MPC-Lib" type="b2602c69:ProjectViewProjectNode" />
               <item name="MPC-Lib" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="MPCLib" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MPC-Lib" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MPC-Lib" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="MPCLib" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="horse" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MPC-Lib" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MPC-Lib" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="MPCLib" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="horse" type="462c0819:PsiDirectoryNode" />
+              <item name="mpclib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MPC-Lib" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MPC-Lib" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="MPCLib" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="horse" type="462c0819:PsiDirectoryNode" />
+              <item name="mpclib" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MPC-Lib" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MPC-Lib" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="MPCLib" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="horse" type="462c0819:PsiDirectoryNode" />
+              <item name="mpclib" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="physics" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MPC-Lib" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MPC-Lib" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="TeamCode" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
@@ -281,74 +463,56 @@
               <item name="TeamCode" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="AndroidView">
+        <subPane>
+          <expand>
+            <path>
+              <item name="MPC-Lib" type="1abcf292:AndroidViewProjectNode" />
+              <item name="FtcRobotController" type="feadf853:AndroidModuleNode" />
+            </path>
+            <path>
+              <item name="MPC-Lib" type="1abcf292:AndroidViewProjectNode" />
+              <item name="FtcRobotController" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+            </path>
+            <path>
+              <item name="MPC-Lib" type="1abcf292:AndroidViewProjectNode" />
+              <item name="FtcRobotController" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="robotcontroller" type="cbb59c9e:AndroidPsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MPC-Lib" type="1abcf292:AndroidViewProjectNode" />
+              <item name="FtcRobotController" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="robotcontroller" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="internal" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MPC-Lib" type="1abcf292:AndroidViewProjectNode" />
+              <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="AndroidView">
-        <subPane>
-          <expand>
-            <path>
-              <item name="MPC-Lib" type="1abcf292:AndroidViewProjectNode" />
-              <item name="MPCLib" type="feadf853:AndroidModuleNode" />
-            </path>
-            <path>
-              <item name="MPC-Lib" type="1abcf292:AndroidViewProjectNode" />
-              <item name="MPCLib" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-            </path>
-            <path>
-              <item name="MPC-Lib" type="1abcf292:AndroidViewProjectNode" />
-              <item name="MPCLib" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="mpclib" type="cbb59c9e:AndroidPsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MPC-Lib" type="1abcf292:AndroidViewProjectNode" />
-              <item name="MPCLib" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="mpclib" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="debugging" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MPC-Lib" type="1abcf292:AndroidViewProjectNode" />
-              <item name="MPCLib" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="mpclib" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="examples" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MPC-Lib" type="1abcf292:AndroidViewProjectNode" />
-              <item name="MPCLib" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="mpclib" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MPC-Lib" type="1abcf292:AndroidViewProjectNode" />
-              <item name="MPCLib" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="mpclib" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="ToolWindowBuild.ShowToolbar" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/MPCLib/src/main" />
     <property name="project.structure.last.edited" value="Dependencies" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
+    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
   </component>
   <component name="PsdUISettings">
     <option name="MODULE_TAB" value="Properties" />
@@ -381,7 +545,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ComputerDebugger">
+  <component name="RunManager" selected="Android App.TeamCode">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -389,7 +553,7 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TeamCode" type="AndroidRunConfigurationType" factoryName="Android App">
+    <configuration name="TeamCode" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="TeamCode" />
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
@@ -468,13 +632,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RingSimulator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.horse.mpclib.lib.physics.RingSimulator" />
+      <module name="MPCLib" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.horse.mpclib.lib.physics.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Android App.TeamCode" />
       <item itemvalue="Application.ComputerDebugger" />
       <item itemvalue="Application.GASplineTuner" />
+      <item itemvalue="Application.RingSimulator" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.RingSimulator" />
         <item itemvalue="Application.ComputerDebugger" />
         <item itemvalue="Application.GASplineTuner" />
       </list>
@@ -493,30 +672,39 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="967" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.16971917" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49942857" visible="true" weight="0.16971917" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info id="Build Variants" order="4" side_tool="true" />
+      <window_info id="Build Variants" order="4" sideWeight="0.5005714" side_tool="true" weight="0.16971917" />
       <window_info id="Image Layers" order="5" />
       <window_info id="Designer" order="6" />
       <window_info id="Resources Explorer" order="7" />
       <window_info id="Capture Tool" order="8" />
-      <window_info active="true" anchor="bottom" id="Run" order="0" visible="true" weight="0.328" />
-      <window_info anchor="bottom" id="Logcat" order="1" />
-      <window_info anchor="bottom" id="TODO" order="2" />
+      <window_info anchor="bottom" id="Run" order="0" weight="0.32685715" />
+      <window_info anchor="bottom" id="Logcat" order="1" weight="0.32914287" />
+      <window_info anchor="bottom" id="TODO" order="2" weight="0.32914287" />
       <window_info anchor="bottom" id="Debug" order="3" />
-      <window_info anchor="bottom" id="Terminal" order="4" />
+      <window_info anchor="bottom" id="Terminal" order="4" weight="0.32914287" />
       <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="6" />
-      <window_info anchor="bottom" id="Build" order="7" weight="0.3272727" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.32114285" />
       <window_info anchor="bottom" id="Find" order="8" weight="0.32914287" />
       <window_info anchor="bottom" id="Messages" order="9" weight="0.32914287" />
-      <window_info anchor="bottom" id="Android Profiler" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Android Profiler" order="10" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Gradle" order="2" />
@@ -531,66 +719,6 @@
     </SUITE>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/control/MecanumDriveILQR.java" />
-    <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/control/MecanumDriveMPC.java" />
-    <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/control/RunnableLQR.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="46" column="40" lean-forward="true" selection-start-line="46" selection-start-column="40" selection-end-line="46" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/control/LinearExtensionLQR.java" />
-    <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/control/MecanumRunnableLQR.java" />
-    <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/physics/OldTankDriveModel.java" />
-    <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/physics/TankDriveModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/examples/TankDriveRobot.java" />
-    <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/examples/TankDriveAutonomousMPC.java" />
-    <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/examples/RobotPIDF.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/examples/RobotILQR.java" />
-    <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/examples/RobotGVF.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="35" column="82" lean-forward="true" selection-start-line="35" selection-start-column="82" selection-end-line="35" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/examples/PurePursuitRobot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/examples/GASplineTuner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="42" column="24" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/examples/ContinuousLinearlyExtendingRobot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/examples/CascadeLinearlyExtendingRobotPractice.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
@@ -671,13 +799,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FtcRobotController/build.release.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/control/RiccatiUtil.java" />
     <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/physics/DynamicModel.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -707,16 +828,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/util/Util.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="60" column="133" selection-start-line="60" selection-start-column="133" selection-end-line="60" selection-end-column="133" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/control/LQRSolver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="181">
@@ -734,52 +845,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/control/MPCSolver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="53" column="16" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="18" lean-forward="true" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#128#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TeamCode/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#2#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FtcRobotController/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#2#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MPCLib/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="39" selection-start-line="1" selection-start-column="39" selection-end-line="1" selection-end-column="39" />
         </state>
       </provider>
-      <provider editor-type-id="android-manifest" />
     </entry>
     <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/util/TimeProfiler.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -794,9 +866,6 @@
           <caret line="25" column="89" lean-forward="true" selection-start-line="25" selection-start-column="89" selection-end-line="25" selection-end-column="89" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MPCLib/build.gradle">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/control/RunnableMPC.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -836,114 +905,246 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/physics/MotorModel.java">
+    <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/util/Util.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2490">
-          <caret line="168" column="11" selection-start-line="168" selection-start-column="11" selection-end-line="168" selection-end-column="11" />
+        <state>
+          <caret column="34" lean-forward="true" selection-start-column="34" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/examples/RobotMPC.java">
+    <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/control/MPCSolver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="36" column="22" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
+        <state relative-caret-position="283">
+          <caret line="43" column="11" selection-start-line="43" selection-start-column="11" selection-end-line="43" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/physics/MecanumDriveModel.java">
+    <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/controllers/ControllerBehavior.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="291" column="24" selection-start-line="291" selection-start-column="24" selection-end-line="291" selection-end-column="24" />
+        <state relative-caret-position="60">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#255#256#0" expanded="true" />
+            <element signature="e#282#283#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MPCLib/build/classes/java/main/com/horse/mpclib/lib/physics/MecanumDriveModel.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="643">
+          <caret line="372" column="45" selection-start-line="372" selection-start-column="45" selection-end-line="372" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/examples/Robot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/physics/MecanumDriveModel.kt" />
+    <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/geometry/ITranslation2d.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/geometry/Translation2d.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-299">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/examples/CascadeLinearlyExtendingRobot.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
+        <state relative-caret-position="285">
+          <caret line="19" column="58" lean-forward="true" selection-start-line="19" selection-start-column="58" selection-end-line="19" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/physics/RingSimulator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="51" column="26" selection-start-line="51" selection-start-column="26" selection-end-line="51" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/controllers/MecanumMPCController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="41" column="85" selection-start-line="41" selection-start-column="85" selection-end-line="41" selection-end-column="85" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.firstinspires.ftc/RobotCore/5.5/586a417ce56ed90b5b8f6ad18895a14b2ddae1dd/RobotCore-5.5-sources.jar!/com/qualcomm/robotcore/hardware/configuration/LynxConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="46" column="13" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TeamCode/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#2#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TeamCode/build.release.gradle">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="18" lean-forward="true" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#128#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FtcRobotController/build/generated/source/buildConfig/debug/com/qualcomm/ftcrobotcontroller/BuildConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="16" column="50" lean-forward="true" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-28/java/text/DateFormat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="356" column="16" selection-start-line="356" selection-start-column="16" selection-end-line="356" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.firstinspires.ftc/FtcCommon/5.5/62527701b969838d3d019ad28bb804857cac6d0c/FtcCommon-5.5-sources.jar!/com/qualcomm/ftccommon/FtcAboutActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="131" column="84" lean-forward="true" selection-start-line="131" selection-start-column="84" selection-end-line="131" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/external/samples/ConceptTensorFlowObjectDetectionWebcam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="95" column="11" selection-start-line="95" selection-start-column="11" selection-end-line="95" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/external/samples/ConceptTensorFlowObjectDetection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="95" column="11" selection-start-line="95" selection-start-column="11" selection-end-line="95" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FtcRobotController/build.release.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="59" selection-start-line="15" selection-start-column="59" selection-end-line="15" selection-end-column="59" />
+          <folding>
+            <element signature="e#0#481#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FtcRobotController/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="25" column="6" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#2#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/debugging/ComputerDebugger.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="185">
+          <caret line="20" column="47" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/examples/Robot.java">
+    <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/physics/MecanumDriveModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="81" column="10" selection-start-line="81" selection-start-column="10" selection-end-line="81" selection-end-column="10" />
+        <state relative-caret-position="480">
+          <caret line="35" column="41" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/internal/FtcRobotControllerActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="374" column="6" selection-start-line="374" selection-start-column="6" selection-end-line="374" selection-end-column="6" />
           <folding>
-            <element signature="e#5087#5088#0" expanded="true" />
-            <element signature="e#5115#5116#0" expanded="true" />
-            <element signature="e#5144#5145#0" expanded="true" />
-            <element signature="e#5169#5170#0" expanded="true" />
-            <element signature="e#5214#5215#0" expanded="true" />
-            <element signature="e#5249#5250#0" expanded="true" />
-            <element signature="e#5311#5312#0" expanded="true" />
-            <element signature="e#5359#5360#0" expanded="true" />
-            <element signature="e#5411#5412#0" expanded="true" />
-            <element signature="e#5447#5448#0" expanded="true" />
-            <element signature="e#5492#5493#0" expanded="true" />
-            <element signature="e#5520#5521#0" expanded="true" />
-            <element signature="e#5575#5576#0" expanded="true" />
-            <element signature="e#5610#5611#0" expanded="true" />
-            <element signature="e#5665#5666#0" expanded="true" />
-            <element signature="e#5698#5699#0" expanded="true" />
-            <element signature="e#5858#5859#0" expanded="true" />
-            <element signature="e#5886#5887#0" expanded="true" />
-            <element signature="e#5941#5942#0" expanded="true" />
-            <element signature="e#5976#5977#0" expanded="true" />
-            <element signature="e#6007#6008#0" expanded="true" />
-            <element signature="e#6044#6045#0" expanded="true" />
-            <element signature="e#6098#6099#0" expanded="true" />
-            <element signature="e#6135#6136#0" expanded="true" />
-            <element signature="e#6306#6307#0" expanded="true" />
-            <element signature="e#6341#6342#0" expanded="true" />
-            <element signature="e#6392#6393#0" expanded="true" />
-            <element signature="e#6424#6425#0" expanded="true" />
-            <element signature="e#6489#6490#0" expanded="true" />
-            <element signature="e#6532#6533#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#29194#29195#0" expanded="true" />
+            <element signature="e#29234#29235#0" expanded="true" />
+            <element signature="e#29268#29269#0" expanded="true" />
+            <element signature="e#29342#29343#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/controllers/MecanumMPCController.java">
+    <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/lib/physics/MotorModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#443#444#0" expanded="true" />
-            <element signature="e#475#476#0" expanded="true" />
-            <element signature="e#528#529#0" expanded="true" />
-            <element signature="e#570#571#0" expanded="true" />
-            <element signature="e#613#614#0" expanded="true" />
-            <element signature="e#647#648#0" expanded="true" />
-            <element signature="e#706#707#0" expanded="true" />
-            <element signature="e#752#753#0" expanded="true" />
-            <element signature="e#807#808#0" expanded="true" />
-            <element signature="e#847#848#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="517">
+          <caret line="389" column="5" selection-start-line="389" selection-start-column="5" selection-end-line="389" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MPCLib/src/main/java/com/horse/mpclib/examples/RobotMPC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="517">
+          <caret line="103" column="13" selection-start-line="103" selection-start-column="13" selection-end-line="103" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/MPCExample.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1050">
-          <caret line="70" column="46" selection-start-line="70" selection-start-column="46" selection-end-line="70" selection-end-column="46" />
+        <state relative-caret-position="660">
+          <caret line="44" column="39" lean-forward="true" selection-start-line="44" selection-start-column="39" selection-end-line="44" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#3138#3139#0" expanded="true" />
             <element signature="e#3174#3175#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MPCLib/build.gradle">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.common.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="98" column="21" lean-forward="true" selection-start-line="98" selection-start-column="21" selection-end-line="98" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#656#0" expanded="true" />
           </folding>
         </state>
       </provider>
